@@ -261,7 +261,7 @@
 
     function getRawUrl(relativePath) {
       // relativePath: "docs/abc.pdf"
-      return `https://raw.githubusercontent.com/tienthien196/data_english/main/docs.json`;
+      return `https://raw.githubusercontent.com/${REPO_USER}/${REPO_NAME}/${BRANCH}/${encodeURIComponent(relativePath)}`;
     }
 
     let documents = [];
