@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -21,10 +21,11 @@
       height: 100vh;
     }
     .sidebar {
-      width: 33.33%;
+      width: 350px;
       background: white;
       border-right: 1px solid #e5e7eb;
       overflow-y: auto;
+      flex-shrink: 0;
     }
     .header {
       padding: 1rem;
@@ -67,6 +68,7 @@
       height: 80px;
       object-fit: cover;
       border-radius: 4px;
+      background: #f3f4f6;
     }
     .doc-info h3 {
       font-size: 0.95rem;
@@ -124,18 +126,14 @@
       cursor: pointer;
       border: none;
       font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
     }
-    .btn-view {
-      background: #3b82f6;
-      color: white;
-    }
-    .btn-download {
-      background: #6b7280;
-      color: white;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
+    .btn-view { background: #3b82f6; color: white; }
+    .btn-download { background: #6b7280; color: white; }
+    .btn-copy { background: #8b5cf6; color: white; }
+    .btn:hover { opacity: 0.9; }
     .content {
       flex: 1;
       padding: 1.5rem;
@@ -160,6 +158,7 @@
       width: 100%;
       border-radius: 0.5rem;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #f9fafb;
     }
     .info-large {
       flex: 2;
@@ -204,28 +203,43 @@
       margin-bottom: 0.5rem;
       color: #1f2937;
     }
+    .error {
+      color: #ef4444;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .sidebar { width: 100%; }
+      .main { display: none; }
+      .sidebar.active { width: 100%; }
+    }
   </style>
 </head>
 <body>
   <div class="app">
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <div class="header">
         <h1>Thư viện Tài liệu</h1>
         <p id="doc-count">Đang tải...</p>
       </div>
       <div class="doc-list" id="doc-list">
-        <!-- Documents will be inserted here -->
+        <!-- Danh sách tài liệu sẽ được chèn vào đây -->
       </div>
     </div>
-    <div class="main">
+    <div class="main" id="main-panel">
       <div id="main-header" class="main-header" style="display:none;">
         <div>
           <h2 id="doc-title">...</h2>
           <div class="size" id="doc-size">...</div>
         </div>
         <div class="actions">
-          <button class="btn btn-view" id="btn-view">Xem trực tiếp</button>
-          <button class="btn btn-download" id="btn-download">Tải về</button>
+          <button class="btn btn-view" id="btn-view">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 3a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/></svg>
+            Xem trực tiếp
+          </button>
+          <button class="btn btn-download" id="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9a.5.5 0 0 1 .5.5V12h13V9.5a.5.5 0 0 1 1 0V12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V9.5A.5.5 0 0 1 .5 9z"/><path d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V13.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+            Tải về
+          </button>
         </div>
       </div>
       <div class="content" id="content">
@@ -234,70 +248,37 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7m2-2h10" />
           </svg>
           <h3>Chọn một tài liệu</h3>
-          <p>Nhấp vào bất kỳ tài liệu nào trong danh sách bên trái để xem chi tiết.</p>
+          <p>Nhấp vào tài liệu bên trái để xem chi tiết.</p>
         </div>
       </div>
     </div>
   </div>
 
   <script>
-    // Mock data - replace with real GitHub API call in production
-    const documents = [
-      {
-        id: 1,
-        name: "Vitamins Supplements For Dummies - S... CNS.pdf",
-        size: "7.27 MB",
-        path: "docs/Vitamins_Supplements_For_Dummies_CNS.pdf",
-        coverUrl: "https://placehold.co/300x400/4F46E5/FFFFFF?text=Vitamins+Supplements",
-        description: "A comprehensive guide to understanding vitamins and supplements for beginners."
-      },
-      {
-        id: 2,
-        name: "Negotiating For Dummies by Michael C. ... ayer.pdf",
-        size: "6.87 MB",
-        path: "docs/Negotiating_For_Dummies_Michael_C_ayer.pdf",
-        coverUrl: "https://placehold.co/300x400/10B981/FFFFFF?text=Negotiating+For+Dummies",
-        description: "Learn the art of negotiation with practical tips and strategies."
-      },
-      {
-        id: 3,
-        name: "File free nhưng các bạn cần in ấn sách thì nhờ hộ Ad nhé.pdf",
-        size: "10.22 MB",
-        path: "docs/File_free_nhung_cac_ban_can_in_an_sach.pdf",
-        coverUrl: "https://placehold.co/300x400/F59E0B/FFFFFF?text=Free+Files+Guide",
-        description: "Guide for printing files with assistance from the administrator."
-      },
-      {
-        id: 4,
-        name: "Chia sẻ tài liệu tiếng anh free 2.pdf",
-        size: "8.55 MB",
-        path: "docs/Chia_se_tai_lieu_tieng_anh_free_2.pdf",
-        coverUrl: "https://placehold.co/300x400/EF4444/FFFFFF?text=English+Materials",
-        description: "Collection of free English learning materials for students."
-      },
-      {
-        id: 5,
-        name: "GPT Ctrl C Ctrl V.pdf",
-        size: "5.34 MB",
-        path: "docs/GPT_Ctrl_C_Ctrl_V.pdf",
-        coverUrl: "https://placehold.co/300x400/8B5CF6/FFFFFF?text=GPT+Tips",
-        description: "Essential tips for using GPT effectively in your daily work."
-      },
-      {
-        id: 6,
-        name: "Box Chat tum lum ga.pdf",
-        size: "4.78 MB",
-        path: "docs/Box_Chat_tum_lum_ga.pdf",
-        coverUrl: "https://placehold.co/300x400/059669/FFFFFF?text=Chat+Box+Guide",
-        description: "Comprehensive guide to using chat boxes for effective communication."
-      }
-    ];
+    const REPO_USER = "tienthien196";
+    const REPO_NAME = "data_english";
+    const BRANCH = "main";
 
+    function getRawUrl(relativePath) {
+      // relativePath: "docs/abc.pdf"
+      return `https://raw.githubusercontent.com/${REPO_USER}/${REPO_NAME}/${BRANCH}/${encodeURIComponent(relativePath)}`;
+    }
+
+    let documents = [];
     let selectedDoc = null;
 
-    function getRawGitHubUrl(path) {
-      // Replace 'username/repo' with your actual GitHub repo
-      return `https://github.com/tienthien196/repo/raw/main/`;
+    // Tải danh sách tài liệu từ docs.json
+    async function loadDocuments() {
+      try {
+        const res = await fetch('docs.json');
+        if (!res.ok) throw new Error(`Không tìm thấy docs.json (HTTP ${res.status})`);
+        documents = await res.json();
+        renderDocuments();
+      } catch (err) {
+        console.error("Lỗi khi tải docs.json:", err);
+        document.getElementById('doc-count').innerHTML = 
+          `<span class="error">❌ Lỗi: ${err.message}</span>`;
+      }
     }
 
     function renderDocuments() {
@@ -311,7 +292,10 @@
         item.className = 'doc-item';
         item.dataset.id = doc.id;
         item.innerHTML = `
-          <img src="${doc.coverUrl}" alt="${doc.name}" class="doc-cover">
+          <img src="${doc.coverUrl}" 
+               alt="${doc.name}" 
+               class="doc-cover"
+               onerror="this.onerror=null; this.src='https://placehold.co/64x80/d1d5db/6b7280?text=Err';">
           <div class="doc-info">
             <h3>${doc.name}</h3>
             <p>${doc.size}</p>
@@ -326,31 +310,33 @@
     function selectDocument(doc) {
       selectedDoc = doc;
 
-      // Highlight selected
-      document.querySelectorAll('.doc-item').forEach(el => {
-        el.classList.remove('active');
-        if (parseInt(el.dataset.id) === doc.id) {
-          el.classList.add('active');
-        }
-      });
+      // Bỏ active cũ
+      document.querySelectorAll('.doc-item').forEach(el => el.classList.remove('active'));
+      // Thêm active mới
+      const newItem = document.querySelector(`.doc-item[data-id="${doc.id}"]`);
+      if (newItem) newItem.classList.add('active');
 
-      // Show detail panel
+      // Hiển thị header
       document.getElementById('main-header').style.display = 'flex';
       document.getElementById('doc-title').textContent = doc.name;
       document.getElementById('doc-size').textContent = doc.size;
 
-      // Update buttons
-      document.getElementById('btn-view').onclick = () => window.open(getRawGitHubUrl(doc.path), '_blank');
-      document.getElementById('btn-download').onclick = () => window.open(getRawGitHubUrl(doc.path), '_blank');
+      const rawUrl = getRawUrl(doc.path);
 
-      // Render detail content
+      // Gán sự kiện cho nút trên header
+      document.getElementById('btn-view').onclick = () => window.open(rawUrl, '_blank');
+      document.getElementById('btn-download').onclick = () => downloadFile(rawUrl, doc.name);
+
+      // Hiển thị chi tiết
       document.getElementById('placeholder').style.display = 'none';
       const contentEl = document.getElementById('content');
       contentEl.innerHTML = `
         <div class="doc-detail">
           <div class="detail-grid">
             <div class="cover-large">
-              <img src="${doc.coverUrl}" alt="${doc.name}">
+              <img src="${doc.coverUrl}" 
+                   alt="${doc.name}"
+                   onerror="this.onerror=null; this.src='https://placehold.co/300x400/d1d5db/6b7280?text=No+Cover';">
             </div>
             <div class="info-large">
               <h3>Thông tin tài liệu</h3>
@@ -368,13 +354,22 @@
               </div>
               <div class="info-item">
                 <div class="info-label">Mô tả:</div>
-                <div class="info-value">${doc.description}</div>
+                <div class="info-value">${doc.description || 'Chưa có mô tả.'}</div>
               </div>
               <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
                 <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
-                  <button class="btn btn-view" onclick="window.open('${getRawGitHubUrl(doc.path)}', '_blank')">Xem trực tiếp</button>
-                  <button class="btn btn-download" onclick="window.open('${getRawGitHubUrl(doc.path)}', '_blank')">Tải về</button>
-                  <button class="btn" style="background:#6b7280;color:white;" onclick="navigator.clipboard.writeText('${getRawGitHubUrl(doc.path)}').then(()=>alert('Đã sao chép liên kết!'))">Sao chép liên kết</button>
+                  <button class="btn btn-view" onclick="window.open('${rawUrl}', '_blank')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 3a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/></svg>
+                    Xem trực tiếp
+                  </button>
+                  <button class="btn btn-download" onclick="downloadFile('${rawUrl}', '${doc.name.replace(/'/g, "\\'")}')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9a.5.5 0 0 1 .5.5V12h13V9.5a.5.5 0 0 1 1 0V12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V9.5A.5.5 0 0 1 .5 9z"/><path d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V13.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+                    Tải về
+                  </button>
+                  <button class="btn btn-copy" onclick="copyLink('${rawUrl}')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h2z"/></svg>
+                    Sao chép link
+                  </button>
                 </div>
               </div>
             </div>
@@ -383,11 +378,30 @@
       `;
     }
 
-    // Initialize
+    function downloadFile(url, filename) {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.rel = 'noopener';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    async function copyLink(url) {
+      try {
+        await navigator.clipboard.writeText(url);
+        alert('✅ Đã sao chép liên kết!');
+      } catch (err) {
+        console.error('Lỗi khi sao chép:', err);
+        alert('❌ Không thể sao chép. Vui lòng chọn thủ công.');
+      }
+    }
+
+    // Khởi chạy khi trang load xong
     document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(renderDocuments, 500); // Simulate loading
+      loadDocuments();
     });
   </script>
 </body>
 </html>
-
