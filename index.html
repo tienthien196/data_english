@@ -1,4 +1,743 @@
-<!DOCTYPE html> <html lang="vi"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <title>Thư Viện Tài Liệu - Cartoon Tech</title> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <style> @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap'); * { margin: 0; padding: 0; box-sizing: border-box; } :root { --primary: #6a11cb; --secondary: #2575fc; --accent: #ff6b6b; --light: #f8f9ff; --dark: #2d1b69; --success: #00c9a7; --warning: #ffb800; --cartoon-blue: #87CEFA; --cartoon-yellow: #fff9c4; --cartoon-green: #c8e6c9; --cartoon-pink: #ffcdd2; } body { background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); background-attachment: fixed; min-height: 100vh; font-family: 'Nunito', sans-serif; overflow-x: hidden; position: relative; } body::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.1) 0%, transparent 20%), radial-gradient(circle at 90% 80%, rgba(255,255,255,0.1) 0%, transparent 20%), repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px); pointer-events: none; z-index: -1; } .app { display: flex; min-height: 100vh; max-width: 1800px; margin: 0 auto; padding: 1rem; } .sidebar { width: 380px; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px); border-radius: 24px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.3); overflow-y: auto; flex-shrink: 0; border: 4px solid var(--cartoon-yellow); position: relative; z-index: 10; animation: floatIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; transform: translateY(20px); opacity: 0; } .sidebar::before { content: ""; position: absolute; top: -4px; left: -4px; right: -4px; bottom: -4px; background: linear-gradient(45deg, var(--cartoon-pink), var(--cartoon-blue), var(--cartoon-green)); border-radius: 28px; z-index: -1; opacity: 0.7; animation: borderGlow 3s infinite alternate; } .header { padding: 1.5rem; text-align: center; border-bottom: 4px dashed var(--cartoon-blue); background: linear-gradient(to right, var(--cartoon-yellow), var(--cartoon-pink)); position: relative; overflow: hidden; } .header::before { content: "📚"; position: absolute; top: -20px; right: 20px; font-size: 2rem; animation: float 3s ease-in-out infinite; } .header h1 { font-family: 'Fredoka One', cursive; font-size: 2rem; font-weight: 800; color: var(--dark); text-shadow: 3px 3px 0 var(--cartoon-blue); letter-spacing: 1px; margin-bottom: 0.5rem; position: relative; z-index: 2; } .header p { font-size: 1rem; color: var(--dark); font-weight: 700; background: var(--cartoon-green); display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px; border: 2px solid var(--cartoon-blue); } .doc-list { padding: 1.5rem; } .doc-item { display: flex; gap: 1rem; padding: 1.2rem; margin-bottom: 1.2rem; background: white; border-radius: 20px; cursor: pointer; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 3px solid transparent; box-shadow: 0 4px 8px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(0,0,0,0.05); position: relative; overflow: hidden; } .doc-item::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(120deg, transparent, rgba(255,255,255,0.8), transparent); transform: translateX(-100%); transition: transform 0.6s ease; } .doc-item:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 8px 20px rgba(0,0,0,0.15), 0 0 20px rgba(106, 17, 203, 0.2); border-color: var(--secondary); } .doc-item:hover::before { transform: translateX(100%); } .doc-item.active { background: linear-gradient(135deg, var(--cartoon-yellow), #e3f2fd); border: 3px solid var(--primary); box-shadow: 0 8px 25px rgba(106, 17, 203, 0.4), inset 0 0 0 2px rgba(255,255,255,0.5); transform: scale(1.03); } .doc-cover { width: 70px; height: 90px; object-fit: cover; border-radius: 12px; background: linear-gradient(45deg, var(--cartoon-blue), var(--cartoon-pink)); border: 3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); position: relative; z-index: 2; } .doc-info h3 { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 0.4rem; line-height: 1.3; } .doc-info p { font-size: 0.9rem; color: #555; font-weight: 700; margin-bottom: 0.3rem; } .doc-path { font-size: 0.75rem; color: #777; font-style: italic; } .main { flex: 1; display: flex; flex-direction: column; margin-left: 2rem; opacity: 0; transform: translateX(30px); animation: slideIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards; } .main-header { padding: 1.5rem; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 24px; margin-bottom: 2rem; border: 4px solid var(--cartoon-green); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.3); display: flex; justify-content: space-between; align-items: center; } .main-header h2 { font-family: 'Fredoka One', cursive; font-size: 1.8rem; font-weight: 800; color: var(--primary); text-shadow: 2px 2px 0 var(--cartoon-yellow); margin-bottom: 0.5rem; } .main-header .size { font-size: 1rem; color: var(--dark); font-weight: 700; background: var(--cartoon-pink); padding: 0.3rem 0.8rem; border-radius: 15px; display: inline-block; border: 2px solid var(--cartoon-blue); } .actions { display: flex; gap: 1rem; } .btn { padding: 0.8rem 1.5rem; border-radius: 50px; font-weight: 800; cursor: pointer; border: none; font-size: 1rem; display: flex; align-items: center; gap: 0.7rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; overflow: hidden; z-index: 1; } .btn::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, #ff6b6b, #ffa502); z-index: -1; transition: transform 0.6s ease; transform: scaleX(0); transform-origin: left; } .btn:hover::before { transform: scaleX(1); } .btn-view { background: linear-gradient(45deg, #4facfe, #00f2fe); color: white; } .btn-download { background: linear-gradient(45deg, #0cebeb, #20e3b2); color: white; } .btn-copy { background: linear-gradient(45deg, #a18cd1, #fbc2eb); color: white; } .btn:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 20px rgba(0,0,0,0.3); } .btn i { font-size: 1.2rem; } .content { flex: 1; padding: 2rem; overflow-y: auto; } .doc-detail { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 28px; padding: 2.5rem; box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.3); border: 4px solid var(--cartoon-pink); animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; opacity: 0; transform: scale(0.9); } .detail-grid { display: flex; flex-wrap: wrap; gap: 2.5rem; } .cover-large { flex: 1; min-width: 300px; display: flex; justify-content: center; } .cover-large img { width: 100%; max-width: 350px; border-radius: 20px; box-shadow: 0 12px 30px rgba(0,0,0,0.25), inset 0 0 0 3px rgba(255,255,255,0.8); border: 4px solid white; animation: float 4s ease-in-out infinite; } .info-large { flex: 2; min-width: 350px; } .info-large h3 { font-family: 'Fredoka One', cursive; font-size: 1.8rem; font-weight: 800; margin-bottom: 1.5rem; color: var(--primary); text-shadow: 2px 2px 0 var(--cartoon-yellow); position: relative; display: inline-block; } .info-large h3::after { content: ""; position: absolute; bottom: -8px; left: 0; width: 50px; height: 4px; background: linear-gradient(to right, var(--cartoon-blue), var(--cartoon-pink)); border-radius: 2px; } .info-item { margin-bottom: 1.2rem; padding-bottom: 1rem; border-bottom: 2px dashed rgba(0,0,0,0.1); } .info-label { font-weight: 800; color: var(--dark); margin-bottom: 0.5rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; } .info-label i { color: var(--secondary); font-size: 1.2rem; } .info-value { color: #333; line-height: 1.6; font-size: 1.1rem; font-weight: 600; } .placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; padding: 4rem; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.3); } .placeholder i { font-size: 5rem; margin-bottom: 2rem; background: linear-gradient(45deg, var(--cartoon-blue), var(--cartoon-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: pulse 2s infinite; } .placeholder h3 { font-family: 'Fredoka One', cursive; font-size: 2.5rem; margin-bottom: 1rem; color: white; text-shadow: 3px 3px 0 rgba(0,0,0,0.2); } .placeholder p { font-size: 1.2rem; max-width: 500px; line-height: 1.6; } .error { color: #ff6b6b; font-size: 1.1rem; font-weight: 700; text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.2); border-radius: 15px; backdrop-filter: blur(10px); } /* Animations */ @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } } @keyframes floatIn { to { transform: translateY(0); opacity: 1; } } @keyframes slideIn { to { transform: translateX(0); opacity: 1; } } @keyframes popIn { to { transform: scale(1); opacity: 1; } } @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } } @keyframes borderGlow { 0% { opacity: 0.7; } 100% { opacity: 1; } } /* Responsive */ @media (max-width: 1100px) { .app { flex-direction: column; padding: 1rem; } .sidebar { width: 100%; margin-bottom: 1.5rem; max-height: 400px; } .main { margin-left: 0; } } @media (max-width: 768px) { .detail-grid { flex-direction: column; align-items: center; } .cover-large, .info-large { min-width: 100%; max-width: 100%; } .actions { flex-wrap: wrap; } .btn { width: 100%; justify-content: center; } } /* Scrollbar styling */ ::-webkit-scrollbar { width: 12px; } ::-webkit-scrollbar-track { background: rgba(255,255,255,0.3); border-radius: 10px; } ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, var(--primary), var(--secondary)); border-radius: 10px; border: 3px solid rgba(255,255,255,0.5); } /* Cartoon elements */ .cartoon-element { position: absolute; font-size: 2rem; opacity: 0.1; z-index: -1; } .element-1 { top: 10%; left: 5%; animation: float 6s ease-in-out infinite; } .element-2 { bottom: 15%; right: 8%; animation: float 8s ease-in-out infinite 1s; } .element-3 { top: 30%; right: 15%; animation: float 7s ease-in-out infinite 0.5s; }
-</style>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thư viện tài liệu trực tuyến của Cartoon Tech – nơi lưu trữ và chia sẻ tài liệu học thuật, kỹ thuật và công nghệ." />
+  <meta name="theme-color" content="#6a11cb" />
+  <title>Thư Viện Tài Liệu - Cartoon Tech</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap');
 
-</head> <body> <!-- Cartoon background elements --> <div class="cartoon-element element-1">📚</div> <div class="cartoon-element element-2">📄</div> <div class="cartoon-element element-3">🔍</div> <div class="app"> <div class="sidebar" id="sidebar"> <div class="header"> <h1>Thư viện Tài liệu</h1> <p id="doc-count">Đang tải...</p> </div> <div class="doc-list" id="doc-list"> <!-- Danh sách tài liệu sẽ được chèn vào đây --> </div> </div> <div class="main" id="main-panel"> <div id="main-header" class="main-header" style="display:none;"> <div> <h2 id="doc-title">...</h2> <div class="size" id="doc-size">...</div> </div> <div class="actions"> <button class="btn btn-view" id="btn-view"> <i class="fas fa-eye"></i> Xem trực tiếp </button> <button class="btn btn-download" id="btn-download"> <i class="fas fa-download"></i> Tải về </button> </div> </div> <div class="content" id="content"> <div class="placeholder" id="placeholder"> <i class="fas fa-book-open"></i> <h3>Chọn một tài liệu</h3> <p>Nhấp vào tài liệu bên trái để xem chi tiết và khám phá thế giới tri thức!</p> </div> </div> </div> </div> <script> const REPO_USER = "tienthien196"; const REPO_NAME = "data_english"; const BRANCH = "main"; function getRawUrl(relativePath) { return `https://raw.githubusercontent.com/${REPO_USER}/${REPO_NAME}/${BRANCH}/${encodeURIComponent(relativePath)}`; } let documents = []; let selectedDoc = null; // Tải danh sách tài liệu từ docs.json async function loadDocuments() { try { const res = await fetch('docs.json'); if (!res.ok) throw new Error(`Không tìm thấy docs.json (HTTP ${res.status})`); documents = await res.json(); renderDocuments(); } catch (err) { console.error("Lỗi khi tải docs.json:", err); document.getElementById('doc-count').innerHTML = `<span class="error">❌ Lỗi: ${err.message}</span>`; } finally { setIsLoading(false); } } function setIsLoading(loading) { if (!loading) { document.getElementById('doc-count').textContent = `Tổng cộng ${documents.length} tài liệu`; } } function renderDocuments() { const listEl = document.getElementById('doc-list'); const countEl = document.getElementById('doc-count'); listEl.innerHTML = ''; documents.forEach(doc => { const item = document.createElement('div'); item.className = 'doc-item'; item.dataset.id = doc.id; item.innerHTML = ` <img src="${doc.coverUrl}" alt="${doc.name}" class="doc-cover" onerror="this.onerror=null; this.src='https://placehold.co/70x90/87CEFA/2D1B69?text=📄';"> <div class="doc-info"> <h3>${doc.name}</h3> <p>${doc.size}</p> <div class="doc-path">${doc.path}</div> </div> `; item.addEventListener('click', () => selectDocument(doc)); listEl.appendChild(item); }); } function selectDocument(doc) { selectedDoc = doc; // Bỏ active cũ document.querySelectorAll('.doc-item').forEach(el => el.classList.remove('active')); // Thêm active mới const newItem = document.querySelector(`.doc-item[data-id="${doc.id}"]`); if (newItem) newItem.classList.add('active'); // Hiển thị header const mainHeader = document.getElementById('main-header'); mainHeader.style.display = 'flex'; document.getElementById('doc-title').textContent = doc.name; document.getElementById('doc-size').textContent = doc.size; const rawUrl = getRawUrl(doc.path); // Gán sự kiện cho nút trên header document.getElementById('btn-view').onclick = () => window.open(rawUrl, '_blank'); document.getElementById('btn-download').onclick = () => downloadFile(rawUrl, doc.name); // Hiển thị chi tiết document.getElementById('placeholder').style.display = 'none'; const contentEl = document.getElementById('content'); contentEl.innerHTML = ` <div class="doc-detail"> <div class="detail-grid"> <div class="cover-large"> <img src="${doc.coverUrl}" alt="${doc.name}" onerror="this.onerror=null; this.src='https://placehold.co/350x450/87CEFA/2D1B69?text=No+Cover';"> </div> <div class="info-large"> <h3>Thông tin tài liệu</h3> <div class="info-item"> <div class="info-label"><i class="fas fa-file-alt"></i> Tên:</div> <div class="info-value">${doc.name}</div> </div> <div class="info-item"> <div class="info-label"><i class="fas fa-weight-hanging"></i> Kích thước:</div> <div class="info-value">${doc.size}</div> </div> <div class="info-item"> <div class="info-label"><i class="fas fa-folder"></i> Đường dẫn:</div> <div class="info-value">${doc.path}</div> </div> <div class="info-item"> <div class="info-label"><i class="fas fa-info-circle"></i> Mô tả:</div> <div class="info-value">${doc.description || 'Chưa có mô tả.'}</div> </div> <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 3px dashed var(--cartoon-blue);"> <div style="display:flex; gap:1rem; flex-wrap:wrap;"> <button class="btn btn-view" onclick="window.open('${rawUrl}', '_blank')"> <i class="fas fa-eye"></i> Xem trực tiếp </button> <button class="btn btn-download" onclick="downloadFile('${rawUrl}', '${doc.name.replace(/'/g, "\\'")}')"> <i class="fas fa-download"></i> Tải về </button> <button class="btn btn-copy" onclick="copyLink('${rawUrl}')"> <i class="fas fa-link"></i> Sao chép link </button> </div> </div> </div> </div> </div> `; } function downloadFile(url, filename) { const a = document.createElement('a'); a.href = url; a.download = filename; a.rel = 'noopener'; document.body.appendChild(a); a.click(); document.body.removeChild(a); } async function copyLink(url) { try { await navigator.clipboard.writeText(url); // Show notification const notification = document.createElement('div'); notification.innerHTML = '✅ Đã sao chép liên kết!'; notification.style.cssText = ` position: fixed; top: 20px; right: 20px; background: linear-gradient(45deg, var(--success), #00c9a7); color: white; padding: 1rem 1.5rem; border-radius: 50px; font-weight: 800; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; animation: slideInNotification 0.5s, fadeOut 0.5s 2.5s forwards; `; document.body.appendChild(notification); setTimeout(() => { notification.style.display = 'none'; document.body.removeChild(notification); }, 3000); } catch (err) { console.error('Lỗi khi sao chép:', err); alert('❌ Không thể sao chép. Vui lòng chọn thủ công.'); } } // Add notification animation const style = document.createElement('style'); style.textContent = ` @keyframes slideInNotification { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } } @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } } `; document.head.appendChild(style); // Khởi chạy khi trang load xong document.addEventListener('DOMContentLoaded', () => { loadDocuments(); }); </script> </body> </html>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    :root {
+      --primary: #6a11cb;
+      --secondary: #2575fc;
+      --accent: #ff6b6b;
+      --light: #f8f9ff;
+      --dark: #2d1b69;
+      --success: #00c9a7;
+      --warning: #ffb800;
+      --cartoon-blue: #87CEFA;
+      --cartoon-yellow: #fff9c4;
+      --cartoon-green: #c8e6c9;
+      --cartoon-pink: #ffcdd2;
+    }
+
+    body {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255,255,255,0.1) 0%, transparent 20%),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .app {
+      display: flex;
+      min-height: 100vh;
+      max-width: 1800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 380px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.3);
+      overflow-y: auto;
+      flex-shrink: 0;
+      border: 4px solid var(--cartoon-yellow);
+      position: relative;
+      z-index: 10;
+      animation: floatIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    .sidebar::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      background: linear-gradient(45deg, var(--cartoon-pink), var(--cartoon-blue), var(--cartoon-green));
+      border-radius: 28px;
+      z-index: -1;
+      opacity: 0.7;
+      animation: borderGlow 3s infinite alternate;
+    }
+
+    .header {
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 4px dashed var(--cartoon-blue);
+      background: linear-gradient(to right, var(--cartoon-yellow), var(--cartoon-pink));
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: "📚";
+      position: absolute;
+      top: -20px;
+      right: 20px;
+      font-size: 2rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .header h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--dark);
+      text-shadow: 3px 3px 0 var(--cartoon-blue);
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .header p {
+      font-size: 1rem;
+      color: var(--dark);
+      font-weight: 700;
+      background: var(--cartoon-green);
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      border: 2px solid var(--cartoon-blue);
+    }
+
+    .doc-list {
+      padding: 1.5rem;
+    }
+
+    .doc-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1.2rem;
+      margin-bottom: 1.2rem;
+      background: white;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: 3px solid transparent;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .doc-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.8), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+    }
+
+    .doc-item:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15), 0 0 20px rgba(106, 17, 203, 0.2);
+      border-color: var(--secondary);
+    }
+
+    .doc-item:hover::before {
+      transform: translateX(100%);
+    }
+
+    .doc-item.active {
+      background: linear-gradient(135deg, var(--cartoon-yellow), #e3f2fd);
+      border: 3px solid var(--primary);
+      box-shadow: 0 8px 25px rgba(106, 17, 203, 0.4), inset 0 0 0 2px rgba(255,255,255,0.5);
+      transform: scale(1.03);
+    }
+
+    .doc-cover {
+      width: 70px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: linear-gradient(45deg, var(--cartoon-blue), var(--cartoon-pink));
+      border: 3px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 2;
+    }
+
+    .doc-info h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .doc-info p {
+      font-size: 0.9rem;
+      color: #555;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .doc-path {
+      font-size: 0.75rem;
+      color: #777;
+      font-style: italic;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+      opacity: 0;
+      transform: translateX(30px);
+      animation: slideIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards;
+    }
+
+    .main-header {
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      margin-bottom: 2rem;
+      border: 4px solid var(--cartoon-green);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .main-header h2 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-shadow: 2px 2px 0 var(--cartoon-yellow);
+      margin-bottom: 0.5rem;
+    }
+
+    .main-header .size {
+      font-size: 1rem;
+      color: var(--dark);
+      font-weight: 700;
+      background: var(--cartoon-pink);
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      display: inline-block;
+      border: 2px solid var(--cartoon-blue);
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 800;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #ff6b6b, #ffa502);
+      z-index: -1;
+      transition: transform 0.6s ease;
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+
+    .btn:hover::before {
+      transform: scaleX(1);
+    }
+
+    .btn-view { background: linear-gradient(45deg, #4facfe, #00f2fe); color: white; }
+    .btn-download { background: linear-gradient(45deg, #0cebeb, #20e3b2); color: white; }
+    .btn-copy { background: linear-gradient(45deg, #a18cd1, #fbc2eb); color: white; }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    .content {
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+
+    .doc-detail {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 28px;
+      padding: 2.5rem;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.3);
+      border: 4px solid var(--cartoon-pink);
+      animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    .detail-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+    }
+
+    .cover-large {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cover-large img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25), inset 0 0 0 3px rgba(255,255,255,0.8);
+      border: 4px solid white;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .info-large {
+      flex: 2;
+      min-width: 350px;
+    }
+
+    .info-large h3 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      text-shadow: 2px 2px 0 var(--cartoon-yellow);
+      position: relative;
+      display: inline-block;
+    }
+
+    .info-large h3::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      background: linear-gradient(to right, var(--cartoon-blue), var(--cartoon-pink));
+      border-radius: 2px;
+    }
+
+    .info-item {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px dashed rgba(0,0,0,0.1);
+    }
+
+    .info-label {
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .info-value {
+      color: #333;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      padding: 4rem;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .placeholder svg {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 2rem;
+      color: var(--cartoon-blue);
+      filter: drop-shadow(0 0 10px rgba(135, 206, 250, 0.7));
+      animation: pulse 2s infinite;
+    }
+
+    .placeholder h3 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+    }
+
+    .placeholder p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .error {
+      color: #ff6b6b;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes floatIn { to { transform: translateY(0); opacity: 1; } }
+    @keyframes slideIn { to { transform: translateX(0); opacity: 1; } }
+    @keyframes popIn { to { transform: scale(1); opacity: 1; } }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+    @keyframes borderGlow { 0% { opacity: 0.7; } 100% { opacity: 1; } }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .app { flex-direction: column; padding: 1rem; }
+      .sidebar { width: 100%; margin-bottom: 1.5rem; max-height: 400px; }
+      .main { margin-left: 0; }
+    }
+
+    @media (max-width: 768px) {
+      .detail-grid { flex-direction: column; align-items: center; }
+      .cover-large, .info-large { min-width: 100%; max-width: 100%; }
+      .actions { flex-wrap: wrap; }
+      .btn { width: 100%; justify-content: center; padding: 0.7rem 1.2rem; font-size: 0.9rem; }
+      .main-header h2 { font-size: 1.5rem; }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: rgba(255,255,255,0.3); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(to bottom, var(--primary), var(--secondary));
+      border-radius: 10px;
+      border: 3px solid rgba(255,255,255,0.5);
+    }
+
+    /* Background elements */
+    .cartoon-element {
+      position: absolute;
+      font-size: 2rem;
+      opacity: 0.1;
+      z-index: -1;
+    }
+    .element-1 { top: 10%; left: 5%; animation: float 6s ease-in-out infinite; }
+    .element-2 { bottom: 15%; right: 8%; animation: float 8s ease-in-out infinite 1s; }
+    .element-3 { top: 30%; right: 15%; animation: float 7s ease-in-out infinite 0.5s; }
+  </style>
+</head>
+<body>
+  <!-- Background decorations -->
+  <div class="cartoon-element element-1">📚</div>
+  <div class="cartoon-element element-2">📄</div>
+  <div class="cartoon-element element-3">🔍</div>
+
+  <div class="app">
+    <div class="sidebar" id="sidebar">
+      <div class="header">
+        <h1>Thư viện Tài liệu</h1>
+        <p id="doc-count">Đang tải...</p>
+      </div>
+      <div class="doc-list" id="doc-list">
+        <!-- Danh sách tài liệu sẽ được chèn vào đây -->
+      </div>
+    </div>
+    <div class="main" id="main-panel">
+      <div id="main-header" class="main-header" style="display: none;">
+        <div>
+          <h2 id="doc-title">...</h2>
+          <div class="size" id="doc-size">...</div>
+        </div>
+        <div class="actions">
+          <button class="btn btn-view" id="btn-view">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M.5 3a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/>
+            </svg> Xem trực tiếp
+          </button>
+          <button class="btn btn-download" id="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M.5 9a.5.5 0 0 1 .5.5V12h13V9.5a.5.5 0 0 1 1 0V12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V9.5A.5.5 0 0 1 .5 9z"/>
+              <path d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V13.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/>
+            </svg> Tải về
+          </button>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="placeholder" id="placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7m2-2h10" />
+          </svg>
+          <h3>Chọn một tài liệu</h3>
+          <p>Nhấp vào tài liệu bên trái để xem chi tiết.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const REPO_USER = "tienthien196";
+    const REPO_NAME = "data_english";
+    const BRANCH = "main";
+
+    function getRawUrl(relativePath) {
+      return `https://raw.githubusercontent.com/${REPO_USER}/${REPO_NAME}/${BRANCH}/${encodeURIComponent(relativePath)}`;
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    let documents = [];
+    let selectedDoc = null;
+
+    async function loadDocuments() {
+      try {
+        const res = await fetch('docs.json');
+        if (!res.ok) throw new Error(`Không tìm thấy docs.json (HTTP ${res.status})`);
+        documents = await res.json();
+        renderDocuments();
+      } catch (err) {
+        console.error("Lỗi khi tải docs.json:", err);
+        document.getElementById('doc-count').innerHTML = `<span class="error">❌ Lỗi: ${escapeHtml(err.message)}</span>`;
+      }
+    }
+
+    function renderDocuments() {
+      const listEl = document.getElementById('doc-list');
+      const countEl = document.getElementById('doc-count');
+      listEl.innerHTML = '';
+      countEl.textContent = `Tổng cộng ${documents.length} tài liệu`;
+
+      documents.forEach(doc => {
+        const item = document.createElement('div');
+        item.className = 'doc-item';
+        item.dataset.id = doc.id;
+
+        const coverUrl = doc.coverUrl || 'https://placehold.co/70x90/87CEFA/2D1B69?text=📄';
+        const escapedName = escapeHtml(doc.name);
+        const escapedSize = escapeHtml(doc.size || 'N/A');
+        const escapedPath = escapeHtml(doc.path || '');
+
+        item.innerHTML = `
+          <img src="${coverUrl}" alt="${escapedName}" class="doc-cover"
+               onerror="this.onerror=null; this.src='https://placehold.co/70x90/87CEFA/2D1B69?text=📄';">
+          <div class="doc-info">
+            <h3>${escapedName}</h3>
+            <p>${escapedSize}</p>
+            <div class="doc-path">${escapedPath}</div>
+          </div>
+        `;
+        item.addEventListener('click', () => selectDocument(doc));
+        listEl.appendChild(item);
+      });
+    }
+
+    function selectDocument(doc) {
+      selectedDoc = doc;
+
+      // Cập nhật active state
+      document.querySelectorAll('.doc-item').forEach(el => el.classList.remove('active'));
+      const newItem = document.querySelector(`.doc-item[data-id="${doc.id}"]`);
+      if (newItem) newItem.classList.add('active');
+
+      // Hiển thị header
+      document.getElementById('main-header').style.display = 'flex';
+      document.getElementById('doc-title').textContent = doc.name;
+      document.getElementById('doc-size').textContent = doc.size || 'N/A';
+
+      const rawUrl = getRawUrl(doc.path);
+
+      // Gán sự kiện cho nút trên header
+      document.getElementById('btn-view').onclick = () => window.open(rawUrl, '_blank');
+      document.getElementById('btn-download').onclick = () => downloadFile(rawUrl, doc.name);
+
+      // Hiển thị chi tiết
+      document.getElementById('placeholder').style.display = 'none';
+      const contentEl = document.getElementById('content');
+
+      const safeName = doc.name.replace(/'/g, "\\'").replace(/"/g, '\\"');
+      const description = doc.description ? escapeHtml(doc.description) : 'Chưa có mô tả.';
+
+      contentEl.innerHTML = `
+        <div class="doc-detail">
+          <div class="detail-grid">
+            <div class="cover-large">
+              <img src="${doc.coverUrl || 'https://placehold.co/350x450/87CEFA/2D1B69?text=No+Cover'}"
+                   alt="${escapeHtml(doc.name)}"
+                   onerror="this.onerror=null; this.src='https://placehold.co/350x450/87CEFA/2D1B69?text=No+Cover';">
+            </div>
+            <div class="info-large">
+              <h3>Thông tin tài liệu</h3>
+              <div class="info-item">
+                <div class="info-label">Tên:</div>
+                <div class="info-value">${escapeHtml(doc.name)}</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Kích thước:</div>
+                <div class="info-value">${escapeHtml(doc.size || 'N/A')}</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Đường dẫn:</div>
+                <div class="info-value">${escapeHtml(doc.path)}</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Mô tả:</div>
+                <div class="info-value">${description}</div>
+              </div>
+              <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 3px dashed var(--cartoon-blue);">
+                <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                  <button class="btn btn-view" onclick="window.open('${rawUrl}', '_blank')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M.5 3a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/>
+                    </svg> Xem trực tiếp
+                  </button>
+                  <button class="btn btn-download" onclick="downloadFile('${rawUrl}', '${safeName}')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M.5 9a.5.5 0 0 1 .5.5V12h13V9.5a.5.5 0 0 1 1 0V12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V9.5A.5.5 0 0 1 .5 9z"/>
+                      <path d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V13.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                    </svg> Tải về
+                  </button>
+                  <button class="btn btn-copy" onclick="copyLink('${rawUrl}')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                      <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h2z"/>
+                    </svg> Sao chép link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function downloadFile(url, filename) {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.rel = 'noopener';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    async function copyLink(url) {
+      try {
+        await navigator.clipboard.writeText(url);
+        const notification = document.createElement('div');
+        notification.innerHTML = '✅ Đã sao chép liên kết!';
+        notification.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: linear-gradient(45deg, var(--success), #00c9a7);
+          color: white;
+          padding: 1rem 1.5rem;
+          border-radius: 50px;
+          font-weight: 800;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+          z-index: 1000;
+          animation: slideInNotification 0.5s, fadeOut 0.5s 2.5s forwards;
+        `;
+        document.body.appendChild(notification);
+        setTimeout(() => {
+          if (notification.parentNode) notification.parentNode.removeChild(notification);
+        }, 3000);
+      } catch (err) {
+        console.error('Lỗi khi sao chép:', err);
+        alert('❌ Không thể sao chép. Vui lòng chọn thủ công.');
+      }
+    }
+
+    // Thêm animation cho thông báo
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideInNotification {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Khởi chạy
+    document.addEventListener('DOMContentLoaded', () => {
+      loadDocuments();
+    });
+  </script>
+</body>
+</html>
