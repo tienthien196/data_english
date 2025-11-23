@@ -156,6 +156,18 @@
         "author": "Unknown",
         "seriesId": "topic_human_body",
         "seriesName": "Human Body & Medicine"
+      },
+      {
+        "id": 275,
+        "filename": "Arthritis (DK Publishing).pdf",
+        "title": "Arthritis (Dk Publishing)",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v5/Arthritis.DK.Publishing.pdf",
+        "coverUrl": "covers/v5_Arthritis (DK Publishing).jpg",
+        "previewUrl": "previews/v5_Arthritis (DK Publishing)_preview.jpg",
+        "size": "4.16 MB",
+        "author": "Unknown",
+        "seriesId": "topic_human_body",
+        "seriesName": "Human Body & Medicine"
       }
     ]
   },
@@ -257,6 +269,42 @@
         "coverUrl": "covers/v3_Dk-lock_deborah_children_s_book_of_music.jpg",
         "previewUrl": "previews/v3_Dk-lock_deborah_children_s_book_of_music_preview.jpg",
         "size": "43.06 MB",
+        "author": "Unknown",
+        "seriesId": "dk_children",
+        "seriesName": "DK Children & Education"
+      },
+      {
+        "id": 235,
+        "filename": "My First Book of Time (DK Publishing).pdf",
+        "title": "My First Book Of Time (Dk Publishing)",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v4/My.First.Book.of.Time.DK.Publishing.pdf",
+        "coverUrl": "covers/v4_My First Book of Time (DK Publishing).jpg",
+        "previewUrl": "previews/v4_My First Book of Time (DK Publishing)_preview.jpg",
+        "size": "16.86 MB",
+        "author": "Unknown",
+        "seriesId": "dk_children",
+        "seriesName": "DK Children & Education"
+      },
+      {
+        "id": 237,
+        "filename": "My_First_Number_Board_Book_by_DK_Publishing.pdf",
+        "title": "My First Number Board Book By Dk Publishing",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v4/My_First_Number_Board_Book_by_DK_Publishing.pdf",
+        "coverUrl": "covers/v4_My_First_Number_Board_Book_by_DK_Publishing.jpg",
+        "previewUrl": "previews/v4_My_First_Number_Board_Book_by_DK_Publishing_preview.jpg",
+        "size": "34.48 MB",
+        "author": "Unknown",
+        "seriesId": "dk_children",
+        "seriesName": "DK Children & Education"
+      },
+      {
+        "id": 238,
+        "filename": "My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing.pdf",
+        "title": "My First Word Board Book My 1St Board Books By Dk Publishing",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v4/My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing.pdf",
+        "coverUrl": "covers/v4_My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing.jpg",
+        "previewUrl": "previews/v4_My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing_preview.jpg",
+        "size": "21.1 MB",
         "author": "Unknown",
         "seriesId": "dk_children",
         "seriesName": "DK Children & Education"
@@ -646,30 +694,6 @@
         "seriesName": "Science & STEM"
       },
       {
-        "id": 69,
-        "filename": "Science Encyclopedia (1).pdf",
-        "title": "Science Encyclopedia (1)",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Science.Encyclopedia.1.pdf",
-        "coverUrl": "covers/otherS_book_Science Encyclopedia (1).jpg",
-        "previewUrl": "previews/otherS_book_Science Encyclopedia (1)_preview.jpg",
-        "size": "170.63 MB",
-        "author": "Unknown",
-        "seriesId": "topic_science",
-        "seriesName": "Science & STEM"
-      },
-      {
-        "id": 70,
-        "filename": "Science Encyclopedia.pdf",
-        "title": "Science Encyclopedia",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Science.Encyclopedia.pdf",
-        "coverUrl": "covers/otherS_book_Science Encyclopedia.jpg",
-        "previewUrl": "previews/otherS_book_Science Encyclopedia_preview.jpg",
-        "size": "170.63 MB",
-        "author": "Unknown",
-        "seriesId": "topic_science",
-        "seriesName": "Science & STEM"
-      },
-      {
         "id": 71,
         "filename": "Science_of_Running_-_Chris_Napier (1).pdf",
         "title": "Science Of Running - Chris Napier (1)",
@@ -766,18 +790,6 @@
         "seriesName": "Science & STEM"
       },
       {
-        "id": 282,
-        "filename": "ENCYCLOPEDIA_SCIENCE_(Mini_Book.Ma.pdf",
-        "title": "Encyclopedia Science (Mini Book.Ma",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/ENCYCLOPEDIA_SCIENCE_.Mini_Book.Ma.pdf",
-        "coverUrl": "covers/visual_dictionary_ENCYCLOPEDIA_SCIENCE_(Mini_Book.Ma.jpg",
-        "previewUrl": "previews/visual_dictionary_ENCYCLOPEDIA_SCIENCE_(Mini_Book.Ma_preview.jpg",
-        "size": "37.82 MB",
-        "author": "Unknown",
-        "seriesId": "topic_science",
-        "seriesName": "Science & STEM"
-      },
-      {
         "id": 287,
         "filename": "The Visual Dictionary of Science & Energy.pdf",
         "title": "The Visual Dictionary Of Science & Energy",
@@ -817,18 +829,6 @@
         "coverUrl": "covers/otherS_book_Ayurveda. Book of Self Care (DK.jpg",
         "previewUrl": "previews/otherS_book_Ayurveda. Book of Self Care (DK_preview.jpg",
         "size": "95.83 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 11,
-        "filename": "Battle at Sea 3.000 Years of Naval Warfare.pdf",
-        "title": "Battle At Sea 3.000 Years Of Naval Warfare",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Battle.at.Sea.3.000.Years.of.Naval.Warfare.pdf",
-        "coverUrl": "covers/otherS_book_Battle at Sea 3.000 Years of Naval Warfare.jpg",
-        "previewUrl": "previews/otherS_book_Battle at Sea 3.000 Years of Naval Warfare_preview.jpg",
-        "size": "123.21 MB",
         "author": "Unknown",
         "seriesId": "others",
         "seriesName": "Others"
@@ -978,18 +978,6 @@
         "seriesName": "Others"
       },
       {
-        "id": 44,
-        "filename": "Encyclopedia_of_Herbal_Medicine-_2_edition.pdf",
-        "title": "Encyclopedia Of Herbal Medicine- 2 Edition",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Encyclopedia_of_Herbal_Medicine-_2_edition.pdf",
-        "coverUrl": "covers/otherS_book_Encyclopedia_of_Herbal_Medicine-_2_edition.jpg",
-        "previewUrl": "previews/otherS_book_Encyclopedia_of_Herbal_Medicine-_2_edition_preview.jpg",
-        "size": "62.11 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
         "id": 45,
         "filename": "Essential Strength Training Skills Key Tips and Techniques to Improve Your Physique (DK).pdf",
         "title": "Essential Strength Training Skills Key Tips And Techniques To Improve Your Physique (Dk)",
@@ -1026,30 +1014,6 @@
         "seriesName": "Others"
       },
       {
-        "id": 50,
-        "filename": "French-English_Bilingual_Visual_Dictionary_-_2009.pdf",
-        "title": "French-English Bilingual Visual Dictionary - 2009",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/French-English_Bilingual_Visual_Dictionary_-_2009.pdf",
-        "coverUrl": "covers/otherS_book_French-English_Bilingual_Visual_Dictionary_-_2009.jpg",
-        "previewUrl": "previews/otherS_book_French-English_Bilingual_Visual_Dictionary_-_2009_preview.jpg",
-        "size": "71.96 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 51,
-        "filename": "German-English_Bilingual_Visual_Dictionary_-_2009.pdf",
-        "title": "German-English Bilingual Visual Dictionary - 2009",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/German-English_Bilingual_Visual_Dictionary_-_2009.pdf",
-        "coverUrl": "covers/otherS_book_German-English_Bilingual_Visual_Dictionary_-_2009.jpg",
-        "previewUrl": "previews/otherS_book_German-English_Bilingual_Visual_Dictionary_-_2009_preview.jpg",
-        "size": "74.14 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
         "id": 54,
         "filename": "Healing_Foods.pdf",
         "title": "Healing Foods",
@@ -1081,18 +1045,6 @@
         "coverUrl": "covers/otherS_book_Paper Craft by DK.jpg",
         "previewUrl": "previews/otherS_book_Paper Craft by DK_preview.jpg",
         "size": "53.72 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 67,
-        "filename": "Picturepedia_ An Encyclopedia on Every Page.pdf",
-        "title": "Picturepedia  An Encyclopedia On Every Page",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Picturepedia_.An.Encyclopedia.on.Every.Page.pdf",
-        "coverUrl": "covers/otherS_book_Picturepedia_ An Encyclopedia on Every Page.jpg",
-        "previewUrl": "previews/otherS_book_Picturepedia_ An Encyclopedia on Every Page_preview.jpg",
-        "size": "64.14 MB",
         "author": "Unknown",
         "seriesId": "others",
         "seriesName": "Others"
@@ -1734,18 +1686,6 @@
         "seriesName": "Others"
       },
       {
-        "id": 181,
-        "filename": "Dk-why_encyclopedia.pdf",
-        "title": "Dk-Why Encyclopedia",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v3/Dk-why_encyclopedia.pdf",
-        "coverUrl": "covers/v3_Dk-why_encyclopedia.jpg",
-        "previewUrl": "previews/v3_Dk-why_encyclopedia_preview.jpg",
-        "size": "81.74 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
         "id": 184,
         "filename": "DK.Coding.Projects.in.Python.pdf",
         "title": "Dk.Coding.Projects.In.Python",
@@ -1765,18 +1705,6 @@
         "coverUrl": "covers/v3_DK_First_Steps_-_Please_and_Thank_You.jpg",
         "previewUrl": "previews/v3_DK_First_Steps_-_Please_and_Thank_You_preview.jpg",
         "size": "16.15 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 188,
-        "filename": "DK_Publishing]_The_Dog_Encyclopedia.pdf",
-        "title": "Dk Publishing] The Dog Encyclopedia",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v3/DK_Publishing._The_Dog_Encyclopedia.pdf",
-        "coverUrl": "covers/v3_DK_Publishing]_The_Dog_Encyclopedia.jpg",
-        "previewUrl": "previews/v3_DK_Publishing]_The_Dog_Encyclopedia_preview.jpg",
-        "size": "68.37 MB",
         "author": "Unknown",
         "seriesId": "others",
         "seriesName": "Others"
@@ -1926,18 +1854,6 @@
         "seriesName": "Others"
       },
       {
-        "id": 226,
-        "filename": "Jungle_DK.pdf",
-        "title": "Jungle Dk",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v4/Jungle_DK.pdf",
-        "coverUrl": "covers/v4_Jungle_DK.jpg",
-        "previewUrl": "previews/v4_Jungle_DK_preview.jpg",
-        "size": "30.08 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
         "id": 227,
         "filename": "Life Cycles Everything from Start to Finish.pdf",
         "title": "Life Cycles Everything From Start To Finish",
@@ -1998,18 +1914,6 @@
         "seriesName": "Others"
       },
       {
-        "id": 235,
-        "filename": "My First Book of Time (DK Publishing).pdf",
-        "title": "My First Book Of Time (Dk Publishing)",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v4/My.First.Book.of.Time.DK.Publishing.pdf",
-        "coverUrl": "covers/v4_My First Book of Time (DK Publishing).jpg",
-        "previewUrl": "previews/v4_My First Book of Time (DK Publishing)_preview.jpg",
-        "size": "16.86 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
         "id": 236,
         "filename": "My Very Important World by DK Publishing.pdf",
         "title": "My Very Important World By Dk Publishing",
@@ -2017,30 +1921,6 @@
         "coverUrl": "covers/v4_My Very Important World by DK Publishing.jpg",
         "previewUrl": "previews/v4_My Very Important World by DK Publishing_preview.jpg",
         "size": "153.96 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 237,
-        "filename": "My_First_Number_Board_Book_by_DK_Publishing.pdf",
-        "title": "My First Number Board Book By Dk Publishing",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v4/My_First_Number_Board_Book_by_DK_Publishing.pdf",
-        "coverUrl": "covers/v4_My_First_Number_Board_Book_by_DK_Publishing.jpg",
-        "previewUrl": "previews/v4_My_First_Number_Board_Book_by_DK_Publishing_preview.jpg",
-        "size": "34.48 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 238,
-        "filename": "My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing.pdf",
-        "title": "My First Word Board Book My 1St Board Books By Dk Publishing",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v4/My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing.pdf",
-        "coverUrl": "covers/v4_My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing.jpg",
-        "previewUrl": "previews/v4_My_First_Word_Board_Book_My_1st_Board_Books_by_DK_Publishing_preview.jpg",
-        "size": "21.1 MB",
         "author": "Unknown",
         "seriesId": "others",
         "seriesName": "Others"
@@ -2178,18 +2058,6 @@
         "seriesName": "Others"
       },
       {
-        "id": 275,
-        "filename": "Arthritis (DK Publishing).pdf",
-        "title": "Arthritis (Dk Publishing)",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v5/Arthritis.DK.Publishing.pdf",
-        "coverUrl": "covers/v5_Arthritis (DK Publishing).jpg",
-        "previewUrl": "previews/v5_Arthritis (DK Publishing)_preview.jpg",
-        "size": "4.16 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
         "id": 276,
         "filename": "Auto Express 12.11.2025_freemagazines.top.pdf",
         "title": "Auto Express 12.11.2025 Freemagazines.Top",
@@ -2202,18 +2070,6 @@
         "seriesName": "Others"
       },
       {
-        "id": 277,
-        "filename": "Battle. A Visual Journey Through 5.000 Years of Combat.pdf",
-        "title": "Battle. A Visual Journey Through 5.000 Years Of Combat",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v5/Battle.A.Visual.Journey.Through.5.000.Years.of.Combat.pdf",
-        "coverUrl": "covers/v5_Battle. A Visual Journey Through 5.000 Years of Combat.jpg",
-        "previewUrl": "previews/v5_Battle. A Visual Journey Through 5.000 Years of Combat_preview.jpg",
-        "size": "144.87 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
         "id": 278,
         "filename": "boat.pdf",
         "title": "Boat",
@@ -2221,66 +2077,6 @@
         "coverUrl": "covers/v5_boat.jpg",
         "previewUrl": "previews/v5_boat_preview.jpg",
         "size": "15.43 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 285,
-        "filename": "The Visual Dictionary of House & Do-It-Yourself_1.pdf",
-        "title": "The Visual Dictionary Of House & Do-It-Yourself 1",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.House.Do-It-Yourself_1.pdf",
-        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of House & Do-It-Yourself_1.jpg",
-        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of House & Do-It-Yourself_1_preview.jpg",
-        "size": "26.8 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 286,
-        "filename": "The Visual Dictionary of Plants & Gardening_1.pdf",
-        "title": "The Visual Dictionary Of Plants & Gardening 1",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.Plants.Gardening_1.pdf",
-        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of Plants & Gardening_1.jpg",
-        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Plants & Gardening_1_preview.jpg",
-        "size": "49.35 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 288,
-        "filename": "The Visual Dictionary of Sports & Games.pdf",
-        "title": "The Visual Dictionary Of Sports & Games",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.Sports.Games.pdf",
-        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of Sports & Games.jpg",
-        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Sports & Games_preview.jpg",
-        "size": "30.55 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 289,
-        "filename": "The Visual Dictionary of Transportation.pdf",
-        "title": "The Visual Dictionary Of Transportation",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.Transportation.pdf",
-        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of Transportation.jpg",
-        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Transportation_preview.jpg",
-        "size": "36.97 MB",
-        "author": "Unknown",
-        "seriesId": "others",
-        "seriesName": "Others"
-      },
-      {
-        "id": 290,
-        "filename": "The_Visual_Dictionary_of_Clothing_and_Personal_Adornment.pdf",
-        "title": "The Visual Dictionary Of Clothing And Personal Adornment",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The_Visual_Dictionary_of_Clothing_and_Personal_Adornment.pdf",
-        "coverUrl": "covers/visual_dictionary_The_Visual_Dictionary_of_Clothing_and_Personal_Adornment.jpg",
-        "previewUrl": "previews/visual_dictionary_The_Visual_Dictionary_of_Clothing_and_Personal_Adornment_preview.jpg",
-        "size": "36.89 MB",
         "author": "Unknown",
         "seriesId": "others",
         "seriesName": "Others"
@@ -2306,6 +2102,18 @@
         "seriesName": "DK Visual Encyclopedias"
       },
       {
+        "id": 19,
+        "filename": "Dk - Space! Knowledge Encyclopedia.pdf",
+        "title": "Dk - Space! Knowledge Encyclopedia",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Dk.-.Space.Knowledge.Encyclopedia.pdf",
+        "coverUrl": "covers/otherS_book_Dk - Space! Knowledge Encyclopedia.jpg",
+        "previewUrl": "previews/otherS_book_Dk - Space! Knowledge Encyclopedia_preview.jpg",
+        "size": "73.01 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
         "id": 36,
         "filename": "DK_-_One_Million_Things-_A_Visual_Encyclopedia.pdf",
         "title": "Dk - One Million Things- A Visual Encyclopedia",
@@ -2313,6 +2121,54 @@
         "coverUrl": "covers/otherS_book_DK_-_One_Million_Things-_A_Visual_Encyclopedia.jpg",
         "previewUrl": "previews/otherS_book_DK_-_One_Million_Things-_A_Visual_Encyclopedia_preview.jpg",
         "size": "136.93 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 44,
+        "filename": "Encyclopedia_of_Herbal_Medicine-_2_edition.pdf",
+        "title": "Encyclopedia Of Herbal Medicine- 2 Edition",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Encyclopedia_of_Herbal_Medicine-_2_edition.pdf",
+        "coverUrl": "covers/otherS_book_Encyclopedia_of_Herbal_Medicine-_2_edition.jpg",
+        "previewUrl": "previews/otherS_book_Encyclopedia_of_Herbal_Medicine-_2_edition_preview.jpg",
+        "size": "62.11 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 67,
+        "filename": "Picturepedia_ An Encyclopedia on Every Page.pdf",
+        "title": "Picturepedia  An Encyclopedia On Every Page",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Picturepedia_.An.Encyclopedia.on.Every.Page.pdf",
+        "coverUrl": "covers/otherS_book_Picturepedia_ An Encyclopedia on Every Page.jpg",
+        "previewUrl": "previews/otherS_book_Picturepedia_ An Encyclopedia on Every Page_preview.jpg",
+        "size": "64.14 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 69,
+        "filename": "Science Encyclopedia (1).pdf",
+        "title": "Science Encyclopedia (1)",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Science.Encyclopedia.1.pdf",
+        "coverUrl": "covers/otherS_book_Science Encyclopedia (1).jpg",
+        "previewUrl": "previews/otherS_book_Science Encyclopedia (1)_preview.jpg",
+        "size": "170.63 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 70,
+        "filename": "Science Encyclopedia.pdf",
+        "title": "Science Encyclopedia",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Science.Encyclopedia.pdf",
+        "coverUrl": "covers/otherS_book_Science Encyclopedia.jpg",
+        "previewUrl": "previews/otherS_book_Science Encyclopedia_preview.jpg",
+        "size": "170.63 MB",
         "author": "Unknown",
         "seriesId": "dk_visual",
         "seriesName": "DK Visual Encyclopedias"
@@ -2337,6 +2193,18 @@
         "coverUrl": "covers/otherS_book_The Visual Encyclopedia By DK.jpg",
         "previewUrl": "previews/otherS_book_The Visual Encyclopedia By DK_preview.jpg",
         "size": "157.32 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 89,
+        "filename": "The_Illustrated_Encyclopedia_of_Birds_by_DK.pdf",
+        "title": "The Illustrated Encyclopedia Of Birds By Dk",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The_Illustrated_Encyclopedia_of_Birds_by_DK.pdf",
+        "coverUrl": "covers/otherS_book_The_Illustrated_Encyclopedia_of_Birds_by_DK.jpg",
+        "previewUrl": "previews/otherS_book_The_Illustrated_Encyclopedia_of_Birds_by_DK_preview.jpg",
+        "size": "170.48 MB",
         "author": "Unknown",
         "seriesId": "dk_visual",
         "seriesName": "DK Visual Encyclopedias"
@@ -2409,6 +2277,42 @@
         "coverUrl": "covers/v3_Dk-Visual_Guide_to_Grammar_and_Punctuation.jpg",
         "previewUrl": "previews/v3_Dk-Visual_Guide_to_Grammar_and_Punctuation_preview.jpg",
         "size": "23.69 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 181,
+        "filename": "Dk-why_encyclopedia.pdf",
+        "title": "Dk-Why Encyclopedia",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v3/Dk-why_encyclopedia.pdf",
+        "coverUrl": "covers/v3_Dk-why_encyclopedia.jpg",
+        "previewUrl": "previews/v3_Dk-why_encyclopedia_preview.jpg",
+        "size": "81.74 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 186,
+        "filename": "dk_first_reference_nature_encyclopedia.pdf",
+        "title": "Dk First Reference Nature Encyclopedia",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v3/dk_first_reference_nature_encyclopedia.pdf",
+        "coverUrl": "covers/v3_dk_first_reference_nature_encyclopedia.jpg",
+        "previewUrl": "previews/v3_dk_first_reference_nature_encyclopedia_preview.jpg",
+        "size": "81.82 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 188,
+        "filename": "DK_Publishing]_The_Dog_Encyclopedia.pdf",
+        "title": "Dk Publishing] The Dog Encyclopedia",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v3/DK_Publishing._The_Dog_Encyclopedia.pdf",
+        "coverUrl": "covers/v3_DK_Publishing]_The_Dog_Encyclopedia.jpg",
+        "previewUrl": "previews/v3_DK_Publishing]_The_Dog_Encyclopedia_preview.jpg",
+        "size": "68.37 MB",
         "author": "Unknown",
         "seriesId": "dk_visual",
         "seriesName": "DK Visual Encyclopedias"
@@ -2532,6 +2436,74 @@
         "author": "Unknown",
         "seriesId": "dk_visual",
         "seriesName": "DK Visual Encyclopedias"
+      },
+      {
+        "id": 282,
+        "filename": "ENCYCLOPEDIA_SCIENCE_(Mini_Book.Ma.pdf",
+        "title": "Encyclopedia Science (Mini Book.Ma",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/ENCYCLOPEDIA_SCIENCE_.Mini_Book.Ma.pdf",
+        "coverUrl": "covers/visual_dictionary_ENCYCLOPEDIA_SCIENCE_(Mini_Book.Ma.jpg",
+        "previewUrl": "previews/visual_dictionary_ENCYCLOPEDIA_SCIENCE_(Mini_Book.Ma_preview.jpg",
+        "size": "37.82 MB",
+        "author": "Unknown",
+        "seriesId": "dk_visual",
+        "seriesName": "DK Visual Encyclopedias"
+      }
+    ]
+  },
+  {
+    "seriesId": "topic_military",
+    "seriesName": "Military & Warfare",
+    "description": "Collection: Military & Warfare",
+    "coverUrl": "covers/topic_military.jpg",
+    "books": [
+      {
+        "id": 11,
+        "filename": "Battle at Sea 3.000 Years of Naval Warfare.pdf",
+        "title": "Battle At Sea 3.000 Years Of Naval Warfare",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Battle.at.Sea.3.000.Years.of.Naval.Warfare.pdf",
+        "coverUrl": "covers/otherS_book_Battle at Sea 3.000 Years of Naval Warfare.jpg",
+        "previewUrl": "previews/otherS_book_Battle at Sea 3.000 Years of Naval Warfare_preview.jpg",
+        "size": "123.21 MB",
+        "author": "Unknown",
+        "seriesId": "topic_military",
+        "seriesName": "Military & Warfare"
+      },
+      {
+        "id": 64,
+        "filename": "Machines_of_War_by_DK_Publishing_1.pdf",
+        "title": "Machines Of War By Dk Publishing 1",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Machines_of_War_by_DK_Publishing_1.pdf",
+        "coverUrl": "covers/otherS_book_Machines_of_War_by_DK_Publishing_1.jpg",
+        "previewUrl": "previews/otherS_book_Machines_of_War_by_DK_Publishing_1_preview.jpg",
+        "size": "131.05 MB",
+        "author": "Unknown",
+        "seriesId": "topic_military",
+        "seriesName": "Military & Warfare"
+      },
+      {
+        "id": 271,
+        "filename": "World_War_II_Map_by_Map_B.pdf",
+        "title": "World War Ii Map By Map B",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v4/World_War_II_Map_by_Map_B.pdf",
+        "coverUrl": "covers/v4_World_War_II_Map_by_Map_B.jpg",
+        "previewUrl": "previews/v4_World_War_II_Map_by_Map_B_preview.jpg",
+        "size": "111.91 MB",
+        "author": "Unknown",
+        "seriesId": "topic_military",
+        "seriesName": "Military & Warfare"
+      },
+      {
+        "id": 277,
+        "filename": "Battle. A Visual Journey Through 5.000 Years of Combat.pdf",
+        "title": "Battle. A Visual Journey Through 5.000 Years Of Combat",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v5/Battle.A.Visual.Journey.Through.5.000.Years.of.Combat.pdf",
+        "coverUrl": "covers/v5_Battle. A Visual Journey Through 5.000 Years of Combat.jpg",
+        "previewUrl": "previews/v5_Battle. A Visual Journey Through 5.000 Years of Combat_preview.jpg",
+        "size": "144.87 MB",
+        "author": "Unknown",
+        "seriesId": "topic_military",
+        "seriesName": "Military & Warfare"
       }
     ]
   },
@@ -2616,74 +2588,6 @@
     ]
   },
   {
-    "seriesId": "topic_space",
-    "seriesName": "Space & Astronomy",
-    "description": "Collection: Space & Astronomy",
-    "coverUrl": "covers/topic_space.jpg",
-    "books": [
-      {
-        "id": 19,
-        "filename": "Dk - Space! Knowledge Encyclopedia.pdf",
-        "title": "Dk - Space! Knowledge Encyclopedia",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Dk.-.Space.Knowledge.Encyclopedia.pdf",
-        "coverUrl": "covers/otherS_book_Dk - Space! Knowledge Encyclopedia.jpg",
-        "previewUrl": "previews/otherS_book_Dk - Space! Knowledge Encyclopedia_preview.jpg",
-        "size": "73.01 MB",
-        "author": "Unknown",
-        "seriesId": "topic_space",
-        "seriesName": "Space & Astronomy"
-      },
-      {
-        "id": 81,
-        "filename": "The Mysteries of the Universe Discover the best-kept secrets of space by Will Gater.pdf",
-        "title": "The Mysteries Of The Universe Discover The Best-Kept Secrets Of Space By Will Gater",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Mysteries.of.the.Universe.Discover.the.best-kept.secrets.of.space.by.Will.Gater.pdf",
-        "coverUrl": "covers/otherS_book_The Mysteries of the Universe Discover the best-kept secrets of space by Will Gater.jpg",
-        "previewUrl": "previews/otherS_book_The Mysteries of the Universe Discover the best-kept secrets of space by Will Gater_preview.jpg",
-        "size": "136.73 MB",
-        "author": "Unknown",
-        "seriesId": "topic_space",
-        "seriesName": "Space & Astronomy"
-      },
-      {
-        "id": 171,
-        "filename": "Dk-Starfinder The Complete Beginners Guide to Exploring the Night Sky by Carole Stott.pdf",
-        "title": "Dk-Starfinder The Complete Beginners Guide To Exploring The Night Sky By Carole Stott",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v3/Dk-Starfinder.The.Complete.Beginners.Guide.to.Exploring.the.Night.Sky.by.Carole.Stott.pdf",
-        "coverUrl": "covers/v3_Dk-Starfinder The Complete Beginners Guide to Exploring the Night Sky by Carole Stott.jpg",
-        "previewUrl": "previews/v3_Dk-Starfinder The Complete Beginners Guide to Exploring the Night Sky by Carole Stott_preview.jpg",
-        "size": "69.2 MB",
-        "author": "Unknown",
-        "seriesId": "topic_space",
-        "seriesName": "Space & Astronomy"
-      },
-      {
-        "id": 267,
-        "filename": "Universe. Third Edition by DK.pdf",
-        "title": "Universe. Third Edition By Dk",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v4/Universe.Third.Edition.by.DK.pdf",
-        "coverUrl": "covers/v4_Universe. Third Edition by DK.jpg",
-        "previewUrl": "previews/v4_Universe. Third Edition by DK_preview.jpg",
-        "size": "190.1 MB",
-        "author": "Unknown",
-        "seriesId": "topic_space",
-        "seriesName": "Space & Astronomy"
-      },
-      {
-        "id": 291,
-        "filename": "The_Visual_Dictionary_of_Universe_& Earth_1.pdf",
-        "title": "The Visual Dictionary Of Universe & Earth 1",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The_Visual_Dictionary_of_Universe_.Earth_1.pdf",
-        "coverUrl": "covers/visual_dictionary_The_Visual_Dictionary_of_Universe_& Earth_1.jpg",
-        "previewUrl": "previews/visual_dictionary_The_Visual_Dictionary_of_Universe_& Earth_1_preview.jpg",
-        "size": "41.95 MB",
-        "author": "Unknown",
-        "seriesId": "topic_space",
-        "seriesName": "Space & Astronomy"
-      }
-    ]
-  },
-  {
     "seriesId": "topic_nature",
     "seriesName": "Nature & Animals",
     "description": "Collection: Nature & Animals",
@@ -2726,18 +2630,6 @@
         "seriesName": "Nature & Animals"
       },
       {
-        "id": 89,
-        "filename": "The_Illustrated_Encyclopedia_of_Birds_by_DK.pdf",
-        "title": "The Illustrated Encyclopedia Of Birds By Dk",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The_Illustrated_Encyclopedia_of_Birds_by_DK.pdf",
-        "coverUrl": "covers/otherS_book_The_Illustrated_Encyclopedia_of_Birds_by_DK.jpg",
-        "previewUrl": "previews/otherS_book_The_Illustrated_Encyclopedia_of_Birds_by_DK_preview.jpg",
-        "size": "170.48 MB",
-        "author": "Unknown",
-        "seriesId": "topic_nature",
-        "seriesName": "Nature & Animals"
-      },
-      {
         "id": 162,
         "filename": "Dk-mack_l_animal_families.pdf",
         "title": "Dk-Mack L Animal Families",
@@ -2750,13 +2642,13 @@
         "seriesName": "Nature & Animals"
       },
       {
-        "id": 186,
-        "filename": "dk_first_reference_nature_encyclopedia.pdf",
-        "title": "Dk First Reference Nature Encyclopedia",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v3/dk_first_reference_nature_encyclopedia.pdf",
-        "coverUrl": "covers/v3_dk_first_reference_nature_encyclopedia.jpg",
-        "previewUrl": "previews/v3_dk_first_reference_nature_encyclopedia_preview.jpg",
-        "size": "81.82 MB",
+        "id": 226,
+        "filename": "Jungle_DK.pdf",
+        "title": "Jungle Dk",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v4/Jungle_DK.pdf",
+        "coverUrl": "covers/v4_Jungle_DK.jpg",
+        "previewUrl": "previews/v4_Jungle_DK_preview.jpg",
+        "size": "30.08 MB",
         "author": "Unknown",
         "seriesId": "topic_nature",
         "seriesName": "Nature & Animals"
@@ -2924,6 +2816,98 @@
     ]
   },
   {
+    "seriesId": "visual_dictionary",
+    "seriesName": "Visual Dictionary",
+    "description": "Collection: Visual Dictionary",
+    "coverUrl": "covers/visual_dictionary.jpg",
+    "books": [
+      {
+        "id": 50,
+        "filename": "French-English_Bilingual_Visual_Dictionary_-_2009.pdf",
+        "title": "French-English Bilingual Visual Dictionary - 2009",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/French-English_Bilingual_Visual_Dictionary_-_2009.pdf",
+        "coverUrl": "covers/otherS_book_French-English_Bilingual_Visual_Dictionary_-_2009.jpg",
+        "previewUrl": "previews/otherS_book_French-English_Bilingual_Visual_Dictionary_-_2009_preview.jpg",
+        "size": "71.96 MB",
+        "author": "Unknown",
+        "seriesId": "visual_dictionary",
+        "seriesName": "Visual Dictionary"
+      },
+      {
+        "id": 51,
+        "filename": "German-English_Bilingual_Visual_Dictionary_-_2009.pdf",
+        "title": "German-English Bilingual Visual Dictionary - 2009",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/German-English_Bilingual_Visual_Dictionary_-_2009.pdf",
+        "coverUrl": "covers/otherS_book_German-English_Bilingual_Visual_Dictionary_-_2009.jpg",
+        "previewUrl": "previews/otherS_book_German-English_Bilingual_Visual_Dictionary_-_2009_preview.jpg",
+        "size": "74.14 MB",
+        "author": "Unknown",
+        "seriesId": "visual_dictionary",
+        "seriesName": "Visual Dictionary"
+      },
+      {
+        "id": 285,
+        "filename": "The Visual Dictionary of House & Do-It-Yourself_1.pdf",
+        "title": "The Visual Dictionary Of House & Do-It-Yourself 1",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.House.Do-It-Yourself_1.pdf",
+        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of House & Do-It-Yourself_1.jpg",
+        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of House & Do-It-Yourself_1_preview.jpg",
+        "size": "26.8 MB",
+        "author": "Unknown",
+        "seriesId": "visual_dictionary",
+        "seriesName": "Visual Dictionary"
+      },
+      {
+        "id": 286,
+        "filename": "The Visual Dictionary of Plants & Gardening_1.pdf",
+        "title": "The Visual Dictionary Of Plants & Gardening 1",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.Plants.Gardening_1.pdf",
+        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of Plants & Gardening_1.jpg",
+        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Plants & Gardening_1_preview.jpg",
+        "size": "49.35 MB",
+        "author": "Unknown",
+        "seriesId": "visual_dictionary",
+        "seriesName": "Visual Dictionary"
+      },
+      {
+        "id": 288,
+        "filename": "The Visual Dictionary of Sports & Games.pdf",
+        "title": "The Visual Dictionary Of Sports & Games",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.Sports.Games.pdf",
+        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of Sports & Games.jpg",
+        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Sports & Games_preview.jpg",
+        "size": "30.55 MB",
+        "author": "Unknown",
+        "seriesId": "visual_dictionary",
+        "seriesName": "Visual Dictionary"
+      },
+      {
+        "id": 289,
+        "filename": "The Visual Dictionary of Transportation.pdf",
+        "title": "The Visual Dictionary Of Transportation",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Visual.Dictionary.of.Transportation.pdf",
+        "coverUrl": "covers/visual_dictionary_The Visual Dictionary of Transportation.jpg",
+        "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Transportation_preview.jpg",
+        "size": "36.97 MB",
+        "author": "Unknown",
+        "seriesId": "visual_dictionary",
+        "seriesName": "Visual Dictionary"
+      },
+      {
+        "id": 290,
+        "filename": "The_Visual_Dictionary_of_Clothing_and_Personal_Adornment.pdf",
+        "title": "The Visual Dictionary Of Clothing And Personal Adornment",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The_Visual_Dictionary_of_Clothing_and_Personal_Adornment.pdf",
+        "coverUrl": "covers/visual_dictionary_The_Visual_Dictionary_of_Clothing_and_Personal_Adornment.jpg",
+        "previewUrl": "previews/visual_dictionary_The_Visual_Dictionary_of_Clothing_and_Personal_Adornment_preview.jpg",
+        "size": "36.89 MB",
+        "author": "Unknown",
+        "seriesId": "visual_dictionary",
+        "seriesName": "Visual Dictionary"
+      }
+    ]
+  },
+  {
     "seriesId": "topic_mind",
     "seriesName": "Mind & Philosophy",
     "description": "Collection: Mind & Philosophy",
@@ -2992,34 +2976,58 @@
     ]
   },
   {
-    "seriesId": "topic_military",
-    "seriesName": "Military & Warfare",
-    "description": "Collection: Military & Warfare",
-    "coverUrl": "covers/topic_military.jpg",
+    "seriesId": "topic_space",
+    "seriesName": "Space & Astronomy",
+    "description": "Collection: Space & Astronomy",
+    "coverUrl": "covers/topic_space.jpg",
     "books": [
       {
-        "id": 64,
-        "filename": "Machines_of_War_by_DK_Publishing_1.pdf",
-        "title": "Machines Of War By Dk Publishing 1",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v2/Machines_of_War_by_DK_Publishing_1.pdf",
-        "coverUrl": "covers/otherS_book_Machines_of_War_by_DK_Publishing_1.jpg",
-        "previewUrl": "previews/otherS_book_Machines_of_War_by_DK_Publishing_1_preview.jpg",
-        "size": "131.05 MB",
+        "id": 81,
+        "filename": "The Mysteries of the Universe Discover the best-kept secrets of space by Will Gater.pdf",
+        "title": "The Mysteries Of The Universe Discover The Best-Kept Secrets Of Space By Will Gater",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The.Mysteries.of.the.Universe.Discover.the.best-kept.secrets.of.space.by.Will.Gater.pdf",
+        "coverUrl": "covers/otherS_book_The Mysteries of the Universe Discover the best-kept secrets of space by Will Gater.jpg",
+        "previewUrl": "previews/otherS_book_The Mysteries of the Universe Discover the best-kept secrets of space by Will Gater_preview.jpg",
+        "size": "136.73 MB",
         "author": "Unknown",
-        "seriesId": "topic_military",
-        "seriesName": "Military & Warfare"
+        "seriesId": "topic_space",
+        "seriesName": "Space & Astronomy"
       },
       {
-        "id": 271,
-        "filename": "World_War_II_Map_by_Map_B.pdf",
-        "title": "World War Ii Map By Map B",
-        "path": "https://github.com/tienthien196/data_english/releases/download/v4/World_War_II_Map_by_Map_B.pdf",
-        "coverUrl": "covers/v4_World_War_II_Map_by_Map_B.jpg",
-        "previewUrl": "previews/v4_World_War_II_Map_by_Map_B_preview.jpg",
-        "size": "111.91 MB",
+        "id": 171,
+        "filename": "Dk-Starfinder The Complete Beginners Guide to Exploring the Night Sky by Carole Stott.pdf",
+        "title": "Dk-Starfinder The Complete Beginners Guide To Exploring The Night Sky By Carole Stott",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v3/Dk-Starfinder.The.Complete.Beginners.Guide.to.Exploring.the.Night.Sky.by.Carole.Stott.pdf",
+        "coverUrl": "covers/v3_Dk-Starfinder The Complete Beginners Guide to Exploring the Night Sky by Carole Stott.jpg",
+        "previewUrl": "previews/v3_Dk-Starfinder The Complete Beginners Guide to Exploring the Night Sky by Carole Stott_preview.jpg",
+        "size": "69.2 MB",
         "author": "Unknown",
-        "seriesId": "topic_military",
-        "seriesName": "Military & Warfare"
+        "seriesId": "topic_space",
+        "seriesName": "Space & Astronomy"
+      },
+      {
+        "id": 267,
+        "filename": "Universe. Third Edition by DK.pdf",
+        "title": "Universe. Third Edition By Dk",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v4/Universe.Third.Edition.by.DK.pdf",
+        "coverUrl": "covers/v4_Universe. Third Edition by DK.jpg",
+        "previewUrl": "previews/v4_Universe. Third Edition by DK_preview.jpg",
+        "size": "190.1 MB",
+        "author": "Unknown",
+        "seriesId": "topic_space",
+        "seriesName": "Space & Astronomy"
+      },
+      {
+        "id": 291,
+        "filename": "The_Visual_Dictionary_of_Universe_& Earth_1.pdf",
+        "title": "The Visual Dictionary Of Universe & Earth 1",
+        "path": "https://github.com/tienthien196/data_english/releases/download/v2/The_Visual_Dictionary_of_Universe_.Earth_1.pdf",
+        "coverUrl": "covers/visual_dictionary_The_Visual_Dictionary_of_Universe_& Earth_1.jpg",
+        "previewUrl": "previews/visual_dictionary_The_Visual_Dictionary_of_Universe_& Earth_1_preview.jpg",
+        "size": "41.95 MB",
+        "author": "Unknown",
+        "seriesId": "topic_space",
+        "seriesName": "Space & Astronomy"
       }
     ]
   },
