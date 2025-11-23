@@ -1,0 +1,9 @@
+# PDF gốc (không commit)
+docs/
+
+# Trạng thái upload (local only)
+upload_state.json
+
+# IDE / Python cache
+__pycache__/
+*.pyc
