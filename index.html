@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Booklib2here - PDF Library Dashboard</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
@@ -705,14 +704,6 @@
       animation: float 6s ease-in-out infinite;
     }
 
-    .card:nth-child(2n) .cover {
-      animation-delay: 0.5s;
-    }
-
-    .card:nth-child(3n) .cover {
-      animation-delay: 1s;
-    }
-
     /* Responsive Design */
     @media (max-width: 768px) {
       .header-content {
@@ -753,26 +744,41 @@
       }
     }
 
-    /* Button Glow Effect */
-    .btn-glow {
-      animation: glow 2s infinite alternate;
+    /* Pagination Controls */
+    .pagination-controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
     }
 
-    @keyframes glow {
-      from {
-        box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
-      }
-      to {
-        box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
-      }
+    .pagination-controls .page-btn {
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 2px solid var(--card-border);
+      background: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: var(--dark-text);
+      min-width: 40px;
+      text-align: center;
     }
 
-    /* Hover effect for cards */
-    .card:hover .cover {
-      animation: none;
+    .pagination-controls .page-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
     }
 
-    /* Add a cute owl decoration in the corner */
+    .pagination-controls .page-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: var(--glow);
+    }
+
+    /* Owl Decoration */
     .owl-decoration {
       position: fixed;
       bottom: 20px;
@@ -792,33 +798,7 @@
       100% { opacity: 0.8; }
     }
 
-    /* Make buttons more rounded and soft */
-    button, input[type="text"] {
-      border-radius: 20px !important;
-    }
-
-    /* Add a subtle glow to active elements */
-    .active-glow {
-      box-shadow: 0 0 15px rgba(255, 107, 107, 0.5) !important;
-    }
-
-    /* Style for the star decorations */
-    .star-decor {
-      position: absolute;
-      color: var(--star-color);
-      font-size: 30px;
-      animation: twinkle 3s infinite ease-in-out;
-    }
-
-    .star-decor:nth-child(odd) {
-      animation-delay: 1s;
-    }
-
-    .star-decor:nth-child(even) {
-      animation-delay: 2s;
-    }
-
-    /* Add some floating books as decoration */
+    /* Floating Books */
     .floating-book {
       position: absolute;
       width: 40px;
@@ -909,7 +889,7 @@
     </div>
     
     <div class="filters">
-      <button class="filter-btn" data-size="all">All Sizes</button>
+      <button class="filter-btn active" data-size="all">All Sizes</button>
       <button class="filter-btn" data-size="small">Under 50MB</button>
       <button class="filter-btn" data-size="medium">50-100MB</button>
       <button class="filter-btn" data-size="large">Over 100MB</button>
@@ -957,6 +937,7 @@
   </div>
 
   <div class="toast" id="toast"><i class="fas fa-check-circle"></i> Link copied to clipboard!</div>
+
   <script>
     if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       const meta = document.createElement('meta');
@@ -964,19 +945,21 @@
       meta.content = 'width=1200, initial-scale=0.5, user-scalable=yes';
       document.head.appendChild(meta);
     } else {
-      // Giữ viewport mặc định trên desktop
       const meta = document.createElement('meta');
       meta.name = 'viewport';
       meta.content = 'width=device-width, initial-scale=1.0';
       document.head.appendChild(meta);
     }
   </script>
+
   <script>
     // State variables
     let currentView = 'series';
     let currentFilter = 'all';
-    let currentSeriesFilter = null; // ← Thêm biến lọc theo seriesId
+    let currentSeriesFilter = null;
     let searchTerm = '';
+    let currentPage = 1;
+    const booksPerPage = 20;
     let books = [];
     let series = [];
     let filteredBooks = [];
@@ -1047,11 +1030,9 @@
     function filterBooks() {
       let result = [...books];
 
-      // Lọc theo seriesId nếu có
       if (currentSeriesFilter) {
         result = result.filter(book => book.seriesId === currentSeriesFilter);
       } else {
-        // Nếu không, mới dùng tìm kiếm text
         if (searchTerm) {
           result = result.filter(book => 
             book.title.toLowerCase().includes(searchTerm) ||
@@ -1061,7 +1042,6 @@
         }
       }
 
-      // Áp dụng filter kích thước
       if (currentFilter !== 'all') {
         result = result.filter(book => {
           const size = parseFloat(book.size);
@@ -1079,6 +1059,7 @@
       filterBooks();
       if (currentView === 'series') {
         renderSeriesView();
+        currentPage = 1; // reset cho series view
       } else {
         renderBooksView();
       }
@@ -1089,17 +1070,50 @@
         gridContainer.innerHTML = '<div class="loading">No books found matching your criteria.</div>';
         return;
       }
+
+      const totalPages = Math.ceil(filteredBooks.length / booksPerPage);
+      const startIndex = (currentPage - 1) * booksPerPage;
+      const endIndex = startIndex + booksPerPage;
+      const booksToRender = filteredBooks.slice(startIndex, endIndex);
+
       let html = '';
-      filteredBooks.forEach(book => {
+      booksToRender.forEach(book => {
         html += createBookCard(book);
       });
-      gridContainer.innerHTML = html;
+
+      gridContainer.innerHTML = html + createPaginationControls(totalPages);
       attachCardEventListeners();
+      attachPaginationEventListeners();
+    }
+
+    function createPaginationControls(totalPages) {
+      if (totalPages <= 1) return '';
+
+      let paginationHtml = '<div class="pagination-controls">';
+
+      // Previous
+      if (currentPage > 1) {
+        paginationHtml += `<button class="page-btn" data-page="${currentPage - 1}">← Prev</button>`;
+      }
+
+      // Page numbers (show up to 5 around current)
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, startPage + 4);
+      for (let i = startPage; i <= endPage; i++) {
+        paginationHtml += `<button class="page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+      }
+
+      // Next
+      if (currentPage < totalPages) {
+        paginationHtml += `<button class="page-btn" data-page="${currentPage + 1}">Next →</button>`;
+      }
+
+      paginationHtml += '</div>';
+      return paginationHtml;
     }
 
     function renderSeriesView() {
       const seriesMap = new Map();
-      // ← DUYỆT TOÀN BỘ `books`, KHÔNG PHỤ THUỘC `filteredBooks`
       books.forEach(book => {
         if (!seriesMap.has(book.seriesId)) {
           const seriesInfo = series.find(s => s.seriesId === book.seriesId) || {
@@ -1114,10 +1128,12 @@
         }
         seriesMap.get(book.seriesId).books.push(book);
       });
+
       if (seriesMap.size === 0) {
         gridContainer.innerHTML = '<div class="loading">No series found matching your criteria.</div>';
         return;
       }
+
       let html = '';
       seriesMap.forEach(seriesGroup => {
         html += createSeriesCard(seriesGroup);
@@ -1198,13 +1214,11 @@
 
       document.querySelectorAll('[data-action="view-series"]').forEach(btn => {
         btn.addEventListener('click', (e) => {
-          const seriesId = e.currentTarget.dataset.series;
           currentView = 'books';
-          currentSeriesFilter = seriesId;
+          currentSeriesFilter = e.currentTarget.dataset.series;
           searchTerm = '';
-          // Cập nhật UI
-          document.querySelector('.view-btn[data-view="books"]').classList.add('active');
-          document.querySelector('.view-btn[data-view="series"]').classList.remove('active');
+          currentPage = 1;
+          updateViewButtons();
           renderContent();
         });
       });
@@ -1221,9 +1235,27 @@
       });
     }
 
+    function updateViewButtons() {
+      viewButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.view === currentView);
+      });
+    }
+
+    function attachPaginationEventListeners() {
+      document.querySelectorAll('.page-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const page = parseInt(e.currentTarget.dataset.page);
+          if (!isNaN(page)) {
+            currentPage = page;
+            renderBooksView();
+          }
+        });
+      });
+    }
+
     function openDetailPanel(book) {
       document.getElementById('panel-title').textContent = book.title;
-      document.getElementById('panel-cover-img').src = book.coverUrl;
+      document.getElementById('panel-cover-img').src = book.coverUrl || 'https://placehold.co/300x400/d1d5db/6b7280?text=Cover';
       document.getElementById('panel-author').textContent = `Author: ${book.author || 'Unknown'}`;
       document.getElementById('panel-size').textContent = `Size: ${book.size}`;
       document.getElementById('panel-series').textContent = `Series: ${book.seriesName}`;
@@ -1275,13 +1307,12 @@
     function setupEventListeners() {
       viewButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-          viewButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
           currentView = btn.dataset.view;
-          if (currentView === 'series') {
-            currentSeriesFilter = null;
-            searchTerm = '';
-          }
+          currentSeriesFilter = null;
+          searchTerm = '';
+          currentPage = 1;
+          searchInput.value = '';
+          updateViewButtons();
           renderContent();
         });
       });
@@ -1291,13 +1322,15 @@
           filterButtons.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           currentFilter = btn.dataset.size;
+          currentPage = 1;
           renderContent();
         });
       });
 
       searchInput.addEventListener('input', () => {
         searchTerm = searchInput.value.trim().toLowerCase();
-        currentSeriesFilter = null; // Xoá filter series khi tìm kiếm
+        currentSeriesFilter = null;
+        currentPage = 1;
         renderContent();
       });
 
