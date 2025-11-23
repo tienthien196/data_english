@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Booklib2here - PDF Library Dashboard</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
@@ -957,7 +957,20 @@
   </div>
 
   <div class="toast" id="toast"><i class="fas fa-check-circle"></i> Link copied to clipboard!</div>
-
+  <script>
+    if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      const meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=1200, initial-scale=0.5, user-scalable=yes';
+      document.head.appendChild(meta);
+    } else {
+      // Giữ viewport mặc định trên desktop
+      const meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, initial-scale=1.0';
+      document.head.appendChild(meta);
+    }
+  </script>
   <script>
     // State variables
     let currentView = 'series';
