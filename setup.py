@@ -23,7 +23,8 @@ if not GITHUB_TOKEN:
 
 OWNER = "tienthien196"
 REPO = "data_english"
-DRAFT_RELEASE_NAME = "Draft - PDF Library (Auto)"
+RELEASE_TAG = "v2"  # ← Tag cố định, public, bền vững
+RELEASE_NAME = "PDF Library v1"
 
 API_BASE = f"https://api.github.com/repos/{OWNER}/{REPO}"
 HEADERS = {
@@ -62,22 +63,21 @@ def create_2x2_preview(doc, preview_path: Path):
     final.paste(images[3], (w, h))
     final.save(preview_path, "JPEG", quality=88)
 
-def get_or_create_draft_release():
-    # Tìm draft hiện có
+def get_or_create_public_release():
+    """Lấy hoặc tạo release public với tag cố định 'v1'"""
     res = requests.get(f"{API_BASE}/releases", headers=HEADERS)
     if res.status_code == 200:
         for r in res.json():
-            if r.get("draft") and r["name"] == DRAFT_RELEASE_NAME:
-                print(f"📝 Dùng draft hiện có: {r['html_url']}")
+            if r["tag_name"] == RELEASE_TAG and not r.get("draft", False):
+                print(f"📦 Dùng release public: {r['name']}")
                 return r["id"], r["upload_url"].replace("{?name,label}", "")
     
-    # Tạo mới
-    print("🆕 Tạo draft release mới...")
+    print(f"🆕 Tạo release PUBLIC mới với tag: {RELEASE_TAG}")
     data = {
-        "tag_name": f"draft-{int(Path(STATE_FILE).stat().st_mtime) if STATE_FILE.exists() else 'init'}",
-        "name": DRAFT_RELEASE_NAME,
-        "body": "Auto-uploaded PDFs — do not delete",
-        "draft": True,
+        "tag_name": RELEASE_TAG,
+        "name": RELEASE_NAME,
+        "body": "Public release for GitHub Pages — all PDFs are accessible via direct URL.",
+        "draft": False,
         "prerelease": False
     }
     res = requests.post(f"{API_BASE}/releases", headers=HEADERS, json=data)
@@ -85,7 +85,15 @@ def get_or_create_draft_release():
         r = res.json()
         return r["id"], r["upload_url"].replace("{?name,label}", "")
     else:
-        raise Exception(f"❌ Tạo draft thất bại: {res.status_code} - {res.text}")
+        raise Exception(f"❌ Tạo release public thất bại: {res.status_code} - {res.text}")
+
+def get_existing_asset_names(release_id):
+    """Lấy danh sách tên file đã có trong release trên GitHub"""
+    assets_url = f"{API_BASE}/releases/{release_id}/assets"
+    res = requests.get(assets_url, headers=HEADERS)
+    if res.status_code == 200:
+        return {asset["name"] for asset in res.json()}
+    return set()
 
 def upload_file(upload_url, filepath: Path):
     filename = filepath.name
@@ -102,12 +110,11 @@ def upload_file(upload_url, filepath: Path):
 
 # === Main ===
 def main():
-    # Đọc trạng thái cũ
+    # Đọc trạng thái local
     state = {"uploaded_files": {}}
     if STATE_FILE.exists():
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             state = json.load(f)
-
     uploaded_files = state["uploaded_files"]
 
     # Quét toàn bộ PDF
@@ -131,7 +138,6 @@ def main():
             cover_path = COVER_DIR / f"{series_id}_{stem}.jpg"
             preview_path = PREVIEW_DIR / f"{series_id}_{stem}_preview.jpg"
 
-            # Tạo ảnh nếu chưa có
             if not cover_path.exists():
                 doc = fitz.open(pdf_path)
                 if doc:
@@ -144,18 +150,13 @@ def main():
                 create_2x2_preview(doc, preview_path)
                 doc.close()
 
-            # Xác định URL
-            if full_key in uploaded_files:
-                url = uploaded_files[full_key]
-                print(f"⏭️ Đã tồn tại: {full_key}")
-            else:
-                url = None  # Sẽ upload sau
-
+            # Dùng URL đã lưu nếu có
+            url = uploaded_files.get(full_key)
             book = {
                 "id": len(all_books) + 1,
                 "filename": filename,
                 "title": stem.replace("_", " ").title(),
-                "path": url or f"./docs/{series_id}/{filename}",  # tạm giữ local nếu chưa upload
+                "path": url or f"./docs/{series_id}/{filename}",
                 "coverUrl": str(cover_path).replace("\\", "/"),
                 "previewUrl": str(preview_path).replace("\\", "/"),
                 "size": f"{get_file_size_mb(pdf_path)} MB",
@@ -174,7 +175,7 @@ def main():
             "books": books_in_series
         }
 
-    # Phát hiện file mới cần upload
+    # Phát hiện file mới (chưa có trong trạng thái local)
     new_files = []
     for series_dir in PDF_ROOT.iterdir():
         if not series_dir.is_dir():
@@ -185,20 +186,28 @@ def main():
                 new_files.append((pdf_path, full_key))
 
     if new_files:
-        print(f"\n📤 Có {len(new_files)} file mới cần upload...")
-        release_id, upload_url = get_or_create_draft_release()
+        print(f"\n📤 Có {len(new_files)} file mới cần xử lý...")
+        release_id, upload_url = get_or_create_public_release()
+        existing_assets = get_existing_asset_names(release_id)
 
         for pdf_path, full_key in new_files:
-            url = upload_file(upload_url, pdf_path)
+            filename = pdf_path.name
+            if filename in existing_assets:
+                # Dùng lại URL public (an toàn, bền vững)
+                url = f"https://github.com/{OWNER}/{REPO}/releases/download/{RELEASE_TAG}/{quote(filename)}"
+                print(f"⏭️  Đã tồn tại trên GitHub: {filename}")
+            else:
+                # Upload mới
+                url = upload_file(upload_url, pdf_path)
             uploaded_files[full_key] = url
 
-        # Cập nhật lại path trong books
+        # Cập nhật đường dẫn trong sách
         for book in all_books:
             full_key = f"{book['seriesId']}/{book['filename']}"
             if full_key in uploaded_files:
                 book["path"] = uploaded_files[full_key]
 
-        # Lưu trạng thái
+        # Lưu trạng thái local
         with open(STATE_FILE, "w", encoding="utf-8") as f:
             json.dump({"uploaded_files": uploaded_files}, f, ensure_ascii=False, indent=2)
         print("💾 Đã lưu trạng thái upload.")
