@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thư Viện Tài Liệu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    body {
+      background-color: #f9fafb;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .app {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 350px;
+      background: white;
+      border-right: 1px solid #e5e7eb;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+    .header {
+      padding: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1f2937;
+    }
+    .header p {
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
+    .doc-list {
+      padding: 1rem;
+    }
+    .doc-item {
+      display: flex;
+      gap: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .doc-item:hover {
+      background-color: #f3f4f6;
+    }
+    .doc-item.active {
+      background-color: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .doc-cover {
+      width: 64px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      background: #f3f4f6;
+    }
+    .doc-info h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1f2937;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .doc-info p {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
+    .doc-path {
+      font-size: 0.7rem;
+      color: #9ca3af;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 0.25rem;
+    }
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .main-header {
+      padding: 1rem;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main-header h2 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #1f2937;
+    }
+    .main-header .size {
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 0.25rem;
+    }
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+    .btn {
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+    }
+    .btn-view { background: #3b82f6; color: white; }
+    .btn-download { background: #6b7280; color: white; }
+    .btn-copy { background: #8b5cf6; color: white; }
+    .btn:hover { opacity: 0.9; }
+    .content {
+      flex: 1;
+      padding: 1.5rem;
+      overflow-y: auto;
+    }
+    .doc-detail {
+      background: white;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .detail-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .cover-large {
+      flex: 1;
+      min-width: 250px;
+    }
+    .cover-large img {
+      width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #f9fafb;
+    }
+    .info-large {
+      flex: 2;
+      min-width: 300px;
+    }
+    .info-large h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+    .info-item {
+      margin-bottom: 0.75rem;
+    }
+    .info-label {
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 0.25rem;
+    }
+    .info-value {
+      color: #1f2937;
+      line-height: 1.5;
+    }
+    .placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      padding: 2rem;
+      color: #6b7280;
+    }
+    .placeholder svg {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1rem;
+      color: #d1d5db;
+    }
+    .placeholder h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #1f2937;
+    }
+    .error {
+      color: #ef4444;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .sidebar { width: 100%; }
+      .main { display: none; }
+      .sidebar.active { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="sidebar" id="sidebar">
+      <div class="header">
+        <h1>Thư viện Tài liệu</h1>
+        <p id="doc-count">Đang tải...</p>
+      </div>
+      <div class="doc-list" id="doc-list">
+        <!-- Danh sách tài liệu sẽ được chèn vào đây -->
+      </div>
+    </div>
+    <div class="main" id="main-panel">
+      <div id="main-header" class="main-header" style="display:none;">
+        <div>
+          <h2 id="doc-title">...</h2>
+          <div class="size" id="doc-size">...</div>
+        </div>
+        <div class="actions">
+          <button class="btn btn-view" id="btn-view">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 3a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/></svg>
+            Xem trực tiếp
+          </button>
+          <button class="btn btn-download" id="btn-download">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9a.5.5 0 0 1 .5.5V12h13V9.5a.5.5 0 0 1 1 0V12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V9.5A.5.5 0 0 1 .5 9z"/><path d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V13.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+            Tải về
+          </button>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="placeholder" id="placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7m2-2h10" />
+          </svg>
+          <h3>Chọn một tài liệu</h3>
+          <p>Nhấp vào tài liệu bên trái để xem chi tiết.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const REPO_USER = "tienthien196";
+    const REPO_NAME = "data_english";
+    const BRANCH = "main";
+
+    function getRawUrl(relativePath) {
+      // relativePath: "docs/abc.pdf"
+      return `https://raw.githubusercontent.com/${REPO_USER}/${REPO_NAME}/${BRANCH}/${encodeURIComponent(relativePath)}`;
+    }
+
+    let documents = [];
+    let selectedDoc = null;
+
+    // Tải danh sách tài liệu từ docs.json
+    async function loadDocuments() {
+      try {
+        const res = await fetch('docs.json');
+        if (!res.ok) throw new Error(`Không tìm thấy docs.json (HTTP ${res.status})`);
+        documents = await res.json();
+        renderDocuments();
+      } catch (err) {
+        console.error("Lỗi khi tải docs.json:", err);
+        document.getElementById('doc-count').innerHTML = 
+          `<span class="error">❌ Lỗi: ${err.message}</span>`;
+      }
+    }
+
+    function renderDocuments() {
+      const listEl = document.getElementById('doc-list');
+      const countEl = document.getElementById('doc-count');
+      listEl.innerHTML = '';
+      countEl.textContent = `Tổng cộng ${documents.length} tài liệu`;
+
+      documents.forEach(doc => {
+        const item = document.createElement('div');
+        item.className = 'doc-item';
+        item.dataset.id = doc.id;
+        item.innerHTML = `
+          <img src="${doc.coverUrl}" 
+               alt="${doc.name}" 
+               class="doc-cover"
+               onerror="this.onerror=null; this.src='https://placehold.co/64x80/d1d5db/6b7280?text=Err';">
+          <div class="doc-info">
+            <h3>${doc.name}</h3>
+            <p>${doc.size}</p>
+            <div class="doc-path">${doc.path}</div>
+          </div>
+        `;
+        item.addEventListener('click', () => selectDocument(doc));
+        listEl.appendChild(item);
+      });
+    }
+
+    function selectDocument(doc) {
+      selectedDoc = doc;
+
+      // Bỏ active cũ
+      document.querySelectorAll('.doc-item').forEach(el => el.classList.remove('active'));
+      // Thêm active mới
+      const newItem = document.querySelector(`.doc-item[data-id="${doc.id}"]`);
+      if (newItem) newItem.classList.add('active');
+
+      // Hiển thị header
+      document.getElementById('main-header').style.display = 'flex';
+      document.getElementById('doc-title').textContent = doc.name;
+      document.getElementById('doc-size').textContent = doc.size;
+
+      const rawUrl = getRawUrl(doc.path);
+
+      // Gán sự kiện cho nút trên header
+      document.getElementById('btn-view').onclick = () => window.open(rawUrl, '_blank');
+      document.getElementById('btn-download').onclick = () => downloadFile(rawUrl, doc.name);
+
+      // Hiển thị chi tiết
+      document.getElementById('placeholder').style.display = 'none';
+      const contentEl = document.getElementById('content');
+      contentEl.innerHTML = `
+        <div class="doc-detail">
+          <div class="detail-grid">
+            <div class="cover-large">
+              <img src="${doc.coverUrl}" 
+                   alt="${doc.name}"
+                   onerror="this.onerror=null; this.src='https://placehold.co/300x400/d1d5db/6b7280?text=No+Cover';">
+            </div>
+            <div class="info-large">
+              <h3>Thông tin tài liệu</h3>
+              <div class="info-item">
+                <div class="info-label">Tên:</div>
+                <div class="info-value">${doc.name}</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Kích thước:</div>
+                <div class="info-value">${doc.size}</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Đường dẫn:</div>
+                <div class="info-value">${doc.path}</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Mô tả:</div>
+                <div class="info-value">${doc.description || 'Chưa có mô tả.'}</div>
+              </div>
+              <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                  <button class="btn btn-view" onclick="window.open('${rawUrl}', '_blank')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 3a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5zm0 4a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/></svg>
+                    Xem trực tiếp
+                  </button>
+                  <button class="btn btn-download" onclick="downloadFile('${rawUrl}', '${doc.name.replace(/'/g, "\\'")}')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9a.5.5 0 0 1 .5.5V12h13V9.5a.5.5 0 0 1 1 0V12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V9.5A.5.5 0 0 1 .5 9z"/><path d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V13.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+                    Tải về
+                  </button>
+                  <button class="btn btn-copy" onclick="copyLink('${rawUrl}')">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h2z"/></svg>
+                    Sao chép link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function downloadFile(url, filename) {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.rel = 'noopener';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    async function copyLink(url) {
+      try {
+        await navigator.clipboard.writeText(url);
+        alert('✅ Đã sao chép liên kết!');
+      } catch (err) {
+        console.error('Lỗi khi sao chép:', err);
+        alert('❌ Không thể sao chép. Vui lòng chọn thủ công.');
+      }
+    }
+
+    // Khởi chạy khi trang load xong
+    document.addEventListener('DOMContentLoaded', () => {
+      loadDocuments();
+    });
+  </script>
+</body>
+</html>
