@@ -524,6 +524,11 @@
       border: 2px solid var(--primary);
     }
 
+    .download-btn {
+      background: var(--secondary);
+      color: white;
+    }
+
     .read-full-btn:hover {
       background: #3a3fb8;
       transform: translateY(-2px);
@@ -534,6 +539,12 @@
       background: #f1f5f9;
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-btn:hover {
+      background: #7a254c;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(143, 45, 86, 0.3);
     }
 
     /* Toast Notification */
@@ -729,6 +740,9 @@
       <button class="panel-btn copy-link-btn" id="panel-copy-btn">
         🔗 Copy Link
       </button>
+      <button class="panel-btn download-btn" id="panel-download-btn">
+        ⬇️ Download PDF
+      </button>
     </div>
   </div>
 
@@ -738,6 +752,7 @@
     // State variables
     let currentView = 'series';
     let currentFilter = 'all';
+    let currentSeriesFilter = null; // ← Thêm biến lọc theo seriesId
     let searchTerm = '';
     let books = [];
     let series = [];
@@ -769,7 +784,6 @@
         books = await booksRes.json();
         series = await seriesRes.json();
 
-        // Ensure every book has seriesName
         const seriesMap = new Map(series.map(s => [s.seriesId, s.seriesName]));
         books.forEach(book => {
           if (!book.seriesName) {
@@ -809,13 +823,22 @@
 
     function filterBooks() {
       let result = [...books];
-      if (searchTerm) {
-        result = result.filter(book => 
-          book.title.toLowerCase().includes(searchTerm) ||
-          book.filename.toLowerCase().includes(searchTerm) ||
-          book.seriesName.toLowerCase().includes(searchTerm)
-        );
+
+      // Lọc theo seriesId nếu có
+      if (currentSeriesFilter) {
+        result = result.filter(book => book.seriesId === currentSeriesFilter);
+      } else {
+        // Nếu không, mới dùng tìm kiếm text
+        if (searchTerm) {
+          result = result.filter(book => 
+            book.title.toLowerCase().includes(searchTerm) ||
+            book.filename.toLowerCase().includes(searchTerm) ||
+            book.seriesName.toLowerCase().includes(searchTerm)
+          );
+        }
       }
+
+      // Áp dụng filter kích thước
       if (currentFilter !== 'all') {
         result = result.filter(book => {
           const size = parseFloat(book.size);
@@ -825,6 +848,7 @@
           return true;
         });
       }
+
       filteredBooks = result;
     }
 
@@ -852,7 +876,8 @@
 
     function renderSeriesView() {
       const seriesMap = new Map();
-      filteredBooks.forEach(book => {
+      // ← DUYỆT TOÀN BỘ `books`, KHÔNG PHỤ THUỘC `filteredBooks`
+      books.forEach(book => {
         if (!seriesMap.has(book.seriesId)) {
           const seriesInfo = series.find(s => s.seriesId === book.seriesId) || {
             seriesId: book.seriesId,
@@ -951,9 +976,10 @@
       document.querySelectorAll('[data-action="view-series"]').forEach(btn => {
         btn.addEventListener('click', (e) => {
           const seriesId = e.currentTarget.dataset.series;
-          searchTerm = seriesId;
-          searchInput.value = seriesId;
           currentView = 'books';
+          currentSeriesFilter = seriesId;
+          searchTerm = '';
+          // Cập nhật UI
           document.querySelector('.view-btn[data-view="books"]').classList.add('active');
           document.querySelector('.view-btn[data-view="series"]').classList.remove('active');
           renderContent();
@@ -996,6 +1022,14 @@
       document.getElementById('panel-copy-btn').onclick = () => {
         copyToClipboard(book.path);
       };
+      document.getElementById('panel-download-btn').onclick = () => {
+        const link = document.createElement('a');
+        link.href = book.path;
+        link.download = book.filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
 
       detailPanel.classList.add('active');
     }
@@ -1021,6 +1055,10 @@
           viewButtons.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           currentView = btn.dataset.view;
+          if (currentView === 'series') {
+            currentSeriesFilter = null;
+            searchTerm = '';
+          }
           renderContent();
         });
       });
@@ -1036,6 +1074,7 @@
 
       searchInput.addEventListener('input', () => {
         searchTerm = searchInput.value.trim().toLowerCase();
+        currentSeriesFilter = null; // Xoá filter series khi tìm kiếm
         renderContent();
       });
 
@@ -1043,7 +1082,6 @@
         detailPanel.classList.remove('active');
       });
 
-      // Close panel when clicking outside (optional)
       document.addEventListener('click', (e) => {
         if (detailPanel.classList.contains('active') && !detailPanel.contains(e.target) && !e.target.closest('.card')) {
           detailPanel.classList.remove('active');
