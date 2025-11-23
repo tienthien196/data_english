@@ -19,20 +19,19 @@
 
   <style>
     :root {
-      /* Phong cách Booklib2here */
-      --primary: #FF6B6B; /* Màu cam đỏ nổi bật */
-      --secondary: #4ECDC4; /* Xanh ngọc pastel */
-      --accent: #FFD166; /* Vàng chanh */
-      --light-bg: #F8F9FA; /* Trắng kem */
-      --dark-text: #212529; /* Đen đậm */
-      --card-bg: rgba(255, 255, 255, 0.9); /* Card trắng trong suốt */
-      --card-border: #E2E8F0; /* Viền xám nhạt */
+      --primary: #FF6B6B;
+      --secondary: #4ECDC4;
+      --accent: #FFD166;
+      --light-bg: #F8F9FA;
+      --dark-text: #212529;
+      --card-bg: rgba(255, 255, 255, 0.9);
+      --card-border: #E2E8F0;
       --glow: 0 0 15px rgba(255, 107, 107, 0.3);
       --shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
       --hover-shadow: 0 12px 30px rgba(255, 107, 107, 0.15);
       --star-color: #FFE66D;
-      --book-shelf-color: #E6CBA8; /* Nâu gỗ pastel */
-      --owl-color: #8B7355; /* Nâu cú */
+      --book-shelf-color: #E6CBA8;
+      --owl-color: #8B7355;
     }
 
     * {
@@ -55,7 +54,6 @@
       background-attachment: fixed;
     }
 
-    /* Hiệu ứng sao lấp lánh */
     .stars {
       position: absolute;
       top: 0;
@@ -88,7 +86,6 @@
       100% { opacity: 0.7; transform: scale(1); }
     }
 
-    /* Header Styles */
     header {
       background: var(--card-bg);
       border-radius: 30px;
@@ -193,7 +190,6 @@
       font-size: 20px;
     }
 
-    /* Controls Section */
     .controls {
       background: var(--card-bg);
       border-radius: 30px;
@@ -299,12 +295,11 @@
       box-shadow: 0 6px 15px rgba(255, 107, 107, 0.3);
     }
 
-    /* Grid Layout */
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .card {
@@ -450,7 +445,6 @@
       background: #f1f5f9;
     }
 
-    /* Detail Panel */
     .detail-panel {
       position: fixed;
       top: 0;
@@ -643,7 +637,6 @@
       box-shadow: 0 6px 20px rgba(78, 204, 204, 0.3);
     }
 
-    /* Toast Notification */
     .toast {
       position: fixed;
       bottom: 20px;
@@ -666,7 +659,6 @@
       transform: translateX(0);
     }
 
-    /* Loading State */
     .loading {
       text-align: center;
       padding: 50px;
@@ -693,7 +685,6 @@
       100% { transform: rotate(360deg); }
     }
 
-    /* Animation Effects */
     @keyframes float {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-10px); }
@@ -704,7 +695,6 @@
       animation: float 6s ease-in-out infinite;
     }
 
-    /* Responsive Design */
     @media (max-width: 768px) {
       .header-content {
         flex-direction: column;
@@ -744,41 +734,57 @@
       }
     }
 
-    /* Pagination Controls */
+    /* --- PAGINATION FIX --- */
+    .pagination-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      min-height: 60px;
+    }
+
     .pagination-controls {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
-    .pagination-controls .page-btn {
-      padding: 10px 16px;
-      border-radius: 12px;
+    .page-btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
       border: 2px solid var(--card-border);
       background: white;
       font-weight: 600;
+      font-size: 14px;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.25s ease;
       color: var(--dark-text);
-      min-width: 40px;
-      text-align: center;
     }
 
-    .pagination-controls .page-btn:hover {
-      background: var(--primary);
-      color: white;
-      border-color: var(--primary);
+    .page-btn:hover:not(.active) {
+      background: var(--light-bg);
+      transform: translateY(-2px);
     }
 
-    .pagination-controls .page-btn.active {
+    .page-btn.active {
       background: var(--primary);
       color: white;
       border-color: var(--primary);
       box-shadow: var(--glow);
+      transform: scale(1.05);
     }
 
-    /* Owl Decoration */
+    .page-btn[data-page*="Prev"],
+    .page-btn[data-page*="Next"] {
+      width: auto;
+      min-width: 70px;
+      border-radius: 20px;
+    }
+
     .owl-decoration {
       position: fixed;
       bottom: 20px;
@@ -798,7 +804,6 @@
       100% { opacity: 0.8; }
     }
 
-    /* Floating Books */
     .floating-book {
       position: absolute;
       width: 40px;
@@ -836,7 +841,6 @@
 </head>
 <body>
 
-  <!-- Thêm các yếu tố trang trí -->
   <div class="stars">
     <div class="star">⭐</div>
     <div class="star">⭐</div>
@@ -850,10 +854,7 @@
     <div class="star">⭐</div>
   </div>
 
-  <!-- Owl Decoration -->
   <div class="owl-decoration"></div>
-
-  <!-- Floating Books -->
   <div class="floating-book"></div>
   <div class="floating-book"></div>
   <div class="floating-book"></div>
@@ -903,7 +904,9 @@
     </div>
   </div>
 
-  <!-- Detail Panel -->
+  <!-- ✅ Phân trang cố định -->
+  <div class="pagination-wrapper" id="pagination-wrapper"></div>
+
   <div class="detail-panel" id="detail-panel">
     <div class="panel-header">
       <h2 class="panel-title" id="panel-title">Book Details</h2>
@@ -920,7 +923,6 @@
     <div class="preview-section">
       <h3>Preview (4 pages)</h3>
       <div class="preview-container" id="panel-preview">
-        <!-- Preview images loaded here -->
       </div>
     </div>
     <div class="panel-actions">
@@ -953,7 +955,6 @@
   </script>
 
   <script>
-    // State variables
     let currentView = 'series';
     let currentFilter = 'all';
     let currentSeriesFilter = null;
@@ -964,7 +965,6 @@
     let series = [];
     let filteredBooks = [];
 
-    // DOM Elements
     const gridContainer = document.getElementById('grid-container');
     const searchInput = document.getElementById('search-input');
     const viewButtons = document.querySelectorAll('.view-btn');
@@ -975,7 +975,6 @@
     const totalBooksEl = document.getElementById('total-books');
     const totalSizeEl = document.getElementById('total-size');
 
-    // Fetch data from JSON files
     async function loadData() {
       try {
         const [booksRes, seriesRes] = await Promise.all([
@@ -1059,7 +1058,7 @@
       filterBooks();
       if (currentView === 'series') {
         renderSeriesView();
-        currentPage = 1; // reset cho series view
+        currentPage = 1;
       } else {
         renderBooksView();
       }
@@ -1068,6 +1067,7 @@
     function renderBooksView() {
       if (filteredBooks.length === 0) {
         gridContainer.innerHTML = '<div class="loading">No books found matching your criteria.</div>';
+        document.getElementById('pagination-wrapper').innerHTML = '';
         return;
       }
 
@@ -1081,29 +1081,31 @@
         html += createBookCard(book);
       });
 
-      gridContainer.innerHTML = html + createPaginationControls(totalPages);
+      gridContainer.innerHTML = html;
       attachCardEventListeners();
-      attachPaginationEventListeners();
+
+      const paginationWrapper = document.getElementById('pagination-wrapper');
+      if (totalPages > 1) {
+        paginationWrapper.innerHTML = createPaginationControls(totalPages);
+        attachPaginationEventListeners();
+      } else {
+        paginationWrapper.innerHTML = '';
+      }
     }
 
     function createPaginationControls(totalPages) {
-      if (totalPages <= 1) return '';
-
       let paginationHtml = '<div class="pagination-controls">';
 
-      // Previous
       if (currentPage > 1) {
         paginationHtml += `<button class="page-btn" data-page="${currentPage - 1}">← Prev</button>`;
       }
 
-      // Page numbers (show up to 5 around current)
       const startPage = Math.max(1, currentPage - 2);
       const endPage = Math.min(totalPages, startPage + 4);
       for (let i = startPage; i <= endPage; i++) {
         paginationHtml += `<button class="page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
       }
 
-      // Next
       if (currentPage < totalPages) {
         paginationHtml += `<button class="page-btn" data-page="${currentPage + 1}">Next →</button>`;
       }
