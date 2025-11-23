@@ -619,7 +619,6 @@
   </style>
 </head>
 <body>
-  <!-- Decorative circuit background -->
   <svg class="circuit" viewBox="0 0 1000 1000">
     <path d="M0 500 Q250 400 500 500 T1000 500" />
     <path d="M0 300 Q250 200 500 300 T1000 300" />
@@ -682,7 +681,6 @@
       </div>
       <div class="modal-content">
         <div class="preview-container" id="preview-container">
-          <!-- Preview images will be inserted here -->
         </div>
         <div class="modal-actions">
           <a href="#" class="modal-btn download-btn" id="download-link" target="_blank">
@@ -696,115 +694,6 @@
   <div class="toast" id="toast">Link copied to clipboard!</div>
 
   <script>
-    // Mock data for demonstration
-    const booksData = [
-      {
-        "id": 1,
-        "filename": "ENCYCLOPEDIA_SCIENCE_(Mini_Book.Ma.pdf",
-        "title": "Encyclopedia Science (Mini Book.Ma",
-        "path": "https://github.com/tienthien196/data_english/releases/download/untagged-e780675855e5e70cbd3b/ENCYCLOPEDIA_SCIENCE_.Mini_Book.Ma.pdf",
-        "coverUrl": "https://placehold.co/300x400/4e54c8/white?text=Encyclopedia+Science",
-        "previewUrl": "https://placehold.co/300x400/8f2d56/white?text=Preview+1",
-        "size": "37.82 MB",
-        "author": "Unknown",
-        "seriesId": "visual_dictionary",
-        "seriesName": "Visual Dictionary"
-      },
-      {
-        "id": 2,
-        "filename": "The Visual Dictionary of Animal Kingdom.pdf",
-        "title": "The Visual Dictionary Of Animal Kingdom",
-        "path": "https://github.com/tienthien196/data_english/releases/download/untagged-e780675855e5e70cbd3b/The.Visual.Dictionary.of.Animal.Kingdom.pdf",
-        "coverUrl": "https://placehold.co/300x400/8f2d56/white?text=Animal+Kingdom",
-        "previewUrl": "https://placehold.co/300x400/4e54c8/white?text=Preview+2",
-        "size": "19.29 MB",
-        "author": "Unknown",
-        "seriesId": "visual_dictionary",
-        "seriesName": "Visual Dictionary"
-      },
-      {
-        "id": 3,
-        "filename": "Space Exploration Guide.pdf",
-        "title": "Space Exploration Guide",
-        "path": "https://github.com/tienthien196/data_english/releases/download/untagged-e780675855e5e70cbd3b/Space.Exploration.Guide.pdf",
-        "coverUrl": "https://placehold.co/300x400/2d5686/white?text=Space+Exploration",
-        "previewUrl": "https://placehold.co/300x400/2d8656/white?text=Preview+3",
-        "size": "125.4 MB",
-        "author": "NASA Archives",
-        "seriesId": "space_guides",
-        "seriesName": "Space Guides"
-      },
-      {
-        "id": 4,
-        "filename": "Ocean Life Encyclopedia.pdf",
-        "title": "Ocean Life Encyclopedia",
-        "path": "https://github.com/tienthien196/data_english/releases/download/untagged-e780675855e5e70cbd3b/Ocean.Life.Encyclopedia.pdf",
-        "coverUrl": "https://placehold.co/300x400/2d8656/white?text=Ocean+Life",
-        "previewUrl": "https://placehold.co/300x400/862d56/white?text=Preview+4",
-        "size": "89.7 MB",
-        "author": "Marine Institute",
-        "seriesId": "nature_series",
-        "seriesName": "Nature Series"
-      },
-      {
-        "id": 5,
-        "filename": "Ancient Civilizations.pdf",
-        "title": "Ancient Civilizations",
-        "path": "https://github.com/tienthien196/data_english/releases/download/untagged-e780675855e5e70cbd3b/Ancient.Civilizations.pdf",
-        "coverUrl": "https://placehold.co/300x400/862d56/white?text=Ancient+Civs",
-        "previewUrl": "https://placehold.co/300x400/56862d/white?text=Preview+5",
-        "size": "156.3 MB",
-        "author": "History Archives",
-        "seriesId": "history_series",
-        "seriesName": "History Series"
-      },
-      {
-        "id": 6,
-        "filename": "Robotics Fundamentals.pdf",
-        "title": "Robotics Fundamentals",
-        "path": "https://github.com/tienthien196/data_english/releases/download/untagged-e780675855e5e70cbd3b/Robotics.Fundamentals.pdf",
-        "coverUrl": "https://placehold.co/300x400/56862d/white?text=Robotics",
-        "previewUrl": "https://placehold.co/300x400/2d5686/white?text=Preview+6",
-        "size": "45.2 MB",
-        "author": "Tech Institute",
-        "seriesId": "tech_series",
-        "seriesName": "Tech Series"
-      }
-    ];
-
-    const seriesData = [
-      {
-        "seriesId": "visual_dictionary",
-        "seriesName": "Visual Dictionary",
-        "description": "Collection: Visual Dictionary",
-        "coverUrl": "https://placehold.co/300x400/4e54c8/white?text=Visual+Dictionary"
-      },
-      {
-        "seriesId": "space_guides",
-        "seriesName": "Space Guides",
-        "description": "Collection: Space Exploration Guides",
-        "coverUrl": "https://placehold.co/300x400/2d5686/white?text=Space+Guides"
-      },
-      {
-        "seriesId": "nature_series",
-        "seriesName": "Nature Series",
-        "description": "Collection: Nature and Wildlife",
-        "coverUrl": "https://placehold.co/300x400/2d8656/white?text=Nature+Series"
-      },
-      {
-        "seriesId": "history_series",
-        "seriesName": "History Series",
-        "description": "Collection: Historical Archives",
-        "coverUrl": "https://placehold.co/300x400/862d56/white?text=History+Series"
-      },
-      {
-        "seriesId": "tech_series",
-        "seriesName": "Tech Series",
-        "description": "Collection: Technology and Innovation",
-        "coverUrl": "https://placehold.co/300x400/56862d/white?text=Tech+Series"
-      }
-    ];
-
     // State variables
     let currentView = 'series';
     let currentFilter = 'all';
@@ -827,81 +716,61 @@
     const totalBooksEl = document.getElementById('total-books');
     const totalSizeEl = document.getElementById('total-size');
 
-    // Initialize the dashboard
-    function init() {
-      // In a real app, we would fetch from JSON files
-      // For this demo, we'll use the mock data
-      books = booksData;
-      series = seriesData;
-      
-      updateStats();
-      renderContent();
-      
-      // Setup event listeners
-      setupEventListeners();
-    }
+    // Fetch data from JSON files
+    async function loadData() {
+      try {
+        const [booksRes, seriesRes] = await Promise.all([
+          fetch('./books.json'),
+          fetch('./series.json')
+        ]);
 
-    // Set up event listeners
-    function setupEventListeners() {
-      // View toggle
-      viewButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          viewButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentView = btn.dataset.view;
-          renderContent();
-        });
-      });
-      
-      // Size filters
-      filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          filterButtons.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentFilter = btn.dataset.size;
-          renderContent();
-        });
-      });
-      
-      // Search
-      searchInput.addEventListener('input', () => {
-        searchTerm = searchInput.value.trim().toLowerCase();
-        renderContent();
-      });
-      
-      // Modal
-      closeModal.addEventListener('click', () => {
-        modalOverlay.classList.remove('active');
-      });
-      
-      modalOverlay.addEventListener('click', (e) => {
-        if (e.target === modalOverlay) {
-          modalOverlay.classList.remove('active');
+        if (!booksRes.ok || !seriesRes.ok) {
+          throw new Error('Failed to load JSON files');
         }
-      });
+
+        books = await booksRes.json();
+        series = await seriesRes.json();
+
+        // Đảm bảo mỗi sách có seriesName
+        const seriesMap = new Map(series.map(s => [s.seriesId, s.seriesName]));
+        books.forEach(book => {
+          if (!book.seriesName) {
+            book.seriesName = seriesMap.get(book.seriesId) || book.seriesId;
+          }
+        });
+
+        updateStats();
+        renderContent();
+        setupEventListeners();
+      } catch (error) {
+        console.error('Load error:', error);
+        gridContainer.innerHTML = `
+          <div class="loading" style="color: #ef4444;">
+            <p>❌ Failed to load data. Please check:</p>
+            <ul>
+              <li><code>books.json</code> and <code>series.json</code> exist in root</li>
+              <li>GitHub Pages is enabled</li>
+              <li>URL: https://tienthien196.github.io/data_english/</li>
+            </ul>
+          </div>
+        `;
+      }
     }
 
-    // Update statistics in header
     function updateStats() {
       const totalBooks = books.length;
       let totalSize = 0;
-      
       books.forEach(book => {
         const size = parseFloat(book.size);
         totalSize += size;
       });
-      
       const totalSizeGB = (totalSize / 1024).toFixed(2);
-      
       totalBooksEl.textContent = `${totalBooks} Books`;
       totalSizeEl.textContent = `~${totalSizeGB} GB`;
     }
 
-    // Filter books based on current criteria
     function filterBooks() {
       let result = [...books];
-      
-      // Apply search filter
       if (searchTerm) {
         result = result.filter(book => 
           book.title.toLowerCase().includes(searchTerm) ||
@@ -909,8 +778,6 @@
           book.seriesName.toLowerCase().includes(searchTerm)
         );
       }
-      
-      // Apply size filter
       if (currentFilter !== 'all') {
         result = result.filter(book => {
           const size = parseFloat(book.size);
@@ -920,14 +787,11 @@
           return true;
         });
       }
-      
       filteredBooks = result;
     }
 
-    // Render content based on current view
     function renderContent() {
       filterBooks();
-      
       if (currentView === 'series') {
         renderSeriesView();
       } else {
@@ -935,27 +799,21 @@
       }
     }
 
-    // Render books view
     function renderBooksView() {
       if (filteredBooks.length === 0) {
         gridContainer.innerHTML = '<div class="loading">No books found matching your criteria.</div>';
         return;
       }
-      
       let html = '';
       filteredBooks.forEach(book => {
         html += createBookCard(book);
       });
-      
       gridContainer.innerHTML = html;
       attachCardEventListeners();
     }
 
-    // Render series view
     function renderSeriesView() {
       const seriesMap = new Map();
-      
-      // Group books by series
       filteredBooks.forEach(book => {
         if (!seriesMap.has(book.seriesId)) {
           const seriesInfo = series.find(s => s.seriesId === book.seriesId) || {
@@ -970,27 +828,23 @@
         }
         seriesMap.get(book.seriesId).books.push(book);
       });
-      
       if (seriesMap.size === 0) {
         gridContainer.innerHTML = '<div class="loading">No series found matching your criteria.</div>';
         return;
       }
-      
       let html = '';
       seriesMap.forEach(seriesGroup => {
         html += createSeriesCard(seriesGroup);
       });
-      
       gridContainer.innerHTML = html;
       attachCardEventListeners();
     }
 
-    // Create a book card HTML
     function createBookCard(book) {
       return `
         <div class="card" data-id="${book.id}">
           <div class="cover floating">
-            <img src="${book.coverUrl}" alt="${book.title}">
+            <img src="${book.coverUrl}" alt="${book.title}" onerror="this.src='https://placehold.co/300x400/d1d5db/6b7280?text=No+Cover'">
           </div>
           <div class="card-info">
             <h3 class="title">${book.title}</h3>
@@ -1011,17 +865,15 @@
       `;
     }
 
-    // Create a series card HTML
     function createSeriesCard(seriesGroup) {
       const bookCount = seriesGroup.books.length;
       const totalSize = seriesGroup.books.reduce((sum, book) => {
         return sum + parseFloat(book.size);
       }, 0);
-      
       return `
         <div class="card" data-series="${seriesGroup.seriesId}">
           <div class="cover floating">
-            <img src="${seriesGroup.coverUrl}" alt="${seriesGroup.seriesName}">
+            <img src="${seriesGroup.coverUrl}" alt="${seriesGroup.seriesName}" onerror="this.src='https://placehold.co/300x400/cccccc/666666?text=Series'">
           </div>
           <div class="card-info">
             <h3 class="title">${seriesGroup.seriesName}</h3>
@@ -1042,42 +894,30 @@
       `;
     }
 
-    // Attach event listeners to card buttons
     function attachCardEventListeners() {
-      // Read PDF buttons
       document.querySelectorAll('[data-action="read"]').forEach(btn => {
         btn.addEventListener('click', (e) => {
           const path = e.currentTarget.dataset.path;
           window.open(path, '_blank');
         });
       });
-      
-      // Copy link buttons
       document.querySelectorAll('[data-action="copy"]').forEach(btn => {
         btn.addEventListener('click', (e) => {
           const path = e.currentTarget.dataset.path;
           copyToClipboard(path);
         });
       });
-      
-      // View series buttons
       document.querySelectorAll('[data-action="view-series"]').forEach(btn => {
         btn.addEventListener('click', (e) => {
           const seriesId = e.currentTarget.dataset.series;
-          // In a real app, this would navigate to a series page
-          // For this demo, we'll just filter to this series
           searchTerm = seriesId;
           searchInput.value = seriesId;
           renderContent();
         });
       });
-      
-      // Card click to open modal
       document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('click', (e) => {
-          // Prevent opening modal when clicking buttons
           if (e.target.closest('.action-btn')) return;
-          
           const id = card.dataset.id;
           if (id) {
             const book = books.find(b => b.id == id);
@@ -1087,26 +927,21 @@
       });
     }
 
-    // Open modal with book preview
     function openModal(book) {
       modalTitle.textContent = book.title;
       downloadLink.href = book.path;
-      
-      // Create 2x2 preview grid
       let previewHtml = '';
       for (let i = 0; i < 4; i++) {
         previewHtml += `
           <div class="preview-item">
-            <img src="${book.previewUrl}" alt="Preview ${i+1}">
+            <img src="${book.previewUrl}" alt="Preview ${i+1}" onerror="this.src='https://placehold.co/300x400/e2e8f0/94a3b8?text=Preview+Not+Available'">
           </div>
         `;
       }
       previewContainer.innerHTML = previewHtml;
-      
       modalOverlay.classList.add('active');
     }
 
-    // Copy text to clipboard
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text).then(() => {
         showToast();
@@ -1115,7 +950,6 @@
       });
     }
 
-    // Show toast notification
     function showToast() {
       toast.classList.add('show');
       setTimeout(() => {
@@ -1123,9 +957,40 @@
       }, 3000);
     }
 
-    // Initialize the app when DOM is loaded
-    document.addEventListener('DOMContentLoaded', init);
+    function setupEventListeners() {
+      viewButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          viewButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentView = btn.dataset.view;
+          renderContent();
+        });
+      });
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.dataset.size;
+          renderContent();
+        });
+      });
+      searchInput.addEventListener('input', () => {
+        searchTerm = searchInput.value.trim().toLowerCase();
+        renderContent();
+      });
+      closeModal.addEventListener('click', () => {
+        modalOverlay.classList.remove('active');
+      });
+      modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+          modalOverlay.classList.remove('active');
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadData();
+    });
   </script>
 </body>
 </html>
-
