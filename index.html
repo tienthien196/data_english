@@ -10,7 +10,7 @@
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Booklib2here - Đọc và chia sẻ sách PDF" />
-  <meta property="og:description" content="Thư viện trực tuyến với giao diện hoạt hình, hỗ trợ đọc và chia sẻ tài liệu PDF miễn phí." />
+  <meta property="og:description" content="Thư viện trực tuyến hỗ trợ chia sẻ tài liệu PDF miễn phí." />
   <meta property="og:url" content="https://tienthien196.github.io/data_english/" />
   <meta property="og:image" content="https://tienthien196.github.io/data_english/bg.png" />
   <meta property="og:image:width" content="1200" />
@@ -1110,6 +1110,8 @@
 </style>
 
 <script>
+
+
   // Windy Particles with Book-like Shapes & Tech Grid — Re-colored for Booklib2here
   (function() {
     const canvas = document.getElementById('scene-canvas');
@@ -1408,6 +1410,40 @@
     const totalBooksEl = document.getElementById('total-books');
     const totalSizeEl = document.getElementById('total-size');
 
+
+    function getThumbnailUrl(originalUrl) {
+      if (!originalUrl || !originalUrl.startsWith('covers/')) return originalUrl;
+      return originalUrl
+        .replace('covers/', 'thumbnails/')
+        .replace(/\.jpg$/i, '.webp')
+        .replace(/\.png$/i, '.webp');
+    }
+
+    // Lazy load ảnh
+    function initLazyImages() {
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              img.removeAttribute('data-src');
+              img.classList.remove('lazy');
+              observer.unobserve(img);
+            }
+          });
+        }, { rootMargin: '50px' });
+
+        document.querySelectorAll('img.lazy[data-src]').forEach(img => observer.observe(img));
+      } else {
+        // Fallback: load all
+        document.querySelectorAll('img.lazy[data-src]').forEach(img => {
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          img.classList.remove('lazy');
+        });
+      }
+    }
     async function loadData() {
       try {
         const [booksRes, seriesRes] = await Promise.all([
@@ -1516,6 +1552,7 @@
 
       gridContainer.innerHTML = html;
       attachCardEventListeners();
+      initLazyImages()
 
       const paginationWrapper = document.getElementById('pagination-wrapper');
       if (totalPages > 1) {
@@ -1578,10 +1615,16 @@
     }
 
     function createBookCard(book) {
+      const thumbUrl = getThumbnailUrl(book.coverUrl);
       return `
         <div class="card" data-id="${book.id}">
           <div class="cover floating">
-            <img src="${book.coverUrl}" alt="${book.title}" onerror="this.src='https://placehold.co/300x400/d1d5db/6b7280?text=No+Cover'">
+            <img 
+              data-src="${thumbUrl}" 
+              class="lazy"
+              alt="${book.title}"
+              onerror="this.onerror=null; this.dataset.src && (this.src=this.dataset.src); this.classList.remove('lazy');"
+            >
           </div>
           <div class="card-info">
             <h3 class="title">${book.title}</h3>
@@ -1602,34 +1645,38 @@
       `;
     }
 
-    function createSeriesCard(seriesGroup) {
-      const bookCount = seriesGroup.books.length;
-      const totalSize = seriesGroup.books.reduce((sum, book) => {
-        return sum + parseFloat(book.size);
-      }, 0);
-      return `
-        <div class="card" data-series="${seriesGroup.seriesId}">
-          <div class="cover floating">
-            <img src="${seriesGroup.coverUrl}" alt="${seriesGroup.seriesName}" onerror="this.src='https://placehold.co/300x400/cccccc/666666?text=Series'">
-          </div>
-          <div class="card-info">
-            <h3 class="title">${seriesGroup.seriesName}</h3>
-            <div class="meta">
-              <span class="size">${totalSize.toFixed(1)} MB</span>
-              <span class="series-tag">${bookCount} Books</span>
-            </div>
-          </div>
-          <div class="actions">
-            <button class="action-btn read-btn" data-action="view-series" data-series="${seriesGroup.seriesId}">
-              <i class="fas fa-eye"></i> View Series
-            </button>
-            <button class="action-btn copy-btn" data-action="copy-series" data-series="${seriesGroup.seriesId}">
-              <i class="fas fa-copy"></i> Copy All
-            </button>
+  function createSeriesCard(seriesGroup) {
+    const bookCount = seriesGroup.books.length;
+    const totalSize = seriesGroup.books.reduce((sum, book) => sum + parseFloat(book.size), 0);
+    const thumbUrl = getThumbnailUrl(seriesGroup.coverUrl);
+    return `
+      <div class="card" data-series="${seriesGroup.seriesId}">
+        <div class="cover floating">
+          <img 
+            data-src="${thumbUrl}" 
+            class="lazy"
+            alt="${seriesGroup.seriesName}"
+            onerror="this.onerror=null; this.dataset.src && (this.src=this.dataset.src); this.classList.remove('lazy');"
+          >
+        </div>
+        <div class="card-info">
+          <h3 class="title">${seriesGroup.seriesName}</h3>
+          <div class="meta">
+            <span class="size">${totalSize.toFixed(1)} MB</span>
+            <span class="series-tag">${bookCount} Books</span>
           </div>
         </div>
-      `;
-    }
+        <div class="actions">
+          <button class="action-btn read-btn" data-action="view-series" data-series="${seriesGroup.seriesId}">
+            <i class="fas fa-eye"></i> View Series
+          </button>
+          <button class="action-btn copy-btn" data-action="copy-series" data-series="${seriesGroup.seriesId}">
+            <i class="fas fa-copy"></i> Copy All
+          </button>
+        </div>
+      </div>
+    `;
+  }
 
     function attachCardEventListeners() {
       document.querySelectorAll('[data-action="read"]').forEach(btn => {
