@@ -3,7 +3,7 @@
     "seriesId": "topic_cooking",
     "seriesName": "Cooking & Nutrition",
     "description": "Collection: Cooking & Nutrition",
-    "coverUrl": "covers/topic_cooking.jpg",
+    "coverUrl": "covers/topic_cooking.png",
     "books": [
       {
         "id": 1,
@@ -107,7 +107,7 @@
     "seriesId": "topic_human_body",
     "seriesName": "Human Body & Medicine",
     "description": "Collection: Human Body & Medicine",
-    "coverUrl": "covers/topic_human_body.jpg",
+    "coverUrl": "covers/topic_human_body.png",
     "books": [
       {
         "id": 2,
@@ -187,7 +187,7 @@
     "seriesId": "dk_children",
     "seriesName": "DK Children & Education",
     "description": "Collection: DK Children & Education",
-    "coverUrl": "covers/dk_children.jpg",
+    "coverUrl": "covers/dk_children.png",
     "books": [
       {
         "id": 3,
@@ -339,7 +339,7 @@
     "seriesId": "topic_history",
     "seriesName": "History",
     "description": "Collection: History",
-    "coverUrl": "covers/topic_history.jpg",
+    "coverUrl": "covers/topic_history.png",
     "books": [
       {
         "id": 4,
@@ -539,7 +539,7 @@
     "seriesId": "dk_eyewitness",
     "seriesName": "DK Eyewitness Books",
     "description": "Collection: DK Eyewitness Books",
-    "coverUrl": "covers/dk_eyewitness.jpg",
+    "coverUrl": "covers/dk_eyewitness.png",
     "books": [
       {
         "id": 5,
@@ -739,7 +739,7 @@
     "seriesId": "topic_science",
     "seriesName": "Science & STEM",
     "description": "Collection: Science & STEM",
-    "coverUrl": "covers/topic_science.jpg",
+    "coverUrl": "covers/topic_science.png",
     "books": [
       {
         "id": 6,
@@ -2447,7 +2447,7 @@
     "seriesId": "dk_visual",
     "seriesName": "DK Visual Encyclopedias",
     "description": "Collection: DK Visual Encyclopedias",
-    "coverUrl": "covers/dk_visual.jpg",
+    "coverUrl": "covers/dk_visual.png",
     "books": [
       {
         "id": 9,
@@ -2863,7 +2863,7 @@
     "seriesId": "topic_military",
     "seriesName": "Military & Warfare",
     "description": "Collection: Military & Warfare",
-    "coverUrl": "covers/topic_military.jpg",
+    "coverUrl": "covers/topic_military.png",
     "books": [
       {
         "id": 11,
@@ -2931,7 +2931,7 @@
     "seriesId": "topic_crafts",
     "seriesName": "Crafts & DIY",
     "description": "Collection: Crafts & DIY",
-    "coverUrl": "covers/topic_crafts.jpg",
+    "coverUrl": "covers/topic_crafts.png",
     "books": [
       {
         "id": 18,
@@ -3011,7 +3011,7 @@
     "seriesId": "topic_nature",
     "seriesName": "Nature & Animals",
     "description": "Collection: Nature & Animals",
-    "coverUrl": "covers/topic_nature.jpg",
+    "coverUrl": "covers/topic_nature.png",
     "books": [
       {
         "id": 20,

@@ -7,3 +7,7 @@ upload_state.json
 # IDE / Python cache
 __pycache__/
 *.pyc
+
+pdf_viewer_qt6/
+/rock.bat
+/toekn.text
