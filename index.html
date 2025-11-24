@@ -45,7 +45,6 @@
       background: linear-gradient(135deg, #E0EAFB 0%, #CFDEF3 100%);
       color: var(--dark-text);
       min-height: 100vh;
-      padding: 20px;
       position: relative;
       overflow-x: hidden;
       background-image: url('https://raw.githubusercontent.com/tienthien196/data_english/main/bg.png');
@@ -54,245 +53,253 @@
       background-attachment: fixed;
     }
 
-    .stars {
-      position: absolute;
+    /* ============= START SCENE ============= */
+    #start-scene {
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      pointer-events: none;
-      z-index: -1;
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
     }
 
-    .star {
+    .spinning-infographic {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotate3D 8s infinite linear;
+      margin-bottom: 40px;
+    }
+
+    .infographic-item {
       position: absolute;
-      color: var(--star-color);
-      font-size: 24px;
-      opacity: 0.7;
-      animation: twinkle 3s infinite ease-in-out;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 10px rgba(255,255,255,0.8);
+      background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
     }
 
-    .star:nth-child(2n) {
-      animation-delay: 1s;
+    .infographic-item:nth-child(1) { transform: rotateY(0deg) translateZ(100px); background: rgba(255,107,107,0.7); }
+    .infographic-item:nth-child(2) { transform: rotateY(90deg) translateZ(100px); background: rgba(78,205,196,0.7); }
+    .infographic-item:nth-child(3) { transform: rotateY(180deg) translateZ(100px); background: rgba(255,209,102,0.7); }
+    .infographic-item:nth-child(4) { transform: rotateY(270deg) translateZ(100px); background: rgba(139,115,85,0.7); }
+
+    @keyframes rotate3D {
+      0% { transform: rotateX(10deg) rotateY(0deg); }
+      100% { transform: rotateX(10deg) rotateY(360deg); }
     }
 
-    .star:nth-child(3n) {
-      animation-delay: 2s;
+    .start-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, var(--accent), white);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
 
-    @keyframes twinkle {
-      0% { opacity: 0.7; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.2); }
-      100% { opacity: 0.7; transform: scale(1); }
+    .start-subtitle {
+      color: rgba(255,255,255,0.9);
+      font-size: 20px;
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 40px;
+      line-height: 1.5;
     }
 
-    header {
+    .enter-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 14px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+    }
+
+    .enter-btn:hover {
+      background: #ff5252;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(255,107,107,0.6);
+    }
+
+    /* ============= MAIN SCENE ============= */
+    #main-scene {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    #main-scene.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* ============= TOOLBAR ============= */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background: var(--card-bg);
-      border-radius: 30px;
-      padding: 25px;
-      margin-bottom: 30px;
+      border-radius: 0 0 24px 24px;
+      padding: 20px;
+      margin-bottom: 25px;
       box-shadow: var(--shadow);
       backdrop-filter: blur(10px);
       border: 3px solid var(--card-border);
-      position: relative;
-      overflow: hidden;
+      border-top: none;
+      background-clip: padding-box;
+    }
+
+    .toolbar-content {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
       flex-wrap: wrap;
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      top: -20px;
-      right: -20px;
-      width: 150px;
-      height: 150px;
-      background: var(--accent);
-      border-radius: 50%;
-      opacity: 0.2;
-      z-index: -1;
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
       gap: 20px;
+      align-items: center;
     }
 
-    .logo {
+    .logo-section {
       display: flex;
       align-items: center;
       gap: 15px;
+      flex: 1;
+      min-width: 250px;
     }
 
     .logo-icon {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       background: var(--primary);
-      border-radius: 20px;
+      border-radius: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: bold;
-      box-shadow: 0 6px 15px rgba(255, 107, 107, 0.4);
-      animation: bounce 2s infinite ease-in-out;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+      box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
     }
 
     .logo-text {
       font-family: 'Fredoka', sans-serif;
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 700;
       background: linear-gradient(45deg, var(--primary), var(--secondary));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      letter-spacing: 1px;
     }
 
     .stats {
       display: flex;
-      gap: 25px;
+      gap: 20px;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 16px;
       flex-wrap: wrap;
     }
 
     .stat-item {
       background: white;
-      padding: 10px 20px;
+      padding: 8px 16px;
       border-radius: 50px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       border: 2px solid var(--card-border);
-      transition: all 0.3s ease;
     }
 
-    .stat-item:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(255, 107, 107, 0.2);
-    }
+    .stat-icon { color: var(--primary); font-size: 18px; }
 
-    .stat-icon {
-      color: var(--primary);
-      font-size: 20px;
-    }
-
-    .controls {
-      background: var(--card-bg);
-      border-radius: 30px;
-      padding: 25px;
-      margin-bottom: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-      border: 3px solid var(--card-border);
-      position: relative;
-    }
-
+    /* Controls now inside toolbar */
     .search-container {
       flex: 1;
-      min-width: 250px;
+      min-width: 200px;
       position: relative;
     }
 
     .search-container input {
       width: 100%;
-      padding: 15px 25px 15px 50px;
+      padding: 12px 20px 12px 45px;
       border-radius: 50px;
-      border: 3px solid var(--card-border);
-      font-size: 16px;
+      border: 2px solid var(--card-border);
+      font-size: 15px;
       background: white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-      font-family: inherit;
-    }
-
-    .search-container input:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.2);
     }
 
     .search-icon {
       position: absolute;
-      left: 20px;
+      left: 16px;
       top: 50%;
       transform: translateY(-50%);
       color: var(--primary);
-      font-size: 18px;
+      font-size: 16px;
     }
 
-    .view-toggle {
+    .view-toggle, .filters {
       display: flex;
-      background: white;
-      border-radius: 50px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border: 3px solid var(--card-border);
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
-    .view-btn {
-      padding: 12px 25px;
-      border: none;
-      background: none;
+    .view-btn, .filter-btn {
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 14px;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.3s ease;
-      color: var(--dark-text);
-      font-size: 16px;
+    }
+
+    .view-btn {
+      border: 2px solid var(--card-border);
+      background: white;
     }
 
     .view-btn.active {
       background: var(--primary);
       color: white;
-      box-shadow: 0 6px 15px rgba(255, 107, 107, 0.3);
-    }
-
-    .filters {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(255,107,107,0.3);
     }
 
     .filter-btn {
-      padding: 10px 20px;
-      border-radius: 50px;
-      border: 3px solid var(--card-border);
+      border: 2px solid var(--card-border);
       background: white;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-size: 16px;
-    }
-
-    .filter-btn:hover {
-      border-color: var(--primary);
-      color: var(--primary);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba(255, 107, 107, 0.1);
     }
 
     .filter-btn.active {
       background: var(--primary);
       color: white;
       border-color: var(--primary);
-      box-shadow: 0 6px 15px rgba(255, 107, 107, 0.3);
+      box-shadow: 0 4px 12px rgba(255,107,107,0.3);
+    }
+
+    /* ============= MAIN CONTENT ============= */
+    .main-content {
+      padding: 0 20px 80px; /* space for footer */
     }
 
     .grid-container {
@@ -302,6 +309,52 @@
       margin-bottom: 20px;
     }
 
+
+    /* ============= FOOTER ============= */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--card-bg);
+      border-top: 3px solid var(--card-border);
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--dark-text);
+      backdrop-filter: blur(10px);
+      z-index: 900;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #ff5252;
+      text-decoration: underline;
+    }
+
+    .copyright {
+      font-weight: 600;
+    }
+  </style>
+
+  <style>
     .card {
       background: var(--card-bg);
       border-radius: 25px;
@@ -639,7 +692,7 @@
 
     .toast {
       position: fixed;
-      bottom: 20px;
+      bottom: 80px; /* above footer */
       right: 20px;
       background: var(--secondary);
       color: white;
@@ -696,21 +749,25 @@
     }
 
     @media (max-width: 768px) {
-      .header-content {
+      .toolbar-content {
         flex-direction: column;
-        text-align: center;
+        align-items: stretch;
+      }
+      
+      .logo-section {
+        justify-content: center;
+        min-width: auto;
       }
       
       .stats {
         justify-content: center;
       }
       
-      .controls {
-        flex-direction: column;
-        align-items: stretch;
+      .search-container {
+        order: 3;
       }
       
-      .filters {
+      .view-toggle, .filters {
         justify-content: center;
       }
       
@@ -731,6 +788,11 @@
       .panel-btn {
         flex: 1;
         min-width: 120px;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        gap: 10px;
       }
     }
 
@@ -787,7 +849,7 @@
 
     .owl-decoration {
       position: fixed;
-      bottom: 20px;
+      bottom: 80px; /* above footer */
       right: 20px;
       width: 80px;
       height: 80px;
@@ -841,72 +903,428 @@
 </head>
 <body>
 
-  <div class="stars">
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-    <div class="star">⭐</div>
-  </div>
-
-  <div class="owl-decoration"></div>
-  <div class="floating-book"></div>
-  <div class="floating-book"></div>
-  <div class="floating-book"></div>
-
-  <header>
-    <div class="header-content">
-      <div class="logo">
-        <div class="logo-icon">📚</div>
-        <div class="logo-text">Booklib2here</div>
+<!-- START SCENE -->
+<div id="start-scene">
+  <canvas id="scene-canvas" class="scene-canvas"></canvas>
+  <div class="glass-card">
+    <div class="hero-icon-container">
+      <div class="hero-circle">
+        <i class="fas fa-book-open book-icon"></i>
       </div>
-      <div class="stats">
-        <div class="stat-item">
-          <span class="stat-icon">📖</span>
-          <span id="total-books">Loading...</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-icon">💾</span>
-          <span id="total-size">Loading...</span>
-        </div>
+      <div class="float-badge badge-1">
+        <i class="fas fa-bolt badge-icon"></i> Nhanh
+      </div>
+      <div class="float-badge badge-2">
+        <i class="fas fa-infinity badge-icon"></i> Miễn phí
       </div>
     </div>
-  </header>
+    <h1 class="logo-text">Booklib<span class="logo-highlight">2</span>here</h1>
+    <p class="subtitle">Tài liệu tham khảo<br>>></p>
+    <button class="enter-btn" id="enter-btn">Bắt đầu ngay <i class="fas fa-arrow-right"></i></button>
+  </div>
+</div>
 
-  <div class="controls">
-    <div class="search-container">
-      <span class="search-icon"><i class="fas fa-search"></i></span>
-      <input type="text" id="search-input" placeholder="Search by title, filename, or series...">
+<style>
+  /* ============= START SCENE STYLE ============= */
+  #start-scene {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #E0EAFB 0%, #CFDEF3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .scene-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .glass-card {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.05),
+      0 1px 3px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    transform: translateY(0);
+    animation: cardFloat 6s ease-in-out infinite;
+    font-family: 'Fredoka', 'Poppins', sans-serif;
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+    opacity: 0.5;
+    transform: rotate(30deg);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .hero-icon-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 24px;
+  }
+
+  .hero-circle {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(78, 205, 196, 0.4);
+    animation: pulseIcon 3s infinite;
+  }
+
+  .book-icon {
+    font-size: 3.2rem;
+    color: white;
+    transform: rotate(-10deg);
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.15));
+  }
+
+  .float-badge {
+    position: absolute;
+    background: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: floatBadge 4s ease-in-out infinite;
+  }
+
+  .badge-1 { top: 0; right: -10px; animation-delay: 0s; }
+  .badge-2 { bottom: 10px; left: -15px; animation-delay: 1.5s; }
+  .badge-icon { color: var(--accent); }
+
+  .logo-text {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 16px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1;
+  }
+
+  .logo-highlight {
+    color: var(--accent) !important;
+    -webkit-text-fill-color: var(--accent) !important;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    margin-bottom: 32px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .enter-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .enter-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(255, 107, 107, 0.4);
+    background: #ff5252;
+  }
+
+  .enter-btn i {
+    transition: transform 0.3s ease;
+  }
+
+  .enter-btn:hover i {
+    transform: translateX(4px);
+  }
+
+  @keyframes cardFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  @keyframes pulseIcon {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(78, 205, 196, 0.6); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(78, 205, 196, 0); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes floatBadge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .hidden-scene {
+    opacity: 0;
+    transform: scale(1.1);
+    pointer-events: none;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+</style>
+
+<script>
+  // Windy Particles with Book-like Shapes & Tech Grid — Re-colored for Booklib2here
+  (function() {
+    const canvas = document.getElementById('scene-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let particles = [];
+
+    function resize() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    // Use your exact color palette
+    const colors = [
+      '#FF6B6B', // primary
+      '#4ECDC4', // secondary
+      '#FFD166', // accent
+      '#E6CBA8', // book shelf
+      '#8B7355'  // owl
+    ];
+
+    class Particle {
+      constructor() {
+        this.reset();
+        this.type = Math.floor(Math.random() * 3); // 0: circle (dot), 1: rect (book), 2: triangle (decoration)
+      }
+
+      reset() {
+        this.x = Math.random() * width;
+        this.y = height + Math.random() * 100;
+        this.size = Math.random() * 12 + 6;
+        this.speedY = Math.random() * 1.2 + 0.6;
+        this.speedX = (Math.random() - 0.5) * 0.8;
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.rotation = Math.random() * 360;
+        this.rotationSpeed = (Math.random() - 0.5) * 2;
+        this.opacity = Math.random() * 0.5 + 0.2;
+      }
+
+      update() {
+        this.y -= this.speedY;
+        this.x += this.speedX;
+        this.rotation += this.rotationSpeed;
+
+        if (this.y < -50 || this.x < -50 || this.x > width + 50) {
+          this.reset();
+          this.y = height + 50;
+        }
+      }
+
+      draw() {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rotation * Math.PI / 180);
+        ctx.globalAlpha = this.opacity;
+
+        ctx.fillStyle = this.color;
+
+        if (this.type === 0) {
+          ctx.beginPath();
+          ctx.arc(0, 0, this.size, 0, Math.PI * 2);
+          ctx.fill();
+        } else if (this.type === 1) {
+          // Book-like rectangle
+          ctx.fillRect(-this.size * 0.7, -this.size, this.size * 1.4, this.size * 1.8);
+        } else {
+          // Triangle
+          ctx.beginPath();
+          ctx.moveTo(0, -this.size);
+          ctx.lineTo(this.size, this.size * 0.5);
+          ctx.lineTo(-this.size, this.size * 0.5);
+          ctx.closePath();
+          ctx.fill();
+        }
+
+        ctx.restore();
+      }
+    }
+
+    function drawTechGrid() {
+      ctx.strokeStyle = 'rgba(78, 205, 196, 0.04)';
+      ctx.lineWidth = 1;
+      const gridSize = 90;
+      ctx.beginPath();
+      for (let x = 0; x <= width; x += gridSize) {
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+      }
+      for (let y = 0; y <= height; y += gridSize) {
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+      }
+      ctx.stroke();
+    }
+
+    function initParticles() {
+      particles = [];
+      const count = Math.min(50, Math.floor(width / 20));
+      for (let i = 0; i < count; i++) {
+        particles.push(new Particle());
+        particles[i].y = Math.random() * height;
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      drawTechGrid();
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+
+    // Expose enter-btn logic globally
+    window.BooklibStartScene = {
+      init: function() {
+        initParticles();
+        animate();
+        document.getElementById('enter-btn')?.addEventListener('click', () => {
+          const scene = document.getElementById('start-scene');
+          scene.classList.add('hidden-scene');
+          setTimeout(() => {
+            scene.style.display = 'none';
+            window.dispatchEvent(new Event('startSceneExited'));
+          }, 800);
+        });
+      }
+    };
+  })();
+</script>
+  <!-- MAIN SCENE -->
+  <div id="main-scene">
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+      <div class="toolbar-content">
+        <div class="logo-section">
+          <div class="logo-icon">📚</div>
+          <div class="logo-text">Booklib2here</div>
+        </div>
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-icon">📖</span>
+            <span id="total-books">Loading...</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-icon">💾</span>
+            <span id="total-size">Loading...</span>
+          </div>
+        </div>
+        <div class="search-container">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <input type="text" id="search-input" placeholder="Search by title, filename, or series...">
+        </div>
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="series">By Series</button>
+          <button class="view-btn" data-view="books">All Books</button>
+        </div>
+        <div class="filters">
+          <button class="filter-btn active" data-size="all">All Sizes</button>
+          <button class="filter-btn" data-size="small">Under 50MB</button>
+          <button class="filter-btn" data-size="medium">50-100MB</button>
+          <button class="filter-btn" data-size="large">Over 100MB</button>
+        </div>
+      </div>
     </div>
-    
-    <div class="view-toggle">
-      <button class="view-btn active" data-view="series">By Series</button>
-      <button class="view-btn" data-view="books">All Books</button>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="stars">
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+        <div class="star">⭐</div>
+      </div>
+
+      <div class="owl-decoration"></div>
+      <div class="floating-book"></div>
+      <div class="floating-book"></div>
+      <div class="floating-book"></div>
+
+      <div class="grid-container" id="grid-container">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          <p>Loading PDF library...</p>
+        </div>
+      </div>
+
+      <div class="pagination-wrapper" id="pagination-wrapper"></div>
     </div>
-    
-    <div class="filters">
-      <button class="filter-btn active" data-size="all">All Sizes</button>
-      <button class="filter-btn" data-size="small">Under 50MB</button>
-      <button class="filter-btn" data-size="medium">50-100MB</button>
-      <button class="filter-btn" data-size="large">Over 100MB</button>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="copyright">© 2025 Booklib2here — GM Finn</div>
+        <div class="footer-links">
+          <a href="https://github.com/tienthien196" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="mailto:votienthien.196@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+          <a href="#" id="go-to-top"><i class="fas fa-arrow-up"></i> Top</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="grid-container" id="grid-container">
-    <div class="loading">
-      <div class="loading-spinner"></div>
-      <p>Loading PDF library...</p>
-    </div>
-  </div>
-
-  <!-- ✅ Phân trang cố định -->
-  <div class="pagination-wrapper" id="pagination-wrapper"></div>
-
+  <!-- Detail Panel (giữ nguyên vị trí) -->
   <div class="detail-panel" id="detail-panel">
     <div class="panel-header">
       <h2 class="panel-title" id="panel-title">Book Details</h2>
@@ -955,6 +1373,21 @@
   </script>
 
   <script>
+    // ============= SCENE CONTROL =============
+    document.getElementById('enter-btn').addEventListener('click', () => {
+      document.getElementById('start-scene').style.opacity = '0';
+      document.getElementById('start-scene').style.visibility = 'hidden';
+      setTimeout(() => {
+        document.getElementById('main-scene').classList.add('active');
+      }, 600);
+    });
+
+    // ============= GO TO TOP =============
+    document.getElementById('go-to-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+
     let currentView = 'series';
     let currentFilter = 'all';
     let currentSeriesFilter = null;
