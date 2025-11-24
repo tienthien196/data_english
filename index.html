@@ -1600,18 +1600,17 @@
         }
         seriesMap.get(book.seriesId).books.push(book);
       });
-
       if (seriesMap.size === 0) {
         gridContainer.innerHTML = '<div class="loading">No series found matching your criteria.</div>';
         return;
       }
-
       let html = '';
       seriesMap.forEach(seriesGroup => {
         html += createSeriesCard(seriesGroup);
       });
       gridContainer.innerHTML = html;
       attachCardEventListeners();
+      initLazyImages(); // 👈 DÒNG NÀY LÀ MỚI — BẮT BUỘC!
     }
 
     function createBookCard(book) {
@@ -1645,39 +1644,38 @@
       `;
     }
 
-  function createSeriesCard(seriesGroup) {
-    const bookCount = seriesGroup.books.length;
-    const totalSize = seriesGroup.books.reduce((sum, book) => sum + parseFloat(book.size), 0);
-    const thumbUrl = getThumbnailUrl(seriesGroup.coverUrl);
-    return `
-      <div class="card" data-series="${seriesGroup.seriesId}">
-        <div class="cover floating">
-          <img 
-            data-src="${thumbUrl}" 
-            class="lazy"
-            alt="${seriesGroup.seriesName}"
-            onerror="this.onerror=null; this.dataset.src && (this.src=this.dataset.src); this.classList.remove('lazy');"
-          >
-        </div>
-        <div class="card-info">
-          <h3 class="title">${seriesGroup.seriesName}</h3>
-          <div class="meta">
-            <span class="size">${totalSize.toFixed(1)} MB</span>
-            <span class="series-tag">${bookCount} Books</span>
+    function createSeriesCard(seriesGroup) {
+      const bookCount = seriesGroup.books.length;
+      const totalSize = seriesGroup.books.reduce((sum, book) => sum + parseFloat(book.size), 0);
+      const thumbUrl = getThumbnailUrl(seriesGroup.coverUrl);
+      return `
+        <div class="card" data-series="${seriesGroup.seriesId}">
+          <div class="cover floating">
+            <img 
+              data-src="${thumbUrl}" 
+              class="lazy"
+              alt="${seriesGroup.seriesName}"
+              onerror="this.onerror=null; this.dataset.src && (this.src=this.dataset.src); this.classList.remove('lazy');"
+            >
+          </div>
+          <div class="card-info">
+            <h3 class="title">${seriesGroup.seriesName}</h3>
+            <div class="meta">
+              <span class="size">${totalSize.toFixed(1)} MB</span>
+              <span class="series-tag">${bookCount} Books</span>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="action-btn read-btn" data-action="view-series" data-series="${seriesGroup.seriesId}">
+              <i class="fas fa-eye"></i> View Series
+            </button>
+            <button class="action-btn copy-btn" data-action="copy-series" data-series="${seriesGroup.seriesId}">
+              <i class="fas fa-copy"></i> Copy All
+            </button>
           </div>
         </div>
-        <div class="actions">
-          <button class="action-btn read-btn" data-action="view-series" data-series="${seriesGroup.seriesId}">
-            <i class="fas fa-eye"></i> View Series
-          </button>
-          <button class="action-btn copy-btn" data-action="copy-series" data-series="${seriesGroup.seriesId}">
-            <i class="fas fa-copy"></i> Copy All
-          </button>
-        </div>
-      </div>
-    `;
-  }
-
+      `;
+    }
     function attachCardEventListeners() {
       document.querySelectorAll('[data-action="read"]').forEach(btn => {
         btn.addEventListener('click', (e) => {
