@@ -1,0 +1,44 @@
+[
+  {
+    "id": "en001",
+    "title": "50 Đề Trắc Nghiệm Tiếng Anh Lớp 8",
+    "filename": "de_thi_anh_lop8.pdf",
+    "path": "./de_thi_anh_lop8.pdf",
+    "coverUrl": "./covers/lop8.jpg",
+    "size": "42.5",
+    "type": "exam",
+    "level": "A2",
+    "target": "grade8",
+    "exam": "none",
+    "skill": "reading",
+    "seriesId": "de_thi_thpt"
+  },
+  {
+    "id": "en002",
+    "title": "IELTS Writing Task 2 Band 7+",
+    "filename": "ielts_writing_t2_band7.pdf",
+    "path": "./ielts_writing_t2_band7.pdf",
+    "coverUrl": "./covers/ielts_t2.jpg",
+    "size": "68.3",
+    "type": "writing",
+    "level": "B2",
+    "target": "ielts",
+    "exam": "ielts",
+    "skill": "writing",
+    "seriesId": "ielts_writing"
+  },
+  {
+    "id": "en003",
+    "title": "3000 Từ Vựng Tiếng Anh Thông Dụng",
+    "filename": "3000_tu_vung.pdf",
+    "path": "./3000_tu_vung.pdf",
+    "coverUrl": "./covers/3000_words.jpg",
+    "size": "25.1",
+    "type": "vocabulary",
+    "level": "B1",
+    "target": "vocabulary",
+    "exam": "none",
+    "skill": "vocabulary",
+    "seriesId": "3000_words"
+  }
+]

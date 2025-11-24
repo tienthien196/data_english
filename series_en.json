@@ -1,0 +1,17 @@
+[
+  {
+    "seriesId": "ielts_writing",
+    "seriesName": "IELTS Writing Bộ Đề Mẫu",
+    "coverUrl": "./covers/ielts_writing_series.jpg"
+  },
+  {
+    "seriesId": "de_thi_thpt",
+    "seriesName": "Đề Thi THPT Quốc Gia",
+    "coverUrl": "./covers/thpt_series.jpg"
+  },
+  {
+    "seriesId": "3000_words",
+    "seriesName": "3000 Từ Vựng Cốt Lõi",
+    "coverUrl": "./covers/3000_words_series.jpg"
+  }
+]

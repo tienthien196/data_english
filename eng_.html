@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📘 EngLib – English Materials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      /* 🍊 MÀU CAM - TRẮNG - học thuật, năng động */
+      --primary: #FF6B35;
+      --secondary: #FF926B;
+      --accent: #FFD166;
+      --light-bg: #FFF8F0;
+      --dark-text: #333333;
+      --card-bg: rgba(255, 255, 255, 0.95);
+      --card-border: #FFE0C0;
+      --glow: 0 0 15px rgba(255, 107, 53, 0.3);
+      --shadow: 0 8px 20px rgba(51, 51, 51, 0.08);
+      --hover-shadow: 0 12px 30px rgba(255, 107, 53, 0.2);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fredoka', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #FFF8F0 0%, #FFE0C0 100%);
+      color: var(--dark-text);
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* ============= TOOLBAR (Glassmorphism như index) ============= */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--card-bg);
+      border-radius: 0 0 24px 24px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 3px solid var(--card-border);
+      border-top: none;
+      background-clip: padding-box;
+    }
+    .toolbar-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex: 1;
+      min-width: 220px;
+    }
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+    }
+    .logo-text {
+      font-size: 26px;
+      font-weight: 700;
+      background: linear-gradient(45deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    /* Search */
+    .search-container {
+      flex: 1;
+      min-width: 200px;
+      position: relative;
+    }
+    .search-container input {
+      width: 100%;
+      padding: 12px 20px 12px 45px;
+      border-radius: 50px;
+      border: 2px solid var(--card-border);
+      font-size: 15px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    /* Infographic Filters */
+    .infographic-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 2px dashed rgba(255, 107, 53, 0.1);
+    }
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .filter-group h5 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--secondary);
+      margin: 0;
+    }
+    .filter-icons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .filter-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: white;
+      border: 2px solid var(--card-border);
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+      padding: 6px;
+      text-align: center;
+    }
+    .filter-icon:hover {
+      transform: translateY(-6px) scale(1.06);
+      box-shadow: 0 8px 18px rgba(255, 107, 53, 0.25);
+    }
+    .filter-icon.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: var(--glow);
+    }
+    .filter-icon i {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    .filter-icon span {
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    /* MAIN CONTENT */
+    .main-content {
+      padding: 0 20px 90px; /* space for footer */
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* ============= CARD (Hiệu ứng giống index.html) ============= */
+    .card {
+      background: var(--card-bg);
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border: 3px solid var(--card-border);
+      position: relative;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: var(--hover-shadow);
+      z-index: 10;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+    .cover {
+      aspect-ratio: 3/4;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      border-radius: 0 0 10px 10px;
+    }
+    .card:hover .cover img {
+      transform: scale(1.05);
+    }
+    .card-info {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.4;
+      color: var(--dark-text);
+    }
+    .series-tag {
+      margin-top: 6px;
+      text-align: center;
+    }
+    .badge {
+      background: rgba(255, 107, 53, 0.12);
+      color: var(--primary);
+      padding: 5px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid rgba(255, 107, 53, 0.2);
+    }
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #64748b;
+      margin-top: auto;
+    }
+
+    /* ============= FOOTER (Glass như index) ============= */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: var(--card-bg);
+      border-top: 3px solid var(--card-border);
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--dark-text);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 900;
+      box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
+    }
+
+    /* ANIMATION */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .toolbar-content {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .logo-section {
+        justify-content: center;
+      }
+      .search-container {
+        order: 2;
+      }
+      .infographic-filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
+      .footer {
+        font-size: 13px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div class="toolbar-content">
+      <div class="logo-section">
+        <div class="logo-icon">🇬🇧</div>
+        <div class="logo-text">EngLib</div>
+      </div>
+      <div class="search-container">
+        <span class="search-icon"><i class="fas fa-search"></i></span>
+        <input type="text" id="search-input" placeholder="Search by title, skill, or target...">
+      </div>
+    </div>
+    <div class="infographic-filters">
+      <!-- Target -->
+      <div class="filter-group">
+        <h5>🎯 Mục tiêu</h5>
+        <div class="filter-icons" id="target-filters">
+          <div class="filter-icon active" data-value="">
+            <i class="fas fa-layer-group"></i>
+            <span>Tất cả</span>
+          </div>
+          <div class="filter-icon" data-value="ielts">
+            <i class="fas fa-graduation-cap"></i>
+            <span>IELTS</span>
+          </div>
+          <div class="filter-icon" data-value="grade8">
+            <i class="fas fa-school"></i>
+            <span>Lớp</span>
+          </div>
+          <div class="filter-icon" data-value="vocabulary">
+            <i class="fas fa-book"></i>
+            <span>Từ vựng</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill -->
+      <div class="filter-group">
+        <h5>🛠️ Kỹ năng</h5>
+        <div class="filter-icons" id="skill-filters">
+          <div class="filter-icon active" data-value="">
+            <i class="fas fa-layer-group"></i>
+            <span>Tất cả</span>
+          </div>
+          <div class="filter-icon" data-value="writing">
+            <i class="fas fa-pen"></i>
+            <span>Viết</span>
+          </div>
+          <div class="filter-icon" data-value="listening">
+            <i class="fas fa-headphones"></i>
+            <span>Nghe</span>
+          </div>
+          <div class="filter-icon" data-value="vocabulary">
+            <i class="fas fa-spell-check"></i>
+            <span>Từ vựng</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="grid-container" id="grid-container">
+      <div class="loading" style="text-align:center; padding:40px; font-size:18px; color:var(--primary);">
+        <i class="fas fa-spinner fa-spin"></i> Đang tải tài liệu tiếng Anh...
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 EngLib — Windy 🌬️ | English Learning Materials
+  </div>
+
+  <script>
+    let books = [];
+    let currentTarget = '';
+    let currentSkill = '';
+    let searchTerm = '';
+
+    async function loadBooks() {
+      try {
+        const res = await fetch('./books_en.json');
+        books = await res.json();
+        const seriesRes = await fetch('./series_en.json');
+        const series = await seriesRes.json();
+        const seriesMap = new Map(series.map(s => [s.seriesId, s.seriesName]));
+        books.forEach(book => {
+          book.seriesName = seriesMap.get(book.seriesId) || book.seriesId;
+        });
+        renderBooks();
+      } catch (e) {
+        document.getElementById('grid-container').innerHTML = `<div style="text-align:center; color:#e63946;">❌ Không tải được dữ liệu.</div>`;
+        console.error(e);
+      }
+    }
+
+    function filterBooks() {
+      return books.filter(book => {
+        const matchTarget = currentTarget ? book.target === currentTarget : true;
+        const matchSkill = currentSkill ? book.skill === currentSkill : true;
+        const matchSearch = searchTerm
+          ? book.title.toLowerCase().includes(searchTerm) ||
+            book.seriesName.toLowerCase().includes(searchTerm) ||
+            (book.target && book.target.includes(searchTerm)) ||
+            (book.skill && book.skill.includes(searchTerm))
+          : true;
+        return matchTarget && matchSkill && matchSearch;
+      });
+    }
+
+    function renderBooks() {
+      const filtered = filterBooks();
+      if (filtered.length === 0) {
+        document.getElementById('grid-container').innerHTML = '<div style="text-align:center; padding:40px; color:#6c757d;">Không tìm thấy tài liệu phù hợp.</div>';
+        return;
+      }
+      const html = filtered.map(book => `
+        <div class="card floating">
+          <div class="cover">
+            <img src="${book.coverUrl || 'https://placehold.co/300x400/FFF8F0/333333?text=EngCover'}" alt="${book.title}" loading="lazy">
+          </div>
+          <div class="card-info">
+            <h3 class="title">${book.title}</h3>
+            <div class="series-tag">
+              <span class="badge">${book.seriesName}</span>
+            </div>
+            <div class="meta">
+              <span>${book.size || '?'} MB</span>
+              <span class="badge">${book.skill || 'General'}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+      document.getElementById('grid-container').innerHTML = html;
+    }
+
+    function setupFilters() {
+      // Target
+      document.querySelectorAll('#target-filters .filter-icon').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#target-filters .filter-icon').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentTarget = btn.dataset.value;
+          renderBooks();
+        });
+      });
+      // Skill
+      document.querySelectorAll('#skill-filters .filter-icon').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#skill-filters .filter-icon').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentSkill = btn.dataset.value;
+          renderBooks();
+        });
+      });
+      // Search
+      document.getElementById('search-input').addEventListener('input', (e) => {
+        searchTerm = e.target.value.trim().toLowerCase();
+        renderBooks();
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadBooks();
+      setupFilters();
+    });
+  </script>
+</body>
+</html>
+
