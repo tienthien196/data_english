@@ -3115,7 +3115,7 @@
     "seriesId": "topic_wellness",
     "seriesName": "Wellness & Fitness",
     "description": "Collection: Wellness & Fitness",
-    "coverUrl": "covers/topic_wellness.jpg",
+    "coverUrl": "covers/topic_wellness.png",
     "books": [
       {
         "id": 23,
@@ -3171,7 +3171,7 @@
     "seriesId": "topic_art",
     "seriesName": "Art & Design",
     "description": "Collection: Art & Design",
-    "coverUrl": "covers/topic_art.jpg",
+    "coverUrl": "covers/topic_art.png",
     "books": [
       {
         "id": 38,
@@ -3251,7 +3251,7 @@
     "seriesId": "visual_dictionary",
     "seriesName": "Visual Dictionary",
     "description": "Collection: Visual Dictionary",
-    "coverUrl": "covers/visual_dictionary.jpg",
+    "coverUrl": "covers/visual_dictionary.png",
     "books": [
       {
         "id": 50,
@@ -3343,7 +3343,7 @@
     "seriesId": "topic_mind",
     "seriesName": "Mind & Philosophy",
     "description": "Collection: Mind & Philosophy",
-    "coverUrl": "covers/topic_mind.jpg",
+    "coverUrl": "covers/topic_mind.png",
     "books": [
       {
         "id": 53,
@@ -3411,7 +3411,7 @@
     "seriesId": "topic_space",
     "seriesName": "Space & Astronomy",
     "description": "Collection: Space & Astronomy",
-    "coverUrl": "covers/topic_space.jpg",
+    "coverUrl": "covers/topic_space.png",
     "books": [
       {
         "id": 81,
@@ -3467,7 +3467,7 @@
     "seriesId": "topic_dinosaurs",
     "seriesName": "Dinosaurs",
     "description": "Collection: Dinosaurs",
-    "coverUrl": "covers/topic_dinosaurs.jpg",
+    "coverUrl": "covers/topic_dinosaurs.png",
     "books": [
       {
         "id": 96,
@@ -3535,7 +3535,7 @@
     "seriesId": "dk_my_encyclopedia",
     "seriesName": "My Encyclopedia of Very Important...",
     "description": "Collection: My Encyclopedia of Very Important...",
-    "coverUrl": "covers/dk_my_encyclopedia.jpg",
+    "coverUrl": "covers/dk_my_encyclopedia.png",
     "books": [
       {
         "id": 103,
@@ -3579,7 +3579,7 @@
     "seriesId": "dk_life_stories",
     "seriesName": "DK Life Stories",
     "description": "Collection: DK Life Stories",
-    "coverUrl": "covers/dk_life_stories.jpg",
+    "coverUrl": "covers/dk_life_stories.png",
     "books": [
       {
         "id": 116,
@@ -3683,7 +3683,7 @@
     "seriesId": "dk_workbooks",
     "seriesName": "DK Workbooks",
     "description": "Collection: DK Workbooks",
-    "coverUrl": "covers/dk_workbooks.jpg",
+    "coverUrl": "covers/dk_workbooks.png",
     "books": [
       {
         "id": 123,
