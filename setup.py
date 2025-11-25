@@ -23,7 +23,7 @@ if not GITHUB_TOKEN:
 
 OWNER = "tienthien196"
 REPO = "data_english"
-RELEASE_TAG = "v6"  # ← Tag cố định, public, bền vững
+RELEASE_TAG = "v8"  # ← Tag cố định, public, bền vững
 RELEASE_NAME = "PDF Library v1"
 
 API_BASE = f"https://api.github.com/repos/{OWNER}/{REPO}"
