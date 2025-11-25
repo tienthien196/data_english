@@ -32,8 +32,8 @@
     "previewUrl": "previews/otherS_book_A Child Through Time- The Book of Children’s History_preview.jpg",
     "size": "60.38 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 4,
@@ -44,8 +44,8 @@
     "previewUrl": "previews/otherS_book_A History of Magic. Witchcraft and the Occult - DK_preview.jpg",
     "size": "140.35 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 5,
@@ -128,8 +128,8 @@
     "previewUrl": "previews/otherS_book_Battle at Sea 3.000 Years of Naval Warfare_preview.jpg",
     "size": "123.21 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "military_warfare",
+    "seriesName": "Military & Warfare"
   },
   {
     "id": 12,
@@ -164,8 +164,8 @@
     "previewUrl": "previews/otherS_book_Books That Changed History _preview.jpg",
     "size": "110.44 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 15,
@@ -176,8 +176,8 @@
     "previewUrl": "previews/otherS_book_Children's Illustrated World Atlas. New Edition_preview.jpg",
     "size": "57.41 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 16,
@@ -200,8 +200,8 @@
     "previewUrl": "previews/otherS_book_Countries of the World - DK_preview.jpg",
     "size": "162.14 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 18,
@@ -284,8 +284,8 @@
     "previewUrl": "previews/otherS_book_DK-Complete_Atlas_of_the_World_3rd_Edition-DK_2016_Chast1_preview.jpg",
     "size": "99.62 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 25,
@@ -296,8 +296,8 @@
     "previewUrl": "previews/otherS_book_DK-Complete_Atlas_of_the_World_3rd_Edition-DK_2016_Chast2_preview.jpg",
     "size": "99.82 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 26,
@@ -308,8 +308,8 @@
     "previewUrl": "previews/otherS_book_DK-Complete_Atlas_of_the_World_3rd_Edition-DK_2016_Chast3_preview.jpg",
     "size": "98.79 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 27,
@@ -320,8 +320,8 @@
     "previewUrl": "previews/otherS_book_dk-flora-inside-the-secret-world-of-plants_preview.jpg",
     "size": "172.22 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 28,
@@ -416,8 +416,8 @@
     "previewUrl": "previews/otherS_book_dk-zoology-inside-the-secret-world-of-animals_preview.jpg",
     "size": "103.19 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 36,
@@ -488,8 +488,8 @@
     "previewUrl": "previews/otherS_book_Earth's Incredible Oceans By DK_preview.jpg",
     "size": "90.3 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science",
+    "seriesName": "Science"
   },
   {
     "id": 42,
@@ -572,8 +572,8 @@
     "previewUrl": "previews/otherS_book_Fermenting_Food_Step_by_Step_preview.jpg",
     "size": "38.84 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "wellness_lifestyle",
+    "seriesName": "Wellness & Lifestyle"
   },
   {
     "id": 49,
@@ -656,8 +656,8 @@
     "previewUrl": "previews/otherS_book_History of Britain  Ireland by DK _preview.jpg",
     "size": "58.08 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 56,
@@ -668,8 +668,8 @@
     "previewUrl": "previews/otherS_book_History of the World Map by Map by DK -1_preview.jpg",
     "size": "152.74 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 57,
@@ -680,8 +680,8 @@
     "previewUrl": "previews/otherS_book_History_of_the_World_in_1_000_Objects_by_DK_Smithsonian_preview.jpg",
     "size": "183.16 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 58,
@@ -728,8 +728,8 @@
     "previewUrl": "previews/otherS_book_Leaders Who Changed History_preview.jpg",
     "size": "141.67 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 62,
@@ -776,8 +776,8 @@
     "previewUrl": "previews/otherS_book_On This Day A History of the World in 366 Days (DK)_preview.jpg",
     "size": "93.51 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 66,
@@ -872,8 +872,8 @@
     "previewUrl": "previews/otherS_book_Scientists Who Changed History_preview.jpg",
     "size": "138.04 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 74,
@@ -1040,8 +1040,8 @@
     "previewUrl": "previews/otherS_book_The-History-Book-DK-2016_preview.jpg",
     "size": "49.32 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 88,
@@ -1076,8 +1076,8 @@
     "previewUrl": "previews/otherS_book_Timelines of History The Ultimate Visual Guide To The Events That Shaped The World by DK. Smithsonian _preview.jpg",
     "size": "144.06 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 91,
@@ -1088,8 +1088,8 @@
     "previewUrl": "previews/otherS_book_Where_on_Earth__-_Dorling_Kindersley_preview.jpg",
     "size": "82.66 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science",
+    "seriesName": "Science"
   },
   {
     "id": 92,
@@ -1136,8 +1136,8 @@
     "previewUrl": "previews/v3_Digital Photography Complete Course Learn Everything You Need to Know in 20 Weeks by David Taylor_preview.jpg",
     "size": "87.85 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 96,
@@ -1148,8 +1148,8 @@
     "previewUrl": "previews/v3_Dinosaurs Riveting Reads for Curious Kids (Microbites) by DK_preview.jpg",
     "size": "115.96 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "dinosaurs",
+    "seriesName": "Dinosaurs"
   },
   {
     "id": 97,
@@ -1160,8 +1160,8 @@
     "previewUrl": "previews/v3_dinosaurs_dk_preview.jpg",
     "size": "18.45 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "dinosaurs",
+    "seriesName": "Dinosaurs"
   },
   {
     "id": 98,
@@ -1220,8 +1220,8 @@
     "previewUrl": "previews/v3_DK - Guide to Dinosaurs_preview.jpg",
     "size": "22.89 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "dinosaurs",
+    "seriesName": "Dinosaurs"
   },
   {
     "id": 103,
@@ -1292,8 +1292,8 @@
     "previewUrl": "previews/v3_DK Animals_preview.jpg",
     "size": "2.75 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 109,
@@ -1364,8 +1364,8 @@
     "previewUrl": "previews/v3_DK Let's Look- Animals_preview.jpg",
     "size": "7.38 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 115,
@@ -1376,8 +1376,8 @@
     "previewUrl": "previews/v3_DK Let's Look- Baby Animals_preview.jpg",
     "size": "4.06 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 116,
@@ -1532,8 +1532,8 @@
     "previewUrl": "previews/v3_Dk-100 Women Who Made History_preview.jpg",
     "size": "46.95 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 129,
@@ -1616,8 +1616,8 @@
     "previewUrl": "previews/v3_Dk-Art_That_Changed_the_World_preview.jpg",
     "size": "102.92 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 136,
@@ -1724,8 +1724,8 @@
     "previewUrl": "previews/v3_Dk-Dinosaurs_preview.jpg",
     "size": "74.37 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "dinosaurs",
+    "seriesName": "Dinosaurs"
   },
   {
     "id": 145,
@@ -1736,8 +1736,8 @@
     "previewUrl": "previews/v3_Dk-Fashion_The_Definitive_History_of_Costume_and_Style_by_DK_Smithsonian_preview.jpg",
     "size": "233.27 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 146,
@@ -1820,8 +1820,8 @@
     "previewUrl": "previews/v3_Dk-History encylopedia_preview.jpg",
     "size": "90.36 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 153,
@@ -1856,8 +1856,8 @@
     "previewUrl": "previews/v3_Dk-How to.Ballet_preview.jpg",
     "size": "11.5 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 156,
@@ -1868,8 +1868,8 @@
     "previewUrl": "previews/v3_Dk-how_to_make_a_better_world_preview.jpg",
     "size": "31.09 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 157,
@@ -1904,8 +1904,8 @@
     "previewUrl": "previews/v3_Dk-lambert_david_the_visual_dictionary_of_dinosaurs_preview.jpg",
     "size": "19.25 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "dinosaurs",
+    "seriesName": "Dinosaurs"
   },
   {
     "id": 160,
@@ -1940,8 +1940,8 @@
     "previewUrl": "previews/v3_Dk-mack_l_animal_families_preview.jpg",
     "size": "4.03 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 163,
@@ -1964,8 +1964,8 @@
     "previewUrl": "previews/v3_Dk-Modern History in Pictures A Visual Guide to the Events that Shaped Our World_1_preview.jpg",
     "size": "37.5 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 165,
@@ -1988,8 +1988,8 @@
     "previewUrl": "previews/v3_Dk-Pocket Genius Earth (2016)_preview.jpg",
     "size": "102.07 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science",
+    "seriesName": "Science"
   },
   {
     "id": 167,
@@ -2024,8 +2024,8 @@
     "previewUrl": "previews/v3_Dk-sirett_dawn_love_your_world_preview.jpg",
     "size": "13.53 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 170,
@@ -2264,8 +2264,8 @@
     "previewUrl": "previews/v3_DK_Readers_L3_-_My_First_Ballet_Recital_preview.jpg",
     "size": "5.85 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 190,
@@ -2384,8 +2384,8 @@
     "previewUrl": "previews/v4_Find My Favorite Animals (DK)_preview.jpg",
     "size": "22.83 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 200,
@@ -2408,8 +2408,8 @@
     "previewUrl": "previews/v4_Flaptastic animals_preview.jpg",
     "size": "2.29 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 202,
@@ -2480,8 +2480,8 @@
     "previewUrl": "previews/v4_Geography of the World By DK_preview.jpg",
     "size": "97.15 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 208,
@@ -2672,8 +2672,8 @@
     "previewUrl": "previews/v4_How to be a Math Wizard (Careers For Kids) (DK)_preview.jpg",
     "size": "30.44 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "mind_philosophy",
+    "seriesName": "Mind & Philosophy"
   },
   {
     "id": 224,
@@ -2768,8 +2768,8 @@
     "previewUrl": "previews/v4_Man-Made Wonders of the World_preview.jpg",
     "size": "141.98 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 232,
@@ -2828,8 +2828,8 @@
     "previewUrl": "previews/v4_My Very Important World by DK Publishing_preview.jpg",
     "size": "153.96 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 237,
@@ -2936,8 +2936,8 @@
     "previewUrl": "previews/v4_School Days Around the World (DK READERS) (Catherine E. Chambers)_preview.jpg",
     "size": "10.63 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 246,
@@ -2948,8 +2948,8 @@
     "previewUrl": "previews/v4_Science Year by Year.  A Visual History. From Stone Tools to Space Travel by DK (1)_preview.jpg",
     "size": "66.07 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 247,
@@ -2960,8 +2960,8 @@
     "previewUrl": "previews/v4_Science Year by Year.  A Visual History. From Stone Tools to Space Travel by DK (2)_preview.jpg",
     "size": "66.07 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 248,
@@ -2972,8 +2972,8 @@
     "previewUrl": "previews/v4_Science Year by Year.  A Visual History. From Stone Tools to Space Travel by DK (3)_preview.jpg",
     "size": "66.07 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 249,
@@ -2984,8 +2984,8 @@
     "previewUrl": "previews/v4_Science Year by Year.  A Visual History. From Stone Tools to Space Travel by DK_preview.jpg",
     "size": "66.07 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 250,
@@ -3044,8 +3044,8 @@
     "previewUrl": "previews/v4_Soldier. A Visual History of the Fighting Man_preview.jpg",
     "size": "143.7 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 255,
@@ -3116,8 +3116,8 @@
     "previewUrl": "previews/v4_The-Story-of-Chocolate-DK-READERS-_preview.jpg",
     "size": "2.69 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "wellness_lifestyle",
+    "seriesName": "Wellness & Lifestyle"
   },
   {
     "id": 261,
@@ -3140,8 +3140,8 @@
     "previewUrl": "previews/v4_The_Little_Book_of_History_-_DK_preview.jpg",
     "size": "39.92 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 263,
@@ -3152,8 +3152,8 @@
     "previewUrl": "previews/v4_The_Military_History_Book_The_Ultimate_Visual_Guide_to_the_Weapons_that_Shaped_the_World_by_Gareth_Jones_Gary_Ombler_preview.jpg",
     "size": "252.62 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "military_warfare",
+    "seriesName": "Military & Warfare"
   },
   {
     "id": 264,
@@ -3236,8 +3236,8 @@
     "previewUrl": "previews/v4_WORLD OF WONDER (1)_preview.jpg",
     "size": "273.66 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 271,
@@ -3248,8 +3248,8 @@
     "previewUrl": "previews/v4_World_War_II_Map_by_Map_B_preview.jpg",
     "size": "111.91 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 272,
@@ -3380,8 +3380,8 @@
     "previewUrl": "previews/v6_Ancient Egypt The Definitive Illustrated History by DK_preview.jpg",
     "size": "100.6 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 283,
@@ -3392,8 +3392,8 @@
     "previewUrl": "previews/v6_Be More Japan The Art of Japanese Living (DK Travel)_preview.jpg",
     "size": "64.17 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "culture_travel",
+    "seriesName": "Culture & Travel"
   },
   {
     "id": 284,
@@ -3404,8 +3404,8 @@
     "previewUrl": "previews/v6_Careers - DK_preview.jpg",
     "size": "33.39 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "mind_philosophy",
+    "seriesName": "Mind & Philosophy"
   },
   {
     "id": 285,
@@ -3416,8 +3416,8 @@
     "previewUrl": "previews/v6_Dance - DK_preview.jpg",
     "size": "43.81 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 286,
@@ -3428,8 +3428,8 @@
     "previewUrl": "previews/v6_Digital Photography Essentials by DK_preview.jpg",
     "size": "34.24 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 287,
@@ -3440,8 +3440,8 @@
     "previewUrl": "previews/v6_DK - Shakespeare. His_Life_and_Works_preview.jpg",
     "size": "78.43 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "literature_philosophy",
+    "seriesName": "Literature & Philosophy"
   },
   {
     "id": 288,
@@ -3464,8 +3464,8 @@
     "previewUrl": "previews/v6_Dk-15-Minute_Japanese_preview.jpg",
     "size": "21.75 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "culture_travel",
+    "seriesName": "Culture & Travel"
   },
   {
     "id": 290,
@@ -3476,8 +3476,8 @@
     "previewUrl": "previews/v6_Dk-[Kevan_Williams]_Strategic_Management_preview.jpg",
     "size": "1.92 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "mind_philosophy",
+    "seriesName": "Mind & Philosophy"
   },
   {
     "id": 291,
@@ -3488,8 +3488,8 @@
     "previewUrl": "previews/v6_Dk-A Short History of the Civil War_preview.jpg",
     "size": "144.51 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "military_warfare",
+    "seriesName": "Military & Warfare"
   },
   {
     "id": 292,
@@ -3500,8 +3500,8 @@
     "previewUrl": "previews/v6_Dk-Achieve_your_goals__strategies_to (1)_preview.jpg",
     "size": "13.53 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "mind_philosophy",
+    "seriesName": "Mind & Philosophy"
   },
   {
     "id": 293,
@@ -3512,8 +3512,8 @@
     "previewUrl": "previews/v6_Dk-Achieve_your_goals__strategies_to_preview.jpg",
     "size": "13.53 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "mind_philosophy",
+    "seriesName": "Mind & Philosophy"
   },
   {
     "id": 294,
@@ -3524,8 +3524,8 @@
     "previewUrl": "previews/v6_Dk-Achieving High Performance_preview.jpg",
     "size": "8.09 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "mind_philosophy",
+    "seriesName": "Mind & Philosophy"
   },
   {
     "id": 295,
@@ -3536,8 +3536,8 @@
     "previewUrl": "previews/v6_Dk-Ballet The Definitive Illustrated Story_preview.jpg",
     "size": "100.85 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 296,
@@ -3548,8 +3548,8 @@
     "previewUrl": "previews/v6_Dk-Chocolate_preview.jpg",
     "size": "80.75 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "wellness_lifestyle",
+    "seriesName": "Wellness & Lifestyle"
   },
   {
     "id": 297,
@@ -3560,8 +3560,8 @@
     "previewUrl": "previews/v6_Dk-Digital_Photography_Complete_Course_preview.jpg",
     "size": "66.19 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 298,
@@ -3572,8 +3572,8 @@
     "previewUrl": "previews/v6_Dk-E.Encyclopedia - Animal_preview.jpg",
     "size": "26.13 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 299,
@@ -3596,8 +3596,8 @@
     "previewUrl": "previews/v6_Dk-Illustrated Encyclopedia of Animal Life (Uhlenbroek C.)_preview.jpg",
     "size": "158.67 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 301,
@@ -3608,8 +3608,8 @@
     "previewUrl": "previews/v6_Dk-Inventions A Visual Encyclopedia_preview.jpg",
     "size": "101.63 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science_technology",
+    "seriesName": "Science & Technology"
   },
   {
     "id": 302,
@@ -3620,8 +3620,8 @@
     "previewUrl": "previews/v6_Dk-Jewel_A_Celebration_of_Earth_s_Treasures_preview.jpg",
     "size": "121.26 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science",
+    "seriesName": "Science"
   },
   {
     "id": 303,
@@ -3632,8 +3632,8 @@
     "previewUrl": "previews/v6_Dk-perfect_your_presentations_preview.jpg",
     "size": "25.57 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "mind_philosophy",
+    "seriesName": "Mind & Philosophy"
   },
   {
     "id": 304,
@@ -3656,8 +3656,8 @@
     "previewUrl": "previews/v6_Dk-Reference World Atlas Everything You Need to Know About Our Planet Today. 10th Edition_preview.jpg",
     "size": "145.84 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 306,
@@ -3668,8 +3668,8 @@
     "previewUrl": "previews/v6_Dk-The Illustrated Encyclopedia of Warfare_preview.jpg",
     "size": "63.53 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "military_warfare",
+    "seriesName": "Military & Warfare"
   },
   {
     "id": 307,
@@ -3680,8 +3680,8 @@
     "previewUrl": "previews/v6_DK_Robot_preview.jpg",
     "size": "39.01 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science_technology",
+    "seriesName": "Science & Technology"
   },
   {
     "id": 308,
@@ -3728,8 +3728,8 @@
     "previewUrl": "previews/v6_History_Year_by_Year._Revised_Edition_-_DK_preview.jpg",
     "size": "132.63 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 312,
@@ -3740,8 +3740,8 @@
     "previewUrl": "previews/v6_How to be a Global Citizen Be Informed. Get Involved. by Dorling Kindersley_preview.jpg",
     "size": "54.43 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "social_studies",
+    "seriesName": "Social Studies"
   },
   {
     "id": 313,
@@ -3752,8 +3752,8 @@
     "previewUrl": "previews/v6_Reference_World_Atlas_-_DK_preview.jpg",
     "size": "73.47 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 314,
@@ -3764,8 +3764,8 @@
     "previewUrl": "previews/v6_Rocks_and_Minerals._New_Edition_by_DK_preview.jpg",
     "size": "71.34 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science",
+    "seriesName": "Science"
   },
   {
     "id": 315,
@@ -3776,8 +3776,8 @@
     "previewUrl": "previews/v6_The American Civil War - DK_preview.jpg",
     "size": "123.55 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "military_warfare",
+    "seriesName": "Military & Warfare"
   },
   {
     "id": 316,
@@ -3788,8 +3788,8 @@
     "previewUrl": "previews/v6_The Beginner's Photography Guide The Ultimate Step-by-Step Manual for Getting the Most from your Digital Camera. By DK_preview.jpg",
     "size": "79.51 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "art_design",
+    "seriesName": "Art & Design"
   },
   {
     "id": 317,
@@ -3800,8 +3800,8 @@
     "previewUrl": "previews/v6_Ultimate_Food_Journeys_by_Dk_preview.jpg",
     "size": "109.28 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "wellness_lifestyle",
+    "seriesName": "Wellness & Lifestyle"
   },
   {
     "id": 318,
@@ -3812,8 +3812,8 @@
     "previewUrl": "previews/v7_Animal Knowledge Genius_ A Quiz Encyclopedia to Boost Your Brain by DK_preview.jpg",
     "size": "74.01 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 319,
@@ -3872,8 +3872,8 @@
     "previewUrl": "previews/v7_Dk-Student atlas_preview.jpg",
     "size": "49.9 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 324,
@@ -3968,8 +3968,8 @@
     "previewUrl": "previews/v7_Dk_world-war-ii-visual-encyclopedia_preview.jpg",
     "size": "151.2 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 332,
@@ -3980,8 +3980,8 @@
     "previewUrl": "previews/v7_Dk_world-war-ii_preview.jpg",
     "size": "44.66 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 333,
@@ -3992,8 +3992,8 @@
     "previewUrl": "previews/v7_Drive The Definitive History of Driving. New Edition by DK_preview.jpg",
     "size": "100.78 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 334,
@@ -4088,8 +4088,8 @@
     "previewUrl": "previews/v7_My Very Important World by DK Publishing_1_preview.jpg",
     "size": "153.96 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "geography",
+    "seriesName": "Geography"
   },
   {
     "id": 342,
@@ -4112,8 +4112,8 @@
     "previewUrl": "previews/v7_The Natural History Book The Ultimate Visual Guide to Everything on Earth by DK_preview.jpg",
     "size": "259.87 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "history",
+    "seriesName": "History"
   },
   {
     "id": 344,
@@ -4136,8 +4136,8 @@
     "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Animal Kingdom_preview.jpg",
     "size": "19.29 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "nature_animals",
+    "seriesName": "Nature & Animals"
   },
   {
     "id": 346,
@@ -4148,8 +4148,8 @@
     "previewUrl": "previews/visual_dictionary_The Visual Dictionary of Food & Kitchen_1_preview.jpg",
     "size": "73.49 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "wellness_lifestyle",
+    "seriesName": "Wellness & Lifestyle"
   },
   {
     "id": 347,
@@ -4232,8 +4232,8 @@
     "previewUrl": "previews/visual_dictionary_The_Visual_Dictionary_of_Universe_& Earth_1_preview.jpg",
     "size": "41.95 MB",
     "author": "Unknown",
-    "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesId": "science",
+    "seriesName": "Science"
   },
   {
     "id": 354,
