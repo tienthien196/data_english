@@ -5,125 +5,86 @@ from pathlib import Path
 
 # --- Cấu hình đường dẫn ---
 BOOKS_PATH = Path(r"E:\DATA\1_test_Src\src\python\web_up_pdf\books.json")
-SERIES_PATH = Path(r"E:\DATA\1_test_Src\src\python\web_up_pdf\series.json")
+THEMES_PATH = Path(r"E:\DATA\1_test_Src\src\python\web_up_pdf\themes.json")
 
-# --- RULES: phát hiện chính xác TÊN SERIES CHÍNH THỨC ---
-SERIES_RULES = [
-    # 1. My Encyclopedia of Very Important…
-    (r'\bMy Encyclopedia of Very Important\b', 'My Encyclopedia of Very Important'),
-
-    # 2. DK Workbooks (Language Arts, Math and Science)
-    (r'\bDK Workbooks\b.*?(Language Arts|Math|Science)', 'DK Workbooks'),
-
-    # 3. DK Life Stories
-    (r'\bDK Life Stories\b', 'DK Life Stories'),
-
-    # 4. DK Eyewitness Books (kể cả Eyewitness Travel / Eyewitness)
-    (r'\bDK Eyewitness\b', 'DK Eyewitness'),
-
-    # 5. DK Children’s Encyclopedia / The New Children's Encyclopedia
-    (r'\bDK Children.*Encyclopedia\b|\bThe New Children[\'’]?s Encyclopedia\b', 'DK Children’s Encyclopedia'),
-
-    # 6. DK Pocket Genius
-    (r'\bPocket Genius\b', 'DK Pocket Genius'),
-
-    # 7. DK Let’s Look
-    (r'\bDK Let[\'’]?s Look\b', 'DK Let’s Look'),
-
-    # 8. DK First Steps / My First Board Book
-    (r'\bDK First Steps\b|\bMy First (Number|Word|Bible) Board Book\b', 'DK First Steps'),
-
-    # 9. DK Readers
-    (r'\bDK Readers\b', 'DK Readers'),
-
-    # 10. DK Visual Encyclopedia (bao gồm Science, Geography, Warfare, Universe, v.v.)
-    (r'\bVisual Encyclopedia\b|\bDK.*Visual.*Encyclopedia\b|\bDK Science.*Visual\b|\bDK Geography.*Visual\b|\bDK.*Warfare.*Visual\b|\bDK.*Universe.*Visual\b', 'DK Visual Encyclopedia'),
-
-    # 11. Complete Step-by-Step / DIY / Crafts (Knitting, Crochet, Woodwork, Baking…)
-    (r'\bComplete Step.?by.?Step\b|\bFearless Knitting Workbook\b|\bDK Knitting Book\b|\bCrochet.*Complete\b|\bWoodwork.*Step\b|\bComplete.*Garden.*Guide\b|\bBaking.*Book\b', 'DK Complete Step-by-Step Guides'),
-
-    # 12. DK Reference Atlas / Student Atlas / Complete Atlas
-    (r'\bComplete Atlas of the World\b|\bStudent Atlas\b|\bReference World Atlas\b', 'DK Reference Atlas'),
-
-    # 13. DK Illustrated Cook / Food & Kitchen (kể cả Visual Dictionary Food)
-    (r'\bIllustrated Cook.*Book\b|\bVisual Dictionary.*Food\b|\bDK.*Kitchen\b|\bBest ever baking book\b', 'DK Food & Kitchen'),
-
-    # 14. DK Art / Art School / How to Draw / Painting
-    (r'\bDK Art School\b|\bIntroduction to Drawing\b|\bIntroduction to Oil Painting\b|\bHow to.*Ballet\b|\bBallet.*Definitive\b|\bGreat Paintings\b|\bHow to be an artist\b', 'DK Art & Design'),
-
-    # 15. DK Science of… (Yoga, Running, Cooking, Nutrition…)
-    (r'\bScience of (Yoga|Running|Cooking|Nutrition)\b', 'DK Science of…'),
-
-    # 16. DK 100 / 1,000 Things / Big Quiz Books
-    (r'\b100 Women Who Made History\b|\bOne Million Things\b|\bBig Trivia Quiz Book\b|\b1,?000 Things\b|\b1000 Words.*STEM\b', 'DK 100 / 1,000 Things'),
-
-    # 17. DK Marvel / Star Wars / Licensed Media
-    (r'\bMarvel.*Character Encyclopedia\b|\bStar Wars.*Character Encyclopedia\b|\bBlack Panther.*Wakanda\b|\bAvengers.*Guide\b', 'DK Licensed Media (Marvel / Star Wars)'),
-
-    # 18. DK Wellness & Fitness / Health / Back Pain / Nutrition
-    (r'\bStrengthen Your Back\b|\bEssential Strength Training\b|\bComplete Massage\b|\bMedical Checkup Book\b|\bAyurveda\b|\bArthritis\b', 'DK Wellness & Fitness'),
-
-    # 19. DK Philosophy / Big Ideas Simply Explained
-    (r'\bBig Ideas Simply Explained\b|\bSimply Philosophy\b|\bSimply Quantum Physics\b|\bHeads Up Psychology\b', 'DK Philosophy & Psychology'),
-
-    # 20. DK History Map by Map / Visual History
-    (r'\bHistory.*Map by Map\b|\bTimelines of History\b|\bHistory Year by Year\b|\bOn This Day.*History\b', 'DK History Map by Map'),
+# --- THEME RULES ---
+THEME_RULES = [
+    (r'\b(english|englisch|vocab|collocation|idiom|grammar|pronunciation|aviation english|cabin crew|cambridge|oxford|ielts|toeic|b2|dialogue|ngu phap|language|words\b.*\d{4}|\d{4}.*words)\b', 'Language Learning & English'),
+    (r'\bdinosaur[s]?\b|\bprehistoric\b|\bJurassic\b|\bT\.?Rex\b', 'Dinosaurs & Prehistoric Life'),
+    (r'\bspace\b|\bastronomy\b|\buniverse\b|\bstar[s]?\b|\bplanet[s]?\b|\bmoon\b|\bsolar system\b|\bnight sky\b|\bstarfinder\b', 'Space & Astronomy'),
+    (r'\banimal[s]?\b|\bbug[s]?\b|\binsect[s]?\b|\bocean\b|\bsea\b|\bjungle\b|\bforest\b|\bnature\b|\bwildlife\b|\bbird[s]?\b|\bfish\b|\bsupernatural creatures\b|\bzoology\b|\bflora\b|\bearth\'s incredible\b', 'Nature & Animals'),
+    (r'\bhistory\b|\bhistorical\b|\bancient\b|\brome\b|\begypt\b|\bcivil war\b|\bworld war\b|\bvietnam war\b|\bmedieval\b|\bemperor\b|\bking\b|\bqueen\b|\bleaders who changed\b|\bhistory of the world\b|\bon this day\b', 'History'),
+    (r'\batlas\b|\bgeography\b|\bcountry[s]?\b|\bnation[s]?\b|\bworld\b.*\bmap\b|\btravel guide\b|\bjapan\b|\bgermany\b|\bcanada\b|\bsicily\b|\bcroatia\b|\bvietnam\b|\birish\b|\brussia\b|\bgreat cities\b|\bman-made wonders\b', 'Geography & World Cultures'),
+    (r'\bscience\b|\bphysics\b|\bchemistry\b|\brobot[s]?\b|\btech\b|\btechnology\b|\binvention[s]?\b|\bsteam(?:punk)?\b|\bhow everything works\b|\bsuper simple (physics|chemistry)\b|\bSTEM\b|\bcoding\b|\bpython\b|\bquantum\b', 'Science & Technology'),
+    (r'\bart\b|\bdesign\b|\bpainting[s]?\b|\bsculpture\b|\bfashion\b|\bphotograph[y]\b|\bcalligraphy\b|\bwatercolor\b|\bgreat paintings\b|\bart that changed\b', 'Art, Design & Photography'),
+    (r'\bmath\b|\bmaths\b|\bmathematics\b|\bnumber[s]?\b|\bpi\b|\bwhy pi\b|\bthink of a number\b|\bmath wizard\b', 'Math & Logic'),
+    (r'\bhealth\b|\bmedical\b|\bmedicine\b|\byoga\b|\barthritis\b|\bayurveda\b|\bback pain\b|\bstrength training\b|\bwellness\b|\bself care\b|\bhuman body\b|\bbrain\b', 'Health, Wellness & Medicine'),
+    (r'\bcook\b|\bfood\b|\bkitchen\b|\bnutrition\b|\bdiet\b|\bweight loss\b|\bchocolate\b|\bbaking\b|\brecipe[s]?\b|\bfermenting\b|\beat beautiful\b|\bhealing foods\b', 'Cooking, Food & Nutrition'),
+    (r'\bcraft[s]?\b|\bdiy\b|\bsewing\b|\bknit\b|\bcrochet\b|\bwoodwork\b|\bgarden[s]?\b|\bpaper craft\b|\bdressmaking\b|\bmake\b.*\bworld\b', 'Crafts, DIY & Sewing'),
+    (r'\bwar\b|\bwarfare\b|\bmilitary\b|\bcombat\b|\bnaval\b|\bsoldier\b|\bweapon[s]?\b|\bbattle\b|\bworld war\b|\bmachines of war\b|\bfirearms\b', 'Military, Warfare & Weapons'),
+    (r'\bbible\b|\breligion\b|\bislam\b|\bmyth[s]?\b|\bwitchcraft\b|\boccult\b|\bastrology\b|\bnorse\b|\bgreek\b|\bsikhs\b|\bphilosophy\b|\bfeminism book\b|\bbig ideas\b', 'Religion, Mythology & Philosophy'),
+    (r'\bpsychology\b|\bmemory\b|\bconfidence\b|\bgoals\b|\bperformance\b|\bmanagement\b|\bpresentation[s]?\b|\bglobal citizen\b|\bhow to\b.*\bbetter\b|\bpersonal\b|\bmind\b', 'Psychology & Personal Development'),
+    (r'\bsport[s]?\b|\bsoccer\b|\bfootball\b|\brunning\b|\bchess\b|\bballer\b|\bdance\b', 'Sports & Physical Activity'),
+    (r'\bmusic\b|\bmusicians\b|\bchoreography\b|\bballet\b|\brecital\b', 'Music, Dance & Performing Arts'),
+    (r'\bfirst\b.*\b(number|word|board)\b|\bplease and thank you\b|\bthings that go\b|\bflaptastic\b|\bbaby\b|\bchildren.*school\b|\bstuff to know\b', 'Children’s Early Learning'),
+    (r'\bhappiful\b|\bauto express\b|\blove sewing\b|\bnational geographic\b|_freemagazines\.top\b', 'Magazines & Periodicals'),
 ]
 
-# --- Chuẩn hóa seriesId từ seriesName ---
-def normalize_series_id(name: str) -> str:
-    # Ví dụ: "DK Eyewitness" → "dk_eyewitness"
+DEFAULT_THEME = "Others / General Knowledge"
+
+def normalize_theme_id(name: str) -> str:
     return re.sub(r'[^a-z0-9]+', '_', name.lower()).strip('_')
 
-# --- Phát hiện series từ văn bản (filename + title) ---
-def detect_series_name(text: str) -> str:
-    for pattern, series_name in SERIES_RULES:
-        if re.search(pattern, text, re.IGNORECASE):
-            return series_name
-    return "Others Book"
+def detect_theme(text: str) -> str:
+    text_lower = text.lower()
+    for pattern, theme_name in THEME_RULES:
+        if re.search(pattern, text_lower):
+            return theme_name
+    return DEFAULT_THEME
 
-# --- Main logic ---
 def main():
-    # Backup files
-    shutil.copy(BOOKS_PATH, BOOKS_PATH.with_suffix('.json.bak'))
-    shutil.copy(SERIES_PATH, SERIES_PATH.with_suffix('.json.bak'))
+    # ✅ Sửa lỗi backup ở đây
+    books_backup = BOOKS_PATH.with_name(BOOKS_PATH.name + '.bak')
+    themes_backup = THEMES_PATH.with_name(THEMES_PATH.name + '.bak')
+    
+    shutil.copy(BOOKS_PATH, books_backup)
+    if THEMES_PATH.exists():
+        shutil.copy(THEMES_PATH, themes_backup)
 
-    # Đọc books.json
     with open(BOOKS_PATH, 'r', encoding='utf-8') as f:
         books = json.load(f)
 
     updated_books = []
-    series_dict = {}
+    theme_dict = {}
 
     for book in books:
-        source_text = (book.get("filename", "") + " " + book.get("title", "")).strip()
-        detected_name = detect_series_name(source_text)
-        detected_id = normalize_series_id(detected_name)
+        source = (book.get("filename", "") + " " + book.get("title", "")).strip()
+        theme_name = detect_theme(source)
+        theme_id = normalize_theme_id(theme_name)
 
-        book["seriesName"] = detected_name
-        book["seriesId"] = detected_id
+        book["themeName"] = theme_name
+        book["themeId"] = theme_id
         updated_books.append(book)
 
-        if detected_id not in series_dict:
-            series_dict[detected_id] = {
-                "seriesId": detected_id,
-                "seriesName": detected_name,
-                "description": f"Collection: {detected_name}",
+        if theme_id not in theme_dict:
+            theme_dict[theme_id] = {
+                "themeId": theme_id,
+                "themeName": theme_name,
+                "description": f"Books about: {theme_name}",
                 "coverUrl": book.get("coverUrl", ""),
                 "books": []
             }
-        series_dict[detected_id]["books"].append(book)
+        theme_dict[theme_id]["books"].append(book)
 
-    # Ghi lại files
     with open(BOOKS_PATH, 'w', encoding='utf-8') as f:
         json.dump(updated_books, f, indent=2, ensure_ascii=False)
 
-    with open(SERIES_PATH, 'w', encoding='utf-8') as f:
-        json.dump(list(series_dict.values()), f, indent=2, ensure_ascii=False)
+    with open(THEMES_PATH, 'w', encoding='utf-8') as f:
+        json.dump(list(theme_dict.values()), f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Đã cập nhật {len(updated_books)} sách.")
-    print(f"✅ Đã tạo {len(series_dict)} series.")
-    print("📁 Đã sao lưu: *.json.bak")
+    print(f"✅ Đã phân loại {len(updated_books)} sách theo chủ đề.")
+    print(f"✅ Đã tạo {len(theme_dict)} chủ đề.")
+    print(f"📁 Backup đã lưu: {books_backup}")
 
 if __name__ == "__main__":
     main()

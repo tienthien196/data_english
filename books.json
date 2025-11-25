@@ -9,7 +9,9 @@
     "size": "41.91 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 2,
@@ -21,7 +23,9 @@
     "size": "65.54 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 3,
@@ -33,7 +37,9 @@
     "size": "60.38 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 4,
@@ -45,7 +51,9 @@
     "size": "140.35 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 5,
@@ -57,7 +65,9 @@
     "size": "27.78 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 6,
@@ -69,7 +79,9 @@
     "size": "33.71 MB",
     "author": "Unknown",
     "seriesId": "dk_science_of",
-    "seriesName": "DK Science of…"
+    "seriesName": "DK Science of…",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 7,
@@ -81,7 +93,9 @@
     "size": "105.52 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 8,
@@ -93,7 +107,9 @@
     "size": "43.04 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 9,
@@ -105,7 +121,9 @@
     "size": "99.83 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 10,
@@ -117,7 +135,9 @@
     "size": "95.83 MB",
     "author": "Unknown",
     "seriesId": "dk_wellness_fitness",
-    "seriesName": "DK Wellness & Fitness"
+    "seriesName": "DK Wellness & Fitness",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 11,
@@ -129,7 +149,9 @@
     "size": "123.21 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 12,
@@ -141,7 +163,9 @@
     "size": "60.98 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 13,
@@ -153,7 +177,9 @@
     "size": "102.19 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 14,
@@ -165,7 +191,9 @@
     "size": "110.44 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 15,
@@ -177,7 +205,9 @@
     "size": "57.41 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 16,
@@ -189,7 +219,9 @@
     "size": "108.05 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 17,
@@ -201,7 +233,9 @@
     "size": "162.14 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 18,
@@ -213,7 +247,9 @@
     "size": "56.68 MB",
     "author": "Unknown",
     "seriesId": "dk_complete_step_by_step_guides",
-    "seriesName": "DK Complete Step-by-Step Guides"
+    "seriesName": "DK Complete Step-by-Step Guides",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 19,
@@ -225,7 +261,9 @@
     "size": "73.01 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 20,
@@ -237,7 +275,9 @@
     "size": "185.4 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 21,
@@ -249,7 +289,9 @@
     "size": "134.96 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 22,
@@ -261,7 +303,9 @@
     "size": "93.59 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 23,
@@ -273,7 +317,9 @@
     "size": "40.8 MB",
     "author": "Unknown",
     "seriesId": "dk_wellness_fitness",
-    "seriesName": "DK Wellness & Fitness"
+    "seriesName": "DK Wellness & Fitness",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 24,
@@ -285,7 +331,9 @@
     "size": "99.62 MB",
     "author": "Unknown",
     "seriesId": "dk_reference_atlas",
-    "seriesName": "DK Reference Atlas"
+    "seriesName": "DK Reference Atlas",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 25,
@@ -297,7 +345,9 @@
     "size": "99.82 MB",
     "author": "Unknown",
     "seriesId": "dk_reference_atlas",
-    "seriesName": "DK Reference Atlas"
+    "seriesName": "DK Reference Atlas",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 26,
@@ -309,7 +359,9 @@
     "size": "98.79 MB",
     "author": "Unknown",
     "seriesId": "dk_reference_atlas",
-    "seriesName": "DK Reference Atlas"
+    "seriesName": "DK Reference Atlas",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 27,
@@ -321,7 +373,9 @@
     "size": "172.22 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 28,
@@ -333,7 +387,9 @@
     "size": "64.17 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 29,
@@ -345,7 +401,9 @@
     "size": "37.15 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 30,
@@ -357,7 +415,9 @@
     "size": "62.57 MB",
     "author": "Unknown",
     "seriesId": "dk_complete_step_by_step_guides",
-    "seriesName": "DK Complete Step-by-Step Guides"
+    "seriesName": "DK Complete Step-by-Step Guides",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 31,
@@ -369,7 +429,9 @@
     "size": "62.57 MB",
     "author": "Unknown",
     "seriesId": "dk_complete_step_by_step_guides",
-    "seriesName": "DK Complete Step-by-Step Guides"
+    "seriesName": "DK Complete Step-by-Step Guides",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 32,
@@ -381,7 +443,9 @@
     "size": "80.27 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 33,
@@ -393,7 +457,9 @@
     "size": "67.97 MB",
     "author": "Unknown",
     "seriesId": "dk_science_of",
-    "seriesName": "DK Science of…"
+    "seriesName": "DK Science of…",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 34,
@@ -405,7 +471,9 @@
     "size": "23.97 MB",
     "author": "Unknown",
     "seriesId": "dk_science_of",
-    "seriesName": "DK Science of…"
+    "seriesName": "DK Science of…",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 35,
@@ -417,7 +485,9 @@
     "size": "103.19 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 36,
@@ -429,7 +499,9 @@
     "size": "136.93 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 37,
@@ -441,7 +513,9 @@
     "size": "125.8 MB",
     "author": "Unknown",
     "seriesId": "dk_children_s_encyclopedia",
-    "seriesName": "DK Children’s Encyclopedia"
+    "seriesName": "DK Children’s Encyclopedia",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 38,
@@ -453,7 +527,9 @@
     "size": "81.07 MB",
     "author": "Unknown",
     "seriesId": "dk_art_design",
-    "seriesName": "DK Art & Design"
+    "seriesName": "DK Art & Design",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 39,
@@ -465,7 +541,9 @@
     "size": "164.1 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 40,
@@ -477,7 +555,9 @@
     "size": "119.63 MB",
     "author": "Unknown",
     "seriesId": "dk_food_kitchen",
-    "seriesName": "DK Food & Kitchen"
+    "seriesName": "DK Food & Kitchen",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 41,
@@ -489,7 +569,9 @@
     "size": "90.3 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 42,
@@ -501,7 +583,9 @@
     "size": "66.21 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 43,
@@ -513,7 +597,9 @@
     "size": "55.78 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 44,
@@ -525,7 +611,9 @@
     "size": "62.11 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 45,
@@ -537,7 +625,9 @@
     "size": "15.65 MB",
     "author": "Unknown",
     "seriesId": "dk_wellness_fitness",
-    "seriesName": "DK Wellness & Fitness"
+    "seriesName": "DK Wellness & Fitness",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 46,
@@ -549,7 +639,9 @@
     "size": "28.9 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 47,
@@ -561,7 +653,9 @@
     "size": "169.43 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 48,
@@ -573,7 +667,9 @@
     "size": "38.84 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 49,
@@ -585,7 +681,9 @@
     "size": "82.41 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 50,
@@ -597,7 +695,9 @@
     "size": "71.96 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 51,
@@ -609,7 +709,9 @@
     "size": "74.14 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 52,
@@ -621,7 +723,9 @@
     "size": "64.13 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 53,
@@ -633,7 +737,9 @@
     "size": "29.3 MB",
     "author": "Unknown",
     "seriesId": "dk_philosophy_psychology",
-    "seriesName": "DK Philosophy & Psychology"
+    "seriesName": "DK Philosophy & Psychology",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 54,
@@ -645,7 +751,9 @@
     "size": "30.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 55,
@@ -657,7 +765,9 @@
     "size": "58.08 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 56,
@@ -669,7 +779,9 @@
     "size": "152.74 MB",
     "author": "Unknown",
     "seriesId": "dk_history_map_by_map",
-    "seriesName": "DK History Map by Map"
+    "seriesName": "DK History Map by Map",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 57,
@@ -681,7 +793,9 @@
     "size": "183.16 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 58,
@@ -693,7 +807,9 @@
     "size": "43.79 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 59,
@@ -705,7 +821,9 @@
     "size": "5.39 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 60,
@@ -717,7 +835,9 @@
     "size": "48.14 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 61,
@@ -729,7 +849,9 @@
     "size": "141.67 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 62,
@@ -741,7 +863,9 @@
     "size": "54.06 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 63,
@@ -753,7 +877,9 @@
     "size": "31.54 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 64,
@@ -765,7 +891,9 @@
     "size": "131.05 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Military, Warfare & Weapons",
+    "themeId": "military_warfare_weapons"
   },
   {
     "id": 65,
@@ -777,7 +905,9 @@
     "size": "93.51 MB",
     "author": "Unknown",
     "seriesId": "dk_history_map_by_map",
-    "seriesName": "DK History Map by Map"
+    "seriesName": "DK History Map by Map",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 66,
@@ -789,7 +919,9 @@
     "size": "53.72 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 67,
@@ -801,7 +933,9 @@
     "size": "64.14 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 68,
@@ -813,7 +947,9 @@
     "size": "20.54 MB",
     "author": "Unknown",
     "seriesId": "dk_100_1_000_things",
-    "seriesName": "DK 100 / 1,000 Things"
+    "seriesName": "DK 100 / 1,000 Things",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 69,
@@ -825,7 +961,9 @@
     "size": "170.63 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 70,
@@ -837,7 +975,9 @@
     "size": "170.63 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 71,
@@ -849,7 +989,9 @@
     "size": "28.41 MB",
     "author": "Unknown",
     "seriesId": "dk_science_of",
-    "seriesName": "DK Science of…"
+    "seriesName": "DK Science of…",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 72,
@@ -861,7 +1003,9 @@
     "size": "28.41 MB",
     "author": "Unknown",
     "seriesId": "dk_science_of",
-    "seriesName": "DK Science of…"
+    "seriesName": "DK Science of…",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 73,
@@ -873,7 +1017,9 @@
     "size": "138.04 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 74,
@@ -885,7 +1031,9 @@
     "size": "54.07 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 75,
@@ -897,7 +1045,9 @@
     "size": "188.51 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 76,
@@ -909,7 +1059,9 @@
     "size": "21.41 MB",
     "author": "Unknown",
     "seriesId": "dk_wellness_fitness",
-    "seriesName": "DK Wellness & Fitness"
+    "seriesName": "DK Wellness & Fitness",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 77,
@@ -921,7 +1073,9 @@
     "size": "21.41 MB",
     "author": "Unknown",
     "seriesId": "dk_wellness_fitness",
-    "seriesName": "DK Wellness & Fitness"
+    "seriesName": "DK Wellness & Fitness",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 78,
@@ -933,7 +1087,9 @@
     "size": "87.05 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 79,
@@ -945,7 +1101,9 @@
     "size": "87.05 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 80,
@@ -957,7 +1115,9 @@
     "size": "29.48 MB",
     "author": "Unknown",
     "seriesId": "dk_wellness_fitness",
-    "seriesName": "DK Wellness & Fitness"
+    "seriesName": "DK Wellness & Fitness",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 81,
@@ -969,7 +1129,9 @@
     "size": "136.73 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 82,
@@ -981,7 +1143,9 @@
     "size": "86.13 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 83,
@@ -993,7 +1157,9 @@
     "size": "52.22 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Sports & Physical Activity",
+    "themeId": "sports_physical_activity"
   },
   {
     "id": 84,
@@ -1005,7 +1171,9 @@
     "size": "157.32 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 85,
@@ -1017,7 +1185,9 @@
     "size": "150.67 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 86,
@@ -1029,7 +1199,9 @@
     "size": "22.91 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 87,
@@ -1041,7 +1213,9 @@
     "size": "49.32 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 88,
@@ -1053,7 +1227,9 @@
     "size": "64.47 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 89,
@@ -1065,7 +1241,9 @@
     "size": "170.48 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 90,
@@ -1077,7 +1255,9 @@
     "size": "144.06 MB",
     "author": "Unknown",
     "seriesId": "dk_history_map_by_map",
-    "seriesName": "DK History Map by Map"
+    "seriesName": "DK History Map by Map",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 91,
@@ -1089,7 +1269,9 @@
     "size": "82.66 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 92,
@@ -1101,7 +1283,9 @@
     "size": "118.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 93,
@@ -1113,7 +1297,9 @@
     "size": "72.02 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 94,
@@ -1125,7 +1311,9 @@
     "size": "6.65 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 95,
@@ -1137,7 +1325,9 @@
     "size": "87.85 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 96,
@@ -1149,7 +1339,9 @@
     "size": "115.96 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Dinosaurs & Prehistoric Life",
+    "themeId": "dinosaurs_prehistoric_life"
   },
   {
     "id": 97,
@@ -1161,7 +1353,9 @@
     "size": "18.45 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Dinosaurs & Prehistoric Life",
+    "themeId": "dinosaurs_prehistoric_life"
   },
   {
     "id": 98,
@@ -1173,7 +1367,9 @@
     "size": "1.93 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 99,
@@ -1185,7 +1381,9 @@
     "size": "2.26 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 100,
@@ -1197,7 +1395,9 @@
     "size": "1.36 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 101,
@@ -1209,7 +1409,9 @@
     "size": "1.34 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 102,
@@ -1221,7 +1423,9 @@
     "size": "22.89 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Dinosaurs & Prehistoric Life",
+    "themeId": "dinosaurs_prehistoric_life"
   },
   {
     "id": 103,
@@ -1233,7 +1437,9 @@
     "size": "60.67 MB",
     "author": "Unknown",
     "seriesId": "my_encyclopedia_of_very_important",
-    "seriesName": "My Encyclopedia of Very Important"
+    "seriesName": "My Encyclopedia of Very Important",
+    "themeName": "Sports & Physical Activity",
+    "themeId": "sports_physical_activity"
   },
   {
     "id": 104,
@@ -1245,7 +1451,9 @@
     "size": "117.29 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 105,
@@ -1257,7 +1465,9 @@
     "size": "2.33 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 106,
@@ -1269,7 +1479,9 @@
     "size": "2.36 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 107,
@@ -1281,7 +1493,9 @@
     "size": "2.47 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 108,
@@ -1293,7 +1507,9 @@
     "size": "2.75 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 109,
@@ -1305,7 +1521,9 @@
     "size": "33.83 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 110,
@@ -1317,7 +1535,9 @@
     "size": "65.41 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 111,
@@ -1329,7 +1549,9 @@
     "size": "109.74 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 112,
@@ -1341,7 +1563,9 @@
     "size": "66.03 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 113,
@@ -1353,7 +1577,9 @@
     "size": "30.68 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 114,
@@ -1365,7 +1591,9 @@
     "size": "7.38 MB",
     "author": "Unknown",
     "seriesId": "dk_let_s_look",
-    "seriesName": "DK Let’s Look"
+    "seriesName": "DK Let’s Look",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 115,
@@ -1377,7 +1605,9 @@
     "size": "4.06 MB",
     "author": "Unknown",
     "seriesId": "dk_let_s_look",
-    "seriesName": "DK Let’s Look"
+    "seriesName": "DK Let’s Look",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 116,
@@ -1389,7 +1619,9 @@
     "size": "16.39 MB",
     "author": "Unknown",
     "seriesId": "dk_life_stories",
-    "seriesName": "DK Life Stories"
+    "seriesName": "DK Life Stories",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 117,
@@ -1401,7 +1633,9 @@
     "size": "27.72 MB",
     "author": "Unknown",
     "seriesId": "dk_life_stories",
-    "seriesName": "DK Life Stories"
+    "seriesName": "DK Life Stories",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 118,
@@ -1413,7 +1647,9 @@
     "size": "27.72 MB",
     "author": "Unknown",
     "seriesId": "dk_life_stories",
-    "seriesName": "DK Life Stories"
+    "seriesName": "DK Life Stories",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 119,
@@ -1425,7 +1661,9 @@
     "size": "27.72 MB",
     "author": "Unknown",
     "seriesId": "dk_life_stories",
-    "seriesName": "DK Life Stories"
+    "seriesName": "DK Life Stories",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 120,
@@ -1437,7 +1675,9 @@
     "size": "71.42 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 121,
@@ -1449,7 +1689,9 @@
     "size": "86.13 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 122,
@@ -1461,7 +1703,9 @@
     "size": "2.52 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 123,
@@ -1473,7 +1717,9 @@
     "size": "7.93 MB",
     "author": "Unknown",
     "seriesId": "dk_workbooks",
-    "seriesName": "DK Workbooks"
+    "seriesName": "DK Workbooks",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 124,
@@ -1485,7 +1731,9 @@
     "size": "7.93 MB",
     "author": "Unknown",
     "seriesId": "dk_workbooks",
-    "seriesName": "DK Workbooks"
+    "seriesName": "DK Workbooks",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 125,
@@ -1497,7 +1745,9 @@
     "size": "6.18 MB",
     "author": "Unknown",
     "seriesId": "dk_workbooks",
-    "seriesName": "DK Workbooks"
+    "seriesName": "DK Workbooks",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 126,
@@ -1509,7 +1759,9 @@
     "size": "5.28 MB",
     "author": "Unknown",
     "seriesId": "dk_workbooks",
-    "seriesName": "DK Workbooks"
+    "seriesName": "DK Workbooks",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 127,
@@ -1521,7 +1773,9 @@
     "size": "5.28 MB",
     "author": "Unknown",
     "seriesId": "dk_workbooks",
-    "seriesName": "DK Workbooks"
+    "seriesName": "DK Workbooks",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 128,
@@ -1533,7 +1787,9 @@
     "size": "46.95 MB",
     "author": "Unknown",
     "seriesId": "dk_100_1_000_things",
-    "seriesName": "DK 100 / 1,000 Things"
+    "seriesName": "DK 100 / 1,000 Things",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 129,
@@ -1545,7 +1801,9 @@
     "size": "5.27 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 130,
@@ -1557,7 +1815,9 @@
     "size": "23.8 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 131,
@@ -1569,7 +1829,9 @@
     "size": "42.93 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 132,
@@ -1581,7 +1843,9 @@
     "size": "41.85 MB",
     "author": "Unknown",
     "seriesId": "dk_art_design",
-    "seriesName": "DK Art & Design"
+    "seriesName": "DK Art & Design",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 133,
@@ -1593,7 +1857,9 @@
     "size": "59.98 MB",
     "author": "Unknown",
     "seriesId": "dk_art_design",
-    "seriesName": "DK Art & Design"
+    "seriesName": "DK Art & Design",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 134,
@@ -1605,7 +1871,9 @@
     "size": "18.57 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 135,
@@ -1617,7 +1885,9 @@
     "size": "102.92 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 136,
@@ -1629,7 +1899,9 @@
     "size": "1.02 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 137,
@@ -1641,7 +1913,9 @@
     "size": "11.01 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Math & Logic",
+    "themeId": "math_logic"
   },
   {
     "id": 138,
@@ -1653,7 +1927,9 @@
     "size": "42.24 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Math & Logic",
+    "themeId": "math_logic"
   },
   {
     "id": 139,
@@ -1665,7 +1941,9 @@
     "size": "35.6 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 140,
@@ -1677,7 +1955,9 @@
     "size": "35.6 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 141,
@@ -1689,7 +1969,9 @@
     "size": "21.37 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 142,
@@ -1701,7 +1983,9 @@
     "size": "106.22 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 143,
@@ -1713,7 +1997,9 @@
     "size": "23.65 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 144,
@@ -1725,7 +2011,9 @@
     "size": "74.37 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Dinosaurs & Prehistoric Life",
+    "themeId": "dinosaurs_prehistoric_life"
   },
   {
     "id": 145,
@@ -1737,7 +2025,9 @@
     "size": "233.27 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 146,
@@ -1749,7 +2039,9 @@
     "size": "3.89 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 147,
@@ -1761,7 +2053,9 @@
     "size": "10.0 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 148,
@@ -1773,7 +2067,9 @@
     "size": "20.14 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 149,
@@ -1785,7 +2081,9 @@
     "size": "82.47 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 150,
@@ -1797,7 +2095,9 @@
     "size": "15.89 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 151,
@@ -1809,7 +2109,9 @@
     "size": "8.93 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 152,
@@ -1821,7 +2123,9 @@
     "size": "90.36 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 153,
@@ -1833,7 +2137,9 @@
     "size": "14.68 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 154,
@@ -1845,7 +2151,9 @@
     "size": "11.45 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 155,
@@ -1857,7 +2165,9 @@
     "size": "11.5 MB",
     "author": "Unknown",
     "seriesId": "dk_art_design",
-    "seriesName": "DK Art & Design"
+    "seriesName": "DK Art & Design",
+    "themeName": "Music, Dance & Performing Arts",
+    "themeId": "music_dance_performing_arts"
   },
   {
     "id": 156,
@@ -1869,7 +2179,9 @@
     "size": "31.09 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 157,
@@ -1881,7 +2193,9 @@
     "size": "38.29 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 158,
@@ -1893,7 +2207,9 @@
     "size": "46.5 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 159,
@@ -1905,7 +2221,9 @@
     "size": "19.25 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Dinosaurs & Prehistoric Life",
+    "themeId": "dinosaurs_prehistoric_life"
   },
   {
     "id": 160,
@@ -1917,7 +2235,9 @@
     "size": "24.24 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 161,
@@ -1929,7 +2249,9 @@
     "size": "43.06 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Music, Dance & Performing Arts",
+    "themeId": "music_dance_performing_arts"
   },
   {
     "id": 162,
@@ -1941,7 +2263,9 @@
     "size": "4.03 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 163,
@@ -1953,7 +2277,9 @@
     "size": "12.71 MB",
     "author": "Unknown",
     "seriesId": "dk_licensed_media_marvel_star_wars",
-    "seriesName": "DK Licensed Media (Marvel / Star Wars)"
+    "seriesName": "DK Licensed Media (Marvel / Star Wars)",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 164,
@@ -1965,7 +2291,9 @@
     "size": "37.5 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 165,
@@ -1977,7 +2305,9 @@
     "size": "51.46 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 166,
@@ -1989,7 +2319,9 @@
     "size": "102.07 MB",
     "author": "Unknown",
     "seriesId": "dk_pocket_genius",
-    "seriesName": "DK Pocket Genius"
+    "seriesName": "DK Pocket Genius",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 167,
@@ -2001,7 +2333,9 @@
     "size": "39.35 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 168,
@@ -2013,7 +2347,9 @@
     "size": "126.05 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 169,
@@ -2025,7 +2361,9 @@
     "size": "13.53 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 170,
@@ -2037,7 +2375,9 @@
     "size": "18.71 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 171,
@@ -2049,7 +2389,9 @@
     "size": "69.2 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 172,
@@ -2061,7 +2403,9 @@
     "size": "30.07 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 173,
@@ -2073,7 +2417,9 @@
     "size": "76.29 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 174,
@@ -2085,7 +2431,9 @@
     "size": "36.06 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 175,
@@ -2097,7 +2445,9 @@
     "size": "44.87 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 176,
@@ -2109,7 +2459,9 @@
     "size": "10.6 MB",
     "author": "Unknown",
     "seriesId": "dk_100_1_000_things",
-    "seriesName": "DK 100 / 1,000 Things"
+    "seriesName": "DK 100 / 1,000 Things",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 177,
@@ -2121,7 +2473,9 @@
     "size": "36.89 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 178,
@@ -2133,7 +2487,9 @@
     "size": "88.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 179,
@@ -2145,7 +2501,9 @@
     "size": "23.69 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 180,
@@ -2157,7 +2515,9 @@
     "size": "8.66 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 181,
@@ -2169,7 +2529,9 @@
     "size": "81.74 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 182,
@@ -2181,7 +2543,9 @@
     "size": "41.85 MB",
     "author": "Unknown",
     "seriesId": "dk_complete_step_by_step_guides",
-    "seriesName": "DK Complete Step-by-Step Guides"
+    "seriesName": "DK Complete Step-by-Step Guides",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 183,
@@ -2193,7 +2557,9 @@
     "size": "69.24 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 184,
@@ -2205,7 +2571,9 @@
     "size": "21.87 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 185,
@@ -2217,7 +2585,9 @@
     "size": "29.28 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 186,
@@ -2229,7 +2599,9 @@
     "size": "81.82 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 187,
@@ -2241,7 +2613,9 @@
     "size": "16.15 MB",
     "author": "Unknown",
     "seriesId": "dk_first_steps",
-    "seriesName": "DK First Steps"
+    "seriesName": "DK First Steps",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 188,
@@ -2253,7 +2627,9 @@
     "size": "68.37 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 189,
@@ -2265,7 +2641,9 @@
     "size": "5.85 MB",
     "author": "Unknown",
     "seriesId": "dk_readers",
-    "seriesName": "DK Readers"
+    "seriesName": "DK Readers",
+    "themeName": "Music, Dance & Performing Arts",
+    "themeId": "music_dance_performing_arts"
   },
   {
     "id": 190,
@@ -2277,7 +2655,9 @@
     "size": "75.95 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 191,
@@ -2289,7 +2669,9 @@
     "size": "42.53 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 192,
@@ -2301,7 +2683,9 @@
     "size": "6.98 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 193,
@@ -2313,7 +2697,9 @@
     "size": "12.46 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 194,
@@ -2325,7 +2711,9 @@
     "size": "14.14 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 195,
@@ -2337,7 +2725,9 @@
     "size": "65.11 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 196,
@@ -2349,7 +2739,9 @@
     "size": "66.86 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 197,
@@ -2361,7 +2753,9 @@
     "size": "28.4 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 198,
@@ -2373,7 +2767,9 @@
     "size": "36.27 MB",
     "author": "Unknown",
     "seriesId": "dk_complete_step_by_step_guides",
-    "seriesName": "DK Complete Step-by-Step Guides"
+    "seriesName": "DK Complete Step-by-Step Guides",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 199,
@@ -2385,7 +2781,9 @@
     "size": "22.83 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 200,
@@ -2397,7 +2795,9 @@
     "size": "3.89 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 201,
@@ -2409,7 +2809,9 @@
     "size": "2.29 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 202,
@@ -2421,7 +2823,9 @@
     "size": "0.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 203,
@@ -2433,7 +2837,9 @@
     "size": "2.84 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 204,
@@ -2445,7 +2851,9 @@
     "size": "2.99 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 205,
@@ -2457,7 +2865,9 @@
     "size": "0.78 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 206,
@@ -2469,7 +2879,9 @@
     "size": "105.11 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 207,
@@ -2481,7 +2893,9 @@
     "size": "97.15 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 208,
@@ -2493,7 +2907,9 @@
     "size": "12.78 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 209,
@@ -2505,7 +2921,9 @@
     "size": "129.03 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 210,
@@ -2517,7 +2935,9 @@
     "size": "66.53 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 211,
@@ -2529,7 +2949,9 @@
     "size": "68.06 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 212,
@@ -2541,7 +2963,9 @@
     "size": "56.4 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 213,
@@ -2553,7 +2977,9 @@
     "size": "61.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 214,
@@ -2565,7 +2991,9 @@
     "size": "62.32 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 215,
@@ -2577,7 +3005,9 @@
     "size": "63.53 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 216,
@@ -2589,7 +3019,9 @@
     "size": "64.6 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 217,
@@ -2601,7 +3033,9 @@
     "size": "60.41 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 218,
@@ -2613,7 +3047,9 @@
     "size": "61.54 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 219,
@@ -2625,7 +3061,9 @@
     "size": "64.57 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 220,
@@ -2637,7 +3075,9 @@
     "size": "55.4 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 221,
@@ -2649,7 +3089,9 @@
     "size": "45.29 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 222,
@@ -2661,7 +3103,9 @@
     "size": "31.63 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 223,
@@ -2673,7 +3117,9 @@
     "size": "30.44 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Math & Logic",
+    "themeId": "math_logic"
   },
   {
     "id": 224,
@@ -2685,7 +3131,9 @@
     "size": "21.61 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Sports & Physical Activity",
+    "themeId": "sports_physical_activity"
   },
   {
     "id": 225,
@@ -2697,7 +3145,9 @@
     "size": "58.44 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 226,
@@ -2709,7 +3159,9 @@
     "size": "30.08 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 227,
@@ -2721,7 +3173,9 @@
     "size": "54.06 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 228,
@@ -2733,7 +3187,9 @@
     "size": "50.4 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 229,
@@ -2745,7 +3201,9 @@
     "size": "13.26 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 230,
@@ -2757,7 +3215,9 @@
     "size": "68.7 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 231,
@@ -2769,7 +3229,9 @@
     "size": "141.98 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 232,
@@ -2781,7 +3243,9 @@
     "size": "15.29 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 233,
@@ -2793,7 +3257,9 @@
     "size": "81.99 MB",
     "author": "Unknown",
     "seriesId": "my_encyclopedia_of_very_important",
-    "seriesName": "My Encyclopedia of Very Important"
+    "seriesName": "My Encyclopedia of Very Important",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 234,
@@ -2805,7 +3271,9 @@
     "size": "83.41 MB",
     "author": "Unknown",
     "seriesId": "my_encyclopedia_of_very_important",
-    "seriesName": "My Encyclopedia of Very Important"
+    "seriesName": "My Encyclopedia of Very Important",
+    "themeName": "Dinosaurs & Prehistoric Life",
+    "themeId": "dinosaurs_prehistoric_life"
   },
   {
     "id": 235,
@@ -2817,7 +3285,9 @@
     "size": "16.86 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 236,
@@ -2829,7 +3299,9 @@
     "size": "153.96 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 237,
@@ -2841,7 +3313,9 @@
     "size": "34.48 MB",
     "author": "Unknown",
     "seriesId": "dk_first_steps",
-    "seriesName": "DK First Steps"
+    "seriesName": "DK First Steps",
+    "themeName": "Math & Logic",
+    "themeId": "math_logic"
   },
   {
     "id": 238,
@@ -2853,7 +3327,9 @@
     "size": "21.1 MB",
     "author": "Unknown",
     "seriesId": "dk_first_steps",
-    "seriesName": "DK First Steps"
+    "seriesName": "DK First Steps",
+    "themeName": "Children’s Early Learning",
+    "themeId": "children_s_early_learning"
   },
   {
     "id": 239,
@@ -2865,7 +3341,9 @@
     "size": "52.96 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 240,
@@ -2877,7 +3355,9 @@
     "size": "21.98 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 241,
@@ -2889,7 +3369,9 @@
     "size": "41.88 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 242,
@@ -2901,7 +3383,9 @@
     "size": "23.6 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 243,
@@ -2913,7 +3397,9 @@
     "size": "30.12 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 244,
@@ -2925,7 +3411,9 @@
     "size": "30.12 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 245,
@@ -2937,7 +3425,9 @@
     "size": "10.63 MB",
     "author": "Unknown",
     "seriesId": "dk_readers",
-    "seriesName": "DK Readers"
+    "seriesName": "DK Readers",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 246,
@@ -2949,7 +3439,9 @@
     "size": "66.07 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 247,
@@ -2961,7 +3453,9 @@
     "size": "66.07 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 248,
@@ -2973,7 +3467,9 @@
     "size": "66.07 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 249,
@@ -2985,7 +3481,9 @@
     "size": "66.07 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 250,
@@ -2997,7 +3495,9 @@
     "size": "41.27 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 251,
@@ -3009,7 +3509,9 @@
     "size": "41.27 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 252,
@@ -3021,7 +3523,9 @@
     "size": "65.18 MB",
     "author": "Unknown",
     "seriesId": "dk_philosophy_psychology",
-    "seriesName": "DK Philosophy & Psychology"
+    "seriesName": "DK Philosophy & Psychology",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 253,
@@ -3033,7 +3537,9 @@
     "size": "46.68 MB",
     "author": "Unknown",
     "seriesId": "dk_philosophy_psychology",
-    "seriesName": "DK Philosophy & Psychology"
+    "seriesName": "DK Philosophy & Psychology",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 254,
@@ -3045,7 +3551,9 @@
     "size": "143.7 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 255,
@@ -3057,7 +3565,9 @@
     "size": "55.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 256,
@@ -3069,7 +3579,9 @@
     "size": "55.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 257,
@@ -3081,7 +3593,9 @@
     "size": "41.48 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 258,
@@ -3093,7 +3607,9 @@
     "size": "57.87 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 259,
@@ -3105,7 +3621,9 @@
     "size": "86.14 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 260,
@@ -3117,7 +3635,9 @@
     "size": "2.69 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 261,
@@ -3129,7 +3649,9 @@
     "size": "48.26 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 262,
@@ -3141,7 +3663,9 @@
     "size": "39.92 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 263,
@@ -3153,7 +3677,9 @@
     "size": "252.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 264,
@@ -3165,7 +3691,9 @@
     "size": "86.86 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 265,
@@ -3177,7 +3705,9 @@
     "size": "89.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 266,
@@ -3189,7 +3719,9 @@
     "size": "159.63 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 267,
@@ -3201,7 +3733,9 @@
     "size": "190.1 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 268,
@@ -3213,7 +3747,9 @@
     "size": "118.62 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 269,
@@ -3225,7 +3761,9 @@
     "size": "6.49 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 270,
@@ -3237,7 +3775,9 @@
     "size": "273.66 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 271,
@@ -3249,7 +3789,9 @@
     "size": "111.91 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 272,
@@ -3261,7 +3803,9 @@
     "size": "140.68 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 273,
@@ -3273,7 +3817,9 @@
     "size": "17.02 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 274,
@@ -3285,7 +3831,9 @@
     "size": "29.15 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 275,
@@ -3297,7 +3845,9 @@
     "size": "4.16 MB",
     "author": "Unknown",
     "seriesId": "dk_wellness_fitness",
-    "seriesName": "DK Wellness & Fitness"
+    "seriesName": "DK Wellness & Fitness",
+    "themeName": "Health, Wellness & Medicine",
+    "themeId": "health_wellness_medicine"
   },
   {
     "id": 276,
@@ -3309,7 +3859,9 @@
     "size": "47.04 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Magazines & Periodicals",
+    "themeId": "magazines_periodicals"
   },
   {
     "id": 277,
@@ -3321,7 +3873,9 @@
     "size": "144.87 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Military, Warfare & Weapons",
+    "themeId": "military_warfare_weapons"
   },
   {
     "id": 278,
@@ -3333,7 +3887,9 @@
     "size": "15.43 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 279,
@@ -3345,7 +3901,9 @@
     "size": "92.99 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 280,
@@ -3357,7 +3915,9 @@
     "size": "118.43 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 281,
@@ -3369,7 +3929,9 @@
     "size": "3.11 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Language Learning & English",
+    "themeId": "language_learning_english"
   },
   {
     "id": 282,
@@ -3381,7 +3943,9 @@
     "size": "100.6 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 283,
@@ -3393,7 +3957,9 @@
     "size": "64.17 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 284,
@@ -3405,7 +3971,9 @@
     "size": "33.39 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 285,
@@ -3417,7 +3985,9 @@
     "size": "43.81 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Sports & Physical Activity",
+    "themeId": "sports_physical_activity"
   },
   {
     "id": 286,
@@ -3429,7 +3999,9 @@
     "size": "34.24 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 287,
@@ -3441,7 +4013,9 @@
     "size": "78.43 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 288,
@@ -3453,7 +4027,9 @@
     "size": "40.87 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 289,
@@ -3465,7 +4041,9 @@
     "size": "21.75 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 290,
@@ -3477,7 +4055,9 @@
     "size": "1.92 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 291,
@@ -3489,7 +4069,9 @@
     "size": "144.51 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 292,
@@ -3501,7 +4083,9 @@
     "size": "13.53 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 293,
@@ -3513,7 +4097,9 @@
     "size": "13.53 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 294,
@@ -3525,7 +4111,9 @@
     "size": "8.09 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 295,
@@ -3537,7 +4125,9 @@
     "size": "100.85 MB",
     "author": "Unknown",
     "seriesId": "dk_art_design",
-    "seriesName": "DK Art & Design"
+    "seriesName": "DK Art & Design",
+    "themeName": "Music, Dance & Performing Arts",
+    "themeId": "music_dance_performing_arts"
   },
   {
     "id": 296,
@@ -3549,7 +4139,9 @@
     "size": "80.75 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 297,
@@ -3561,7 +4153,9 @@
     "size": "66.19 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 298,
@@ -3573,7 +4167,9 @@
     "size": "26.13 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 299,
@@ -3585,7 +4181,9 @@
     "size": "157.32 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 300,
@@ -3597,7 +4195,9 @@
     "size": "158.67 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 301,
@@ -3609,7 +4209,9 @@
     "size": "101.63 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 302,
@@ -3621,7 +4223,9 @@
     "size": "121.26 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 303,
@@ -3633,7 +4237,9 @@
     "size": "25.57 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 304,
@@ -3645,7 +4251,9 @@
     "size": "12.85 MB",
     "author": "Unknown",
     "seriesId": "dk_pocket_genius",
-    "seriesName": "DK Pocket Genius"
+    "seriesName": "DK Pocket Genius",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 305,
@@ -3657,7 +4265,9 @@
     "size": "145.84 MB",
     "author": "Unknown",
     "seriesId": "dk_reference_atlas",
-    "seriesName": "DK Reference Atlas"
+    "seriesName": "DK Reference Atlas",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 306,
@@ -3669,7 +4279,9 @@
     "size": "63.53 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Military, Warfare & Weapons",
+    "themeId": "military_warfare_weapons"
   },
   {
     "id": 307,
@@ -3681,7 +4293,9 @@
     "size": "39.01 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 308,
@@ -3693,7 +4307,9 @@
     "size": "23.24 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Music, Dance & Performing Arts",
+    "themeId": "music_dance_performing_arts"
   },
   {
     "id": 309,
@@ -3705,7 +4321,9 @@
     "size": "23.24 MB",
     "author": "Unknown",
     "seriesId": "dk_eyewitness",
-    "seriesName": "DK Eyewitness"
+    "seriesName": "DK Eyewitness",
+    "themeName": "Music, Dance & Performing Arts",
+    "themeId": "music_dance_performing_arts"
   },
   {
     "id": 310,
@@ -3717,7 +4335,9 @@
     "size": "48.71 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 311,
@@ -3729,7 +4349,9 @@
     "size": "132.63 MB",
     "author": "Unknown",
     "seriesId": "dk_history_map_by_map",
-    "seriesName": "DK History Map by Map"
+    "seriesName": "DK History Map by Map",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 312,
@@ -3741,7 +4363,9 @@
     "size": "54.43 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 313,
@@ -3753,7 +4377,9 @@
     "size": "73.47 MB",
     "author": "Unknown",
     "seriesId": "dk_reference_atlas",
-    "seriesName": "DK Reference Atlas"
+    "seriesName": "DK Reference Atlas",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 314,
@@ -3765,7 +4391,9 @@
     "size": "71.34 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 315,
@@ -3777,7 +4405,9 @@
     "size": "123.55 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 316,
@@ -3789,7 +4419,9 @@
     "size": "79.51 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Art, Design & Photography",
+    "themeId": "art_design_photography"
   },
   {
     "id": 317,
@@ -3801,7 +4433,9 @@
     "size": "109.28 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 318,
@@ -3813,7 +4447,9 @@
     "size": "74.01 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 319,
@@ -3825,7 +4461,9 @@
     "size": "70.07 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 320,
@@ -3837,7 +4475,9 @@
     "size": "30.82 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 321,
@@ -3849,7 +4489,9 @@
     "size": "46.82 MB",
     "author": "Unknown",
     "seriesId": "dk_pocket_genius",
-    "seriesName": "DK Pocket Genius"
+    "seriesName": "DK Pocket Genius",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 322,
@@ -3861,7 +4503,9 @@
     "size": "180.04 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 323,
@@ -3873,7 +4517,9 @@
     "size": "49.9 MB",
     "author": "Unknown",
     "seriesId": "dk_reference_atlas",
-    "seriesName": "DK Reference Atlas"
+    "seriesName": "DK Reference Atlas",
+    "themeName": "Geography & World Cultures",
+    "themeId": "geography_world_cultures"
   },
   {
     "id": 324,
@@ -3885,7 +4531,9 @@
     "size": "76.61 MB",
     "author": "Unknown",
     "seriesId": "dk_complete_step_by_step_guides",
-    "seriesName": "DK Complete Step-by-Step Guides"
+    "seriesName": "DK Complete Step-by-Step Guides",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 325,
@@ -3897,7 +4545,9 @@
     "size": "448.11 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 326,
@@ -3909,7 +4559,9 @@
     "size": "40.15 MB",
     "author": "Unknown",
     "seriesId": "dk_art_design",
-    "seriesName": "DK Art & Design"
+    "seriesName": "DK Art & Design",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 327,
@@ -3921,7 +4573,9 @@
     "size": "40.15 MB",
     "author": "Unknown",
     "seriesId": "dk_art_design",
-    "seriesName": "DK Art & Design"
+    "seriesName": "DK Art & Design",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 328,
@@ -3933,7 +4587,9 @@
     "size": "79.5 MB",
     "author": "Unknown",
     "seriesId": "dk_licensed_media_marvel_star_wars",
-    "seriesName": "DK Licensed Media (Marvel / Star Wars)"
+    "seriesName": "DK Licensed Media (Marvel / Star Wars)",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 329,
@@ -3945,7 +4601,9 @@
     "size": "112.54 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 330,
@@ -3957,7 +4615,9 @@
     "size": "34.93 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 331,
@@ -3969,7 +4629,9 @@
     "size": "151.2 MB",
     "author": "Unknown",
     "seriesId": "dk_visual_encyclopedia",
-    "seriesName": "DK Visual Encyclopedia"
+    "seriesName": "DK Visual Encyclopedia",
+    "themeName": "Military, Warfare & Weapons",
+    "themeId": "military_warfare_weapons"
   },
   {
     "id": 332,
@@ -3981,7 +4643,9 @@
     "size": "44.66 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Military, Warfare & Weapons",
+    "themeId": "military_warfare_weapons"
   },
   {
     "id": 333,
@@ -3993,7 +4657,9 @@
     "size": "100.78 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 334,
@@ -4005,7 +4671,9 @@
     "size": "187.93 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Crafts, DIY & Sewing",
+    "themeId": "crafts_diy_sewing"
   },
   {
     "id": 335,
@@ -4017,7 +4685,9 @@
     "size": "65.94 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Sports & Physical Activity",
+    "themeId": "sports_physical_activity"
   },
   {
     "id": 336,
@@ -4029,7 +4699,9 @@
     "size": "131.23 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 337,
@@ -4041,7 +4713,9 @@
     "size": "1.55 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 338,
@@ -4053,7 +4727,9 @@
     "size": "80.32 MB",
     "author": "Unknown",
     "seriesId": "my_encyclopedia_of_very_important",
-    "seriesName": "My Encyclopedia of Very Important"
+    "seriesName": "My Encyclopedia of Very Important",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 339,
@@ -4065,7 +4741,9 @@
     "size": "66.31 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 340,
@@ -4077,7 +4755,9 @@
     "size": "38.96 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Religion, Mythology & Philosophy",
+    "themeId": "religion_mythology_philosophy"
   },
   {
     "id": 341,
@@ -4089,7 +4769,9 @@
     "size": "153.96 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 342,
@@ -4101,7 +4783,9 @@
     "size": "51.09 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 343,
@@ -4113,7 +4797,9 @@
     "size": "259.87 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "History",
+    "themeId": "history"
   },
   {
     "id": 344,
@@ -4125,7 +4811,9 @@
     "size": "37.82 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 345,
@@ -4137,7 +4825,9 @@
     "size": "19.29 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Nature & Animals",
+    "themeId": "nature_animals"
   },
   {
     "id": 346,
@@ -4149,7 +4839,9 @@
     "size": "73.49 MB",
     "author": "Unknown",
     "seriesId": "dk_food_kitchen",
-    "seriesName": "DK Food & Kitchen"
+    "seriesName": "DK Food & Kitchen",
+    "themeName": "Cooking, Food & Nutrition",
+    "themeId": "cooking_food_nutrition"
   },
   {
     "id": 347,
@@ -4161,7 +4853,9 @@
     "size": "26.8 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 348,
@@ -4173,7 +4867,9 @@
     "size": "49.35 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 349,
@@ -4185,7 +4881,9 @@
     "size": "25.34 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Science & Technology",
+    "themeId": "science_technology"
   },
   {
     "id": 350,
@@ -4197,7 +4895,9 @@
     "size": "30.55 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Sports & Physical Activity",
+    "themeId": "sports_physical_activity"
   },
   {
     "id": 351,
@@ -4209,7 +4909,9 @@
     "size": "36.97 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   },
   {
     "id": 352,
@@ -4221,7 +4923,9 @@
     "size": "36.89 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Psychology & Personal Development",
+    "themeId": "psychology_personal_development"
   },
   {
     "id": 353,
@@ -4233,7 +4937,9 @@
     "size": "41.95 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Space & Astronomy",
+    "themeId": "space_astronomy"
   },
   {
     "id": 354,
@@ -4245,6 +4951,8 @@
     "size": "86.86 MB",
     "author": "Unknown",
     "seriesId": "others_book",
-    "seriesName": "Others Book"
+    "seriesName": "Others Book",
+    "themeName": "Others / General Knowledge",
+    "themeId": "others_general_knowledge"
   }
 ]
